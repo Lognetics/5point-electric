@@ -3,7 +3,7 @@
   "category": "ev-charging-equipment",
   "summary": "Sample listing that shows how this product will appear. Verified product details will replace it.",
   "description": "This is sample content, not a real product. Replace it in the CMS with a verified product name, description, specifications, and application areas.",
-  "image": "/images/ev-connector.jpg",
+  "image": "/images/charge-port.jpg",
   "imageAlt": "EV charging connector plugged into a vehicle",
   "specifications": [
     {

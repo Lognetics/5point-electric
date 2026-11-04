@@ -3,7 +3,7 @@
   "category": "electric-vehicles",
   "summary": "Sample listing that shows how this product will appear. Verified product details will replace it.",
   "description": "This is sample content, not a real product. Replace it in the CMS with a verified product name, description, specifications, and application areas.",
-  "image": "/images/ev-city.jpg",
+  "image": "/images/ev-plugged.jpg",
   "imageAlt": "Electric car connected to a charging cable",
   "specifications": [
     {

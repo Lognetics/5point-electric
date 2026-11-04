@@ -26,14 +26,14 @@ export default function QuotePage() {
       <section className="section">
         <div className="wrap grid gap-14 lg:grid-cols-12 lg:gap-20">
           <div className="lg:col-span-4">
-            <h2 className="text-2xl text-navy">What happens next</h2>
-            <ol className="mt-6 border-t border-line">
+            <h2 className="label text-deep">What happens next</h2>
+            <ol className="mt-6 border-t border-ink/15">
               {STEPS.map((step, i) => (
-                <li key={step.title} className="flex gap-4 border-b border-line py-5">
-                  <span className="font-display font-semibold text-blue-ink">{i + 1}</span>
+                <li key={step.title} className="flex gap-5 border-b border-ink/15 py-6">
+                  <span className="text-[2rem] leading-none font-medium tracking-[-0.04em] text-deep">{i + 1}</span>
                   <div>
-                    <h3 className="text-base text-navy">{step.title}</h3>
-                    <p className="mt-1 text-[0.9688rem] text-slate">{step.text}</p>
+                    <h3 className="text-[1.125rem]">{step.title}</h3>
+                    <p className="mt-1 text-[0.9688rem] text-stone">{step.text}</p>
                   </div>
                 </li>
               ))}

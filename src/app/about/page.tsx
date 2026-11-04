@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
+import { Cta } from "@/components/Cta";
+import { ApertureOutline } from "@/components/Logo";
 import { PageHero } from "@/components/PageHero";
+import { ParallaxImage } from "@/components/ParallaxImage";
 import { Reveal } from "@/components/Reveal";
+import { ScrubSpin } from "@/components/ScrubSpin";
+import { SplitReveal } from "@/components/SplitReveal";
+import { WordScrub } from "@/components/WordScrub";
 import { getCompany, getImages } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -17,68 +21,64 @@ export default function AboutPage() {
   const img = getImages();
   return (
     <>
-      <PageHero
-        eyebrow="About Us"
-        title="An electric mobility and clean energy company for Nigeria."
-        image={img("sustainability")}
-      />
+      <PageHero eyebrow="About Us" title="An electric mobility and clean energy company for Nigeria." image={img("sustainability")} />
 
       <section className="section">
-        <div className="wrap grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
-          <Reveal className="lg:col-span-6">
-            <h2 className="display-2 text-navy">Who We Are</h2>
-            <p className="mt-7 text-slate lg:text-lg">{company.whoWeAre}</p>
-          </Reveal>
-          <Reveal delay={120} className="relative aspect-[4/3] overflow-hidden lg:col-span-6">
-            <Image src={img("about").src} alt={img("about").alt} fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
-            <span className="demo-tag absolute top-3 left-3">Demonstration image</span>
-          </Reveal>
+        <div className="wrap grid gap-10 lg:grid-cols-12">
+          <p className="label text-deep lg:col-span-3">Who We Are</p>
+          <div className="lg:col-span-9">
+            <WordScrub className="d-3" text={company.whoWeAre} />
+          </div>
         </div>
       </section>
 
-      <section className="bg-navy text-white">
-        <div className="wrap grid lg:grid-cols-2">
-          <Reveal className="border-white/20 py-16 lg:border-r lg:py-24 lg:pr-16">
-            <p className="eyebrow mb-6 text-white/80">Our Vision</p>
-            <p className="font-display text-2xl leading-snug font-medium tracking-tight lg:text-[2rem]">{company.vision}</p>
-          </Reveal>
-          <Reveal delay={100} className="border-t border-white/20 py-16 lg:border-t-0 lg:py-24 lg:pl-16">
-            <p className="eyebrow mb-6 text-white/80">Our Mission</p>
-            <p className="font-display text-2xl leading-snug font-medium tracking-tight lg:text-[2rem]">{company.mission}</p>
-          </Reveal>
+      <section className="relative overflow-hidden bg-ink text-white">
+        <ScrubSpin className="pointer-events-none absolute top-1/2 left-1/2 w-[70vw] -translate-x-1/2 -translate-y-1/2 text-leaf/15" turn={130}>
+          <ApertureOutline />
+        </ScrubSpin>
+        <div className="wrap relative">
+          <div className="grid gap-5 border-b border-white/12 py-20 lg:grid-cols-12 lg:py-32">
+            <p className="label text-leaf lg:col-span-3">Our Vision</p>
+            <SplitReveal as="p" className="d-3 lg:col-span-9">{company.vision}</SplitReveal>
+          </div>
+          <div className="grid gap-5 py-20 lg:grid-cols-12 lg:py-32">
+            <p className="label text-leaf lg:col-span-3">Our Mission</p>
+            <SplitReveal as="p" className="d-3 lg:col-span-9">{company.mission}</SplitReveal>
+          </div>
         </div>
       </section>
 
       <section className="section">
         <div className="wrap">
-          <Reveal>
-            <h2 className="display-2 text-navy">Our Core Values</h2>
-          </Reveal>
-          <ul className="mt-12 grid gap-x-10 border-t border-line sm:grid-cols-2 lg:grid-cols-3">
-            {company.values.map((v) => (
-              <li key={v.title} className="border-b border-line py-8">
-                <h3 className="text-xl text-navy">{v.title}</h3>
-                <p className="mt-2 text-slate">{v.description}</p>
-              </li>
+          <p className="label mb-7 text-deep">What guides us</p>
+          <SplitReveal className="d-2">Our Core Values</SplitReveal>
+          <ul className="mt-14 border-t border-ink/15 lg:mt-20">
+            {company.values.map((v, i) => (
+              <Reveal as="li" key={v.title} className="group grid gap-2 border-b border-ink/15 py-7 transition-colors duration-500 lg:grid-cols-12 lg:items-baseline lg:py-9">
+                <span className="label text-stone lg:col-span-1">0{i + 1}</span>
+                <h3 className="d-3 transition-transform duration-700 ease-out-soft group-hover:translate-x-3 lg:col-span-6">{v.title}</h3>
+                <p className="text-stone lg:col-span-5">{v.description}</p>
+              </Reveal>
             ))}
           </ul>
         </div>
       </section>
 
-      <section className="bg-mist section">
-        <div className="wrap grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
-          <Reveal className="relative aspect-[4/3] overflow-hidden lg:col-span-6">
-            <Image src={img("commitment").src} alt={img("commitment").alt} fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
-            <span className="demo-tag absolute top-3 left-3">Demonstration image</span>
-          </Reveal>
-          <Reveal delay={120} className="lg:col-span-6">
-            <h2 className="display-2 text-navy">Our Commitment</h2>
-            <p className="mt-7 text-slate lg:text-lg">{company.commitment}</p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Link href="/solutions" className="btn btn-primary">Explore Our Solutions</Link>
-              <Link href="/contact" className="btn btn-ghost-dark">Contact Our Team</Link>
-            </div>
-          </Reveal>
+      <section className="pb-24 lg:pb-44">
+        <div className="wrap grid gap-12 lg:grid-cols-12 lg:gap-8">
+          <div className="lg:col-span-7">
+            <ParallaxImage src={img("commitment").src} alt={img("commitment").alt} sizes="(min-width: 1024px) 58vw, 100vw" demo="Demonstration image" className="aspect-[5/4]" />
+          </div>
+          <div className="flex flex-col justify-center lg:col-span-4 lg:col-start-9">
+            <SplitReveal className="d-2">Our Commitment</SplitReveal>
+            <Reveal>
+              <p className="lead mt-7 text-stone">{company.commitment}</p>
+              <div className="mt-9 flex flex-col gap-3 sm:flex-row lg:flex-col lg:items-start">
+                <Cta href="/solutions">Explore Our Solutions</Cta>
+                <Cta href="/contact" variant="outline">Contact Our Team</Cta>
+              </div>
+            </Reveal>
+          </div>
         </div>
       </section>
     </>

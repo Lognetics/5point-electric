@@ -13,10 +13,9 @@ export function WhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Enquire on WhatsApp"
-      className="fixed right-5 bottom-5 z-40 inline-flex h-14 items-center gap-2 rounded-full bg-[#128C4B] px-5 font-semibold text-white shadow-lg shadow-navy/25 transition-colors hover:bg-[#0E7540]"
+      className="fixed right-5 bottom-5 z-40 grid h-14 w-14 place-items-center rounded-full bg-leaf text-ink shadow-xl shadow-ink/30 transition-transform duration-300 hover:scale-105"
     >
-      <MessageCircle size={22} aria-hidden="true" />
-      <span className="hidden text-[0.9375rem] sm:inline">WhatsApp</span>
+      <MessageCircle size={24} aria-hidden="true" />
     </a>
   );
 }

@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, MapPin } from "lucide-react";
+import { Cta } from "@/components/Cta";
+import { ParallaxImage } from "@/components/ParallaxImage";
+import { SplitReveal } from "@/components/SplitReveal";
 import { getProjects } from "@/lib/content";
 import { projectCategory } from "@/lib/taxonomy";
 import { contactHref } from "@/lib/site";
@@ -36,38 +38,42 @@ export default async function ProjectPage({ params }: Props) {
 
   return (
     <>
-      <div className="bg-navy pt-[76px]" />
-      <section className="section !pt-10 lg:!pt-14">
+      <section className="pt-32 text-white lg:pt-44" style={{ background: "linear-gradient(to bottom, var(--color-ink) calc(100% - clamp(5rem, 14vw, 13rem)), var(--color-paper) 0)" }}>
         <div className="wrap">
-          <Link href="/projects" className="text-link">
+          <Link href="/projects" className="link-arrow">
             <ArrowLeft size={16} aria-hidden="true" /> All projects
           </Link>
-          <div className="mt-8 max-w-4xl">
-            <p className="text-sm text-slate">{projectCategory(project.category)?.label}</p>
-            <h1 className="mt-2 text-[clamp(2rem,4vw,3.5rem)] text-navy">{project.title}</h1>
-            <p className="mt-4 flex items-center gap-1.5 text-slate">
-              <MapPin size={16} aria-hidden="true" /> {project.location}
-            </p>
-          </div>
+          <p className="label mt-12 text-leaf">{projectCategory(project.category)?.label}</p>
+          <SplitReveal as="h1" immediate className="d-1 mt-5 max-w-[17ch]">{project.title}</SplitReveal>
+          <p className="mt-6 flex items-center gap-1.5 text-white/70">
+            <MapPin size={16} aria-hidden="true" /> {project.location}
+          </p>
+          <ParallaxImage
+            priority
+            src={lead.src}
+            alt={lead.alt}
+            sizes="100vw"
+            demo={project.sample ? "Sample content, demonstration image" : undefined}
+            className="mt-12 aspect-[4/3] sm:aspect-[21/10]"
+          />
+        </div>
+      </section>
 
-          <div className="relative mt-10 aspect-[16/8] overflow-hidden bg-mist">
-            <Image src={lead.src} alt={lead.alt} fill priority sizes="100vw" className="object-cover" />
-            {project.sample && <span className="demo-tag absolute top-3 left-3">Sample content, demonstration image</span>}
-          </div>
-
-          <div className="mt-12 grid gap-10 lg:grid-cols-12">
+      <section className="section !pt-16 lg:!pt-24">
+        <div className="wrap">
+          <div className="grid gap-12 lg:grid-cols-12">
             <div className="lg:col-span-7">
-              <h2 className="text-2xl text-navy">Project description</h2>
-              <p className="mt-4 whitespace-pre-line text-slate lg:text-lg">{project.description}</p>
+              <h2 className="label text-deep">Project description</h2>
+              <p className="lead mt-5 whitespace-pre-line">{project.description}</p>
             </div>
             {project.technicalDetails.length > 0 && (
-              <div className="lg:col-span-5">
-                <h2 className="text-2xl text-navy">Technical details</h2>
-                <dl className="mt-4 border-t border-line">
+              <div className="lg:col-span-4 lg:col-start-9">
+                <h2 className="label text-deep">Technical details</h2>
+                <dl className="mt-5 border-t border-ink/15">
                   {project.technicalDetails.map((d) => (
-                    <div key={d.label} className="grid grid-cols-2 gap-4 border-b border-line py-3 text-[0.9688rem]">
-                      <dt className="text-slate">{d.label}</dt>
-                      <dd className="font-medium">{d.value}</dd>
+                    <div key={d.label} className="grid grid-cols-2 gap-4 border-b border-ink/15 py-3 text-[0.9688rem]">
+                      <dt className="text-stone">{d.label}</dt>
+                      <dd>{d.value}</dd>
                     </div>
                   ))}
                 </dl>
@@ -76,19 +82,18 @@ export default async function ProjectPage({ params }: Props) {
           </div>
 
           {rest.length > 0 && (
-            <ul className="mt-12 grid gap-6 sm:grid-cols-2">
+            <ul className="mt-16 grid gap-7 sm:grid-cols-2">
               {rest.map((image) => (
-                <li key={image.src} className="relative aspect-[16/10] overflow-hidden bg-mist">
-                  <Image src={image.src} alt={image.alt} fill sizes="(min-width: 640px) 50vw, 100vw" className="object-cover" />
-                  {project.sample && <span className="demo-tag absolute top-3 left-3">Demonstration image</span>}
+                <li key={image.src}>
+                  <ParallaxImage src={image.src} alt={image.alt} sizes="(min-width: 640px) 50vw, 100vw" demo={project.sample ? "Demonstration image" : undefined} className="aspect-[5/4]" />
                 </li>
               ))}
             </ul>
           )}
 
-          <div className="mt-16 flex flex-col items-start justify-between gap-5 border-t border-line pt-10 md:flex-row md:items-center">
-            <h2 className="text-2xl text-navy">Planning something similar?</h2>
-            <Link href={contactHref()} className="btn btn-primary">Discuss Your Project</Link>
+          <div className="mt-20 flex flex-col items-start justify-between gap-6 rounded-[14px] bg-ink p-7 text-white md:flex-row md:items-center lg:p-12">
+            <h2 className="d-3">Planning something similar?</h2>
+            <Cta href={contactHref()} variant="leaf" className="shrink-0">Discuss Your Project</Cta>
           </div>
         </div>
       </section>

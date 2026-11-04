@@ -6,11 +6,11 @@
   "description": "This is sample content with demonstration imagery. It does not describe work carried out by 5Point Electric Technology Limited. Replace it in the CMS with a verified project title, location, description, photographs, and technical details.",
   "images": [
     {
-      "src": "/images/solar-aerial.jpg",
+      "src": "/images/solar-gold.jpg",
       "alt": "Aerial view of a large solar plant"
     },
     {
-      "src": "/images/inverter.jpg",
+      "src": "/images/rooftop-aerial.jpg",
       "alt": "Aerial view of a large solar plant"
     }
   ],

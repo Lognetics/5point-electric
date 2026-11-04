@@ -23,7 +23,7 @@ export default function ProjectsPage() {
       <section className="section">
         <div className="wrap">
           {hasSamples && (
-            <p className="mb-10 border-l-2 border-green bg-mist px-5 py-4 text-[0.9688rem]">
+            <p className="mb-10 rounded-[10px] bg-white px-5 py-4 text-[0.9688rem] text-stone">
               The entries below are clearly labelled samples showing how the portfolio will look. They are not completed
               5Point projects, and verified projects will replace them.
             </p>

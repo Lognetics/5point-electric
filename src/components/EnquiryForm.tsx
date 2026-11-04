@@ -4,6 +4,7 @@ import Script from "next/script";
 import { useEffect, useRef, useState, type FormEvent } from "react";
 import { CheckCircle2 } from "lucide-react";
 import { SERVICES } from "@/lib/taxonomy";
+import { ArrowRoll } from "./Cta";
 
 type Props = {
   type?: "contact" | "quote" | "product";
@@ -35,7 +36,7 @@ function Field({
     <div>
       <label htmlFor={id} className="field-label">
         {label}
-        {!required && <span className="font-normal text-slate"> (optional)</span>}
+        {!required && <span className="font-normal text-stone"> (optional)</span>}
       </label>
       {children}
       {error && (
@@ -111,13 +112,13 @@ export function EnquiryForm({
 
   if (status === "sent") {
     return (
-      <div ref={statusRef} tabIndex={-1} role="status" className="border border-line bg-mist p-8 outline-none lg:p-10">
-        <CheckCircle2 className="text-[#1F8F4E]" size={32} aria-hidden="true" />
-        <h3 className="mt-4 text-2xl text-navy">Thank you. We've received your enquiry.</h3>
-        <p className="mt-3 text-slate">Our team will review the details and get back to you.</p>
+      <div ref={statusRef} tabIndex={-1} role="status" className="rounded-[14px] bg-ink p-8 text-white outline-none lg:p-12">
+        <CheckCircle2 className="text-leaf" size={36} strokeWidth={1.5} aria-hidden="true" />
+        <h3 className="d-3 mt-5">Thank you. We've received your enquiry.</h3>
+        <p className="mt-3 text-white/70">Our team will review the details and get back to you.</p>
         <button
           type="button"
-          className="text-link mt-5"
+          className="link-arrow mt-6"
           onClick={() => {
             startedAt.current = Date.now();
             setStatus("idle");
@@ -133,7 +134,7 @@ export function EnquiryForm({
     errors[name] ? { "aria-invalid": true, "aria-describedby": `${name}-error` } : {};
 
   return (
-    <form onSubmit={onSubmit} noValidate className="grid gap-5 sm:grid-cols-2">
+    <form onSubmit={onSubmit} noValidate className="grid gap-x-8 gap-y-7 sm:grid-cols-2">
       <Field id="fullName" label="Full Name" required error={errors.fullName}>
         <input id="fullName" name="fullName" required autoComplete="name" maxLength={120} className="field" {...describe("fullName")} />
       </Field>
@@ -199,13 +200,14 @@ export function EnquiryForm({
 
       <div className="flex flex-col gap-4 sm:col-span-2">
         {formError && (
-          <p role="alert" className="border-l-2 border-[#B42D24] bg-[#FBEEED] px-4 py-3 text-[0.9688rem] text-[#8F231C]">
+          <p role="alert" className="rounded-lg bg-[#FBEEED] px-4 py-3 text-[0.9688rem] text-[#8F231C]">
             {formError}
           </p>
         )}
         <div>
-          <button type="submit" disabled={status === "sending"} className="btn btn-primary w-full disabled:opacity-60 sm:w-auto sm:min-w-48">
+          <button type="submit" disabled={status === "sending"} className="btn btn-ink w-full disabled:opacity-60 sm:w-auto sm:min-w-56">
             {status === "sending" ? "Sending..." : submitLabel}
+            <ArrowRoll />
           </button>
         </div>
       </div>

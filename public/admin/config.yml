@@ -153,6 +153,12 @@ collections:
             fields:
               - { name: src, label: Image, widget: image }
               - { name: alt, label: Image description (alt text), widget: string }
+          - name: introSecondary
+            label: "Home: company introduction (second image)"
+            widget: object
+            fields:
+              - { name: src, label: Image, widget: image }
+              - { name: alt, label: Image description (alt text), widget: string }
           - name: electricVehicles
             label: "Electric vehicles"
             widget: object

@@ -1,54 +1,58 @@
 {
   "hero": {
-    "src": "/images/hero.jpg",
-    "alt": "Electric vehicles parked at charging points beneath a solar panel canopy on a clear day"
+    "src": "/images/hero-canopy.jpg",
+    "alt": "Electric cars plugged in at a solar-powered charging canopy in a tree-lined car park"
   },
   "intro": {
-    "src": "/images/canopy-front.jpg",
-    "alt": "Electric cars and a fast charger beneath a solar canopy at a commercial site"
+    "src": "/images/panels-sky.jpg",
+    "alt": "Solar panels angled towards a bright sky with scattered clouds"
+  },
+  "introSecondary": {
+    "src": "/images/charge-port.jpg",
+    "alt": "Charging connector plugged into the port of an electric car"
   },
   "electricVehicles": {
-    "src": "/images/ev-city.jpg",
-    "alt": "Charging cable connected to an electric car on a city street at dusk"
+    "src": "/images/ev-plugged.jpg",
+    "alt": "White electric car connected to a charging post by a coiled cable"
   },
   "solarCharging": {
-    "src": "/images/canopy-site.jpg",
-    "alt": "EV chargers and battery cabinets under a solar canopy outside a commercial building"
+    "src": "/images/hero-canopy.jpg",
+    "alt": "Solar-powered EV charging canopy with electric cars plugged in"
   },
   "cables": {
+    "src": "/images/cables-color.jpg",
+    "alt": "Colourful electrical conductors twisting together against a dark background"
+  },
+  "industrialSolar": {
+    "src": "/images/rooftop-aerial.jpg",
+    "alt": "Aerial view of a large industrial roof covered in solar panels"
+  },
+  "showcaseCharging": {
+    "src": "/images/hero-canopy.jpg",
+    "alt": "Solar canopy above electric vehicle charging bays"
+  },
+  "showcaseEv": {
+    "src": "/images/charge-hand.jpg",
+    "alt": "Driver plugging a charging connector into an electric car"
+  },
+  "showcaseSolar": {
+    "src": "/images/solar-gold.jpg",
+    "alt": "Aerial view of rows of solar panels across golden fields"
+  },
+  "showcaseCables": {
     "src": "/images/cable-coil.jpg",
     "alt": "Heavy black power cable wound tightly on a wooden drum"
   },
-  "industrialSolar": {
-    "src": "/images/solar-rows.jpg",
-    "alt": "Rows of ground-mounted solar modules across an open field"
-  },
-  "showcaseCharging": {
-    "src": "/images/canopy-wide.jpg",
-    "alt": "Underside of a large steel solar canopy above an EV charging site"
-  },
-  "showcaseEv": {
-    "src": "/images/ev-connector.jpg",
-    "alt": "EV charging connector plugged in, with blurred city traffic lights behind"
-  },
-  "showcaseSolar": {
-    "src": "/images/solar-aerial.jpg",
-    "alt": "Aerial view of a large solar farm among green fields"
-  },
-  "showcaseCables": {
-    "src": "/images/cable-detail.jpg",
-    "alt": "Close view of black power cable coiled on a drum"
-  },
   "sustainability": {
-    "src": "/images/solar-rows.jpg",
-    "alt": "Long rows of solar modules stretching across a field"
+    "src": "/images/solar-sunrise.jpg",
+    "alt": "Vast solar farm and wind turbines at sunrise, seen from the air"
   },
   "about": {
-    "src": "/images/technicians.jpg",
-    "alt": "Technicians in safety harnesses working together on a roof installation"
+    "src": "/images/tech-green.jpg",
+    "alt": "Technician in a hard hat fixing a solar panel in place"
   },
   "commitment": {
-    "src": "/images/rooftop.jpg",
-    "alt": "Engineers inspecting a rooftop solar array surrounded by trees"
+    "src": "/images/tech-panel.jpg",
+    "alt": "Technician using a drill to install a solar panel under a blue sky"
   }
 }

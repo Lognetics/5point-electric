@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
 import { EnquiryForm } from "@/components/EnquiryForm";
+import { ArrowRoll } from "@/components/Cta";
 import { getProducts } from "@/lib/content";
 import { productCategory } from "@/lib/taxonomy";
 
@@ -36,32 +37,30 @@ export default async function ProductPage({ params }: Props) {
 
   return (
     <>
-      <div className="bg-navy pt-[76px]" />
-      <section className="section !pt-10 lg:!pt-14">
+      <section className="bg-ink pt-32 pb-16 text-white lg:pt-44 lg:pb-24">
         <div className="wrap">
-          <Link href={`/products#${category.id}`} className="text-link">
+          <Link href={`/products#${category.id}`} className="link-arrow">
             <ArrowLeft size={16} aria-hidden="true" /> {category.label}
           </Link>
-
-          <div className="mt-8 grid gap-10 lg:grid-cols-2 lg:gap-16">
-            <div className="relative aspect-[4/3] overflow-hidden bg-mist">
+          <div className="mt-10 grid gap-10 lg:grid-cols-2 lg:gap-16">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-[14px] bg-moss lg:aspect-auto lg:min-h-[34rem]">
               <Image src={product.image} alt={product.imageAlt} fill priority sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
-              {product.sample && <span className="demo-tag absolute top-3 left-3">Sample listing, demonstration image</span>}
+              {product.sample && <span className="demo-tag absolute top-3.5 left-3.5">Sample listing, demonstration image</span>}
             </div>
             <div>
-              <p className="text-sm text-slate">{category.label}</p>
-              <h1 className="mt-2 text-[clamp(2rem,3.6vw,3rem)] text-navy">{product.title}</h1>
-              <p className="lead mt-5 text-slate">{product.summary}</p>
-              {product.description && <p className="mt-4 text-slate">{product.description}</p>}
+              <p className="label text-leaf">{category.label}</p>
+              <h1 className="d-2 mt-4">{product.title}</h1>
+              <p className="lead mt-6 text-white/75">{product.summary}</p>
+              {product.description && <p className="mt-4 text-white/60">{product.description}</p>}
 
               {product.specifications.length > 0 && (
-                <div className="mt-9">
-                  <h2 className="text-lg text-navy">Technical specifications</h2>
-                  <dl className="mt-3 border-t border-line">
+                <div className="mt-10">
+                  <h2 className="label text-white/50">Technical specifications</h2>
+                  <dl className="mt-3 border-t border-white/15">
                     {product.specifications.map((spec) => (
-                      <div key={spec.label} className="grid grid-cols-2 gap-4 border-b border-line py-3 text-[0.9688rem]">
-                        <dt className="text-slate">{spec.label}</dt>
-                        <dd className="font-medium">{spec.value}</dd>
+                      <div key={spec.label} className="grid grid-cols-2 gap-4 border-b border-white/15 py-3 text-[0.9688rem]">
+                        <dt className="text-white/60">{spec.label}</dt>
+                        <dd>{spec.value}</dd>
                       </div>
                     ))}
                   </dl>
@@ -69,31 +68,34 @@ export default async function ProductPage({ params }: Props) {
               )}
 
               {product.applications.length > 0 && (
-                <div className="mt-9">
-                  <h2 className="text-lg text-navy">Application areas</h2>
+                <div className="mt-10">
+                  <h2 className="label text-white/50">Application areas</h2>
                   <ul className="mt-3 flex flex-wrap gap-2">
                     {product.applications.map((a) => (
-                      <li key={a} className="rounded-[3px] bg-mist px-3 py-1.5 text-[0.9063rem]">{a}</li>
+                      <li key={a} className="rounded-full border border-white/20 px-3.5 py-1.5 text-[0.9063rem]">{a}</li>
                     ))}
                   </ul>
                 </div>
               )}
 
-              <a href="#enquiry" className="btn btn-primary mt-9">Request Product Information</a>
+              <a href="#enquiry" className="btn btn-leaf mt-10">
+                Request Product Information
+                <ArrowRoll />
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="enquiry" className="bg-mist section">
-        <div className="wrap grid gap-10 lg:grid-cols-12">
-          <div className="lg:col-span-4">
-            <h2 className="text-[clamp(1.75rem,3vw,2.5rem)] text-navy">Request Product Information</h2>
-            <p className="mt-4 text-slate">
-              Tell us what you need and where it is for. Your enquiry will reference <strong className="font-semibold text-charcoal">{product.title}</strong>.
+      <section id="enquiry" className="section">
+        <div className="wrap grid gap-12 lg:grid-cols-12">
+          <div className="lg:col-span-5">
+            <h2 className="d-3 max-w-[14ch]">Request Product Information</h2>
+            <p className="mt-5 max-w-md text-stone">
+              Tell us what you need and where it is for. Your enquiry will reference <strong className="font-medium text-ink">{product.title}</strong>.
             </p>
           </div>
-          <div className="bg-white p-6 lg:col-span-8 lg:p-10">
+          <div className="lg:col-span-7">
             <EnquiryForm type="product" product={product.title} defaultService={category.service} submitLabel="Request Product Information" />
           </div>
         </div>

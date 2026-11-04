@@ -6,11 +6,11 @@
   "description": "This is sample content with demonstration imagery. It does not describe work carried out by 5Point Electric Technology Limited. Replace it in the CMS with a verified project title, location, description, photographs, and technical details.",
   "images": [
     {
-      "src": "/images/hero.jpg",
+      "src": "/images/hero-canopy.jpg",
       "alt": "Electric vehicles charging beneath a solar canopy"
     },
     {
-      "src": "/images/canopy-front.jpg",
+      "src": "/images/charge-hand.jpg",
       "alt": "Electric vehicles charging beneath a solar canopy"
     }
   ],

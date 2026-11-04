@@ -1,6 +1,6 @@
 # 5Point Electric Technology Limited: corporate website
 
-Built with Next.js (App Router), TypeScript, and Tailwind CSS. Content lives in `content/` as JSON and is edited through Decap CMS at `/admin`.
+Built with Next.js (App Router), TypeScript, Tailwind CSS, GSAP, and Lenis. Content lives in `content/` as JSON and is edited through Decap CMS at `/admin`.
 
 ## Run it
 
@@ -16,7 +16,6 @@ npm run dev                  # http://localhost:3000
 
 | Item | Where |
 | --- | --- |
-| Official logo (the current mark is a placeholder) | `src/components/Logo.tsx`, `src/app/icon.svg` |
 | Phone, email, social links, WhatsApp number | CMS: Company information > Contact details and settings |
 | Turn off sample products and projects | Same screen: "Show labelled sample products and projects" |
 | Real products, projects, and photography | CMS: Products, Projects, Website images |
@@ -51,4 +50,4 @@ Editors need write access to the repository. Each save is a commit, and the site
 
 ## Image licences
 
-Current photos come from Wikimedia Commons (CC0, CC BY, CC BY-SA) and are credited at `/image-credits`, which must stay published while those photos are in use. Remove an entry from `content/image-credits.json` when its photo is replaced.
+Current photos come from Pexels and Wikimedia Commons (CC BY-SA) and are credited at `/image-credits`, which must stay published while the Wikimedia photos are in use. Remove an entry from `content/image-credits.json` when its photo is replaced.

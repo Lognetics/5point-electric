@@ -1,33 +1,38 @@
-// Placeholder mark until the official 5Point logo is supplied: five points, one energised.
-export function LogoMark({ className = "h-8 w-8" }: { className?: string }) {
+import { LOGO_BLADES, LOGO_CORE, LOGO_GREEN, LOGO_RING } from "@/lib/logo-paths";
+
+export function LogoMark({ className = "h-10 w-10" }: { className?: string }) {
   return (
-    <svg viewBox="0 0 32 32" className={className} aria-hidden="true">
-      <rect width="32" height="32" rx="4" fill="currentColor" />
-      <g fill="var(--logo-dots,#fff)">
-        <circle cx="9" cy="9" r="2.6" />
-        <circle cx="23" cy="9" r="2.6" />
-        <circle cx="9" cy="23" r="2.6" />
-        <circle cx="23" cy="23" r="2.6" />
-      </g>
-      <circle cx="16" cy="16" r="3.4" fill="#35B96B" />
+    <svg viewBox="-3 -1 104 102" className={className} aria-hidden="true">
+      <circle cx="50" cy="50" r="49" fill="#fff" />
+      <path fill={LOGO_GREEN} fillRule="evenodd" d={LOGO_RING} />
+      {LOGO_BLADES.map((d) => (
+        <path key={d} fill={LOGO_GREEN} d={d} />
+      ))}
+      <path fill={LOGO_GREEN} d={LOGO_CORE} />
     </svg>
   );
 }
 
-export function Logo({ tone = "dark" }: { tone?: "dark" | "light" }) {
-  const light = tone === "light";
+export function Logo({ className = "" }: { className?: string }) {
   return (
-    <span className="inline-flex items-center gap-2.5">
-      <span
-        className={light ? "text-white [--logo-dots:#101D2C]" : "text-navy [--logo-dots:#FFFFFF]"}
-      >
-        <LogoMark className="h-8 w-8" />
-      </span>
-      <span
-        className={`font-display text-[1.0625rem] leading-none font-bold tracking-[-0.02em] ${light ? "text-white" : "text-navy"}`}
-      >
-        5Point <span className="font-medium">Electric</span>
+    <span className={`inline-flex items-center gap-2.5 ${className}`}>
+      <LogoMark className="h-10 w-10 shrink-0" />
+      <span className="leading-none">
+        <span className="block text-[1.0625rem] font-medium tracking-[-0.02em]">5Point Electric</span>
+        <span className="mt-1 block font-mono text-[0.5938rem] tracking-[0.1em] uppercase opacity-70">Technology Limited</span>
       </span>
     </span>
+  );
+}
+
+/** Outline of the logo's aperture, used as a large background graphic. */
+export function ApertureOutline({ className = "", strokeWidth = 0.18 }: { className?: string; strokeWidth?: number }) {
+  return (
+    <svg viewBox="0 0 100 100" className={className} fill="none" stroke="currentColor" strokeWidth={strokeWidth} aria-hidden="true">
+      {LOGO_BLADES.map((d) => (
+        <path key={d} d={d} />
+      ))}
+      <path d={LOGO_CORE} />
+    </svg>
   );
 }

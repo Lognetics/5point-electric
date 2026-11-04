@@ -1,14 +1,19 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Manrope } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
+import { ApertureIntro } from "@/components/ApertureIntro";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { SmoothScroll } from "@/components/SmoothScroll";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { getSettings } from "@/lib/content";
 import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
-const manrope = Manrope({ subsets: ["latin"], variable: "--font-manrope", display: "swap" });
+const geist = Geist({ subsets: ["latin"], variable: "--font-geist", display: "swap" });
+const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono", display: "swap" });
+
+// Runs before first paint: marks JavaScript as available and opts in to the intro once per session.
+const BOOT_SCRIPT = `(function(){var d=document.documentElement;d.classList.add('js');try{if(location.pathname==='/'&&!sessionStorage.getItem('5p-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches){d.classList.add('intro-on')}}catch(e){}})()`;
 
 const DESCRIPTION =
   "5Point Electric Technology Limited provides EV charging infrastructure, solar-powered EV charging stations, AC and DC electrical cables, and industrial solar systems in Abuja, Lagos, and Port Harcourt, Nigeria.";
@@ -30,7 +35,7 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" },
 };
 
-export const viewport: Viewport = { themeColor: "#101D2C" };
+export const viewport: Viewport = { themeColor: "#0A1510" };
 
 function organizationJsonLd() {
   const s = getSettings();
@@ -56,17 +61,19 @@ function organizationJsonLd() {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-NG" className={`${inter.variable} ${manrope.variable}`} suppressHydrationWarning>
+    <html lang="en-NG" className={`${geist.variable} ${geistMono.variable}`} suppressHydrationWarning>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }} />
+        <script dangerouslySetInnerHTML={{ __html: BOOT_SCRIPT }} />
       </head>
       <body>
         <a
           href="#main"
-          className="btn btn-primary fixed top-3 left-3 z-[60] -translate-y-24 focus:translate-y-0"
+          className="btn btn-leaf fixed top-3 left-3 z-[60] !pr-6 -translate-y-24 focus:translate-y-0"
         >
           Skip to content
         </a>
+        <SmoothScroll />
+        <ApertureIntro />
         <Header />
         <main id="main">{children}</main>
         <Footer />

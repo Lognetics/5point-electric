@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
-import { ArrowRight, Check } from "lucide-react";
+import { Check } from "lucide-react";
+import { Cta } from "@/components/Cta";
 import { PageHero } from "@/components/PageHero";
+import { ParallaxImage } from "@/components/ParallaxImage";
 import { Reveal } from "@/components/Reveal";
+import { SplitReveal } from "@/components/SplitReveal";
 import { getImages } from "@/lib/content";
 import { contactHref } from "@/lib/site";
 
@@ -64,13 +65,14 @@ export default function SolutionsPage() {
         eyebrow="Solutions"
         title="Connected solutions for mobility and clean energy."
         lead="From the solar panels that generate power to the cables that carry it and the chargers that deliver it, our four business areas work together."
-        image={img("showcaseCharging")}
+        image={img("sustainability")}
       >
-        <ul className="mt-9 flex flex-wrap gap-x-7 gap-y-2.5 text-[0.9375rem]">
-          {SECTIONS.map((s) => (
+        <ul className="mt-7 space-y-2 text-[0.9688rem]">
+          {SECTIONS.map((s, i) => (
             <li key={s.id}>
-              <a href={`#${s.id}`} className="underline decoration-white/40 underline-offset-4 transition-colors hover:decoration-white">
-                {s.title}
+              <a href={`#${s.id}`} className="group inline-flex gap-3">
+                <span className="label pt-1 text-leaf">0{i + 1}</span>
+                <span className="underline decoration-white/30 underline-offset-4 transition-colors group-hover:decoration-white">{s.title}</span>
               </a>
             </li>
           ))}
@@ -78,45 +80,48 @@ export default function SolutionsPage() {
       </PageHero>
 
       {SECTIONS.map((s, i) => (
-        <section key={s.id} id={s.id} className={`section ${i % 2 === 1 ? "bg-mist" : ""}`}>
-          <div className="wrap grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
-            <Reveal className={`relative aspect-[4/3] overflow-hidden lg:col-span-7 ${i % 2 === 1 ? "lg:order-2" : ""}`}>
-              <Image src={img(s.imageKey).src} alt={img(s.imageKey).alt} fill sizes="(min-width: 1024px) 58vw, 100vw" className="object-cover" />
-            </Reveal>
-            <Reveal delay={100} className={`lg:col-span-5 ${i % 2 === 1 ? "lg:order-1" : ""}`}>
-              <h2 className="text-[clamp(1.75rem,3vw,2.625rem)] text-navy">{s.title}</h2>
-              <p className="mt-5 text-slate lg:text-lg">{s.text}</p>
-              <ul className="mt-7 space-y-3">
-                {s.points.map((p) => (
-                  <li key={p} className="flex gap-3 text-[0.9844rem]">
-                    <Check size={20} className="mt-0.5 shrink-0 text-[#1F8F4E]" aria-hidden="true" />
-                    <span>{p}</span>
-                  </li>
-                ))}
-              </ul>
-              <Link href={contactHref(s.service)} className="btn btn-primary mt-8">
-                Discuss Your Project <ArrowRight size={18} aria-hidden="true" />
-              </Link>
-            </Reveal>
-          </div>
-
-          {s.id === "solar-ev-charging" && (
-            <div className="wrap mt-16 lg:mt-24">
-              <div className="bg-navy p-8 text-white lg:p-14">
-                <h3 className="text-[clamp(1.5rem,2.4vw,2.125rem)]">How solar-powered EV charging works</h3>
-                <div className="energy-line mt-9 hidden h-0.5 md:block" aria-hidden="true" />
-                <ol className="mt-8 grid gap-8 md:mt-7 md:grid-cols-4">
-                  {STEPS.map((step, n) => (
-                    <li key={step.title}>
-                      <span className="font-display text-sm font-semibold text-green">Step {n + 1}</span>
-                      <h4 className="mt-2 text-lg">{step.title}</h4>
-                      <p className="mt-2 text-[0.9375rem] text-white/75">{step.text}</p>
+        <section key={s.id} id={s.id} className="section border-b border-ink/10 last:border-0">
+          <div className="wrap">
+            <div className="grid items-end gap-6 lg:grid-cols-12">
+              <p className="label text-deep lg:col-span-2">0{i + 1} / 04</p>
+              <SplitReveal className="d-2 lg:col-span-10">{s.title}</SplitReveal>
+            </div>
+            <div className="mt-12 grid gap-10 lg:mt-20 lg:grid-cols-12 lg:gap-8">
+              <div className={`lg:col-span-7 ${i % 2 === 1 ? "lg:order-2 lg:col-start-6" : ""}`}>
+                <ParallaxImage src={img(s.imageKey).src} alt={img(s.imageKey).alt} sizes="(min-width: 1024px) 58vw, 100vw" demo="Demonstration image" className="aspect-[4/3]" />
+              </div>
+              <Reveal className={`flex flex-col justify-end lg:col-span-4 ${i % 2 === 1 ? "lg:order-1" : "lg:col-start-9"}`}>
+                <p className="lead text-stone">{s.text}</p>
+                <ul className="mt-8 border-t border-ink/15">
+                  {s.points.map((p) => (
+                    <li key={p} className="flex gap-3 border-b border-ink/15 py-3.5 text-[0.9844rem]">
+                      <Check size={19} className="mt-0.5 shrink-0 text-deep" aria-hidden="true" />
+                      <span>{p}</span>
                     </li>
+                  ))}
+                </ul>
+                <div className="mt-9">
+                  <Cta href={contactHref(s.service)}>Discuss Your Project</Cta>
+                </div>
+              </Reveal>
+            </div>
+
+            {s.id === "solar-ev-charging" && (
+              <div className="mt-20 rounded-[14px] bg-ink p-7 text-white lg:mt-32 lg:p-16">
+                <p className="label mb-6 text-leaf">How it works</p>
+                <SplitReveal as="h3" className="d-2 max-w-[16ch]">How solar-powered EV charging works</SplitReveal>
+                <ol className="mt-12 grid gap-px overflow-hidden rounded-[10px] bg-white/12 md:grid-cols-2 lg:mt-20 lg:grid-cols-4">
+                  {STEPS.map((step, n) => (
+                    <Reveal as="li" key={step.title} delay={n * 90} className="bg-ink p-6 lg:p-8">
+                      <span className="block text-[3.5rem] leading-none font-medium tracking-[-0.05em] text-leaf">{n + 1}</span>
+                      <h4 className="mt-10 text-[1.375rem] lg:mt-16">{step.title}</h4>
+                      <p className="mt-3 text-[0.9688rem] text-white/65">{step.text}</p>
+                    </Reveal>
                   ))}
                 </ol>
               </div>
-            </div>
-          )}
+            )}
+          </div>
         </section>
       ))}
     </>
