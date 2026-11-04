@@ -30,10 +30,10 @@ export default function QuotePage() {
             <ol className="mt-6 border-t border-ink/15">
               {STEPS.map((step, i) => (
                 <li key={step.title} className="flex gap-5 border-b border-ink/15 py-6">
-                  <span className="text-[2rem] leading-none font-medium tracking-[-0.04em] text-deep">{i + 1}</span>
+                  <span className="text-[1.6rem] leading-none font-medium tracking-[-0.04em] text-deep">{i + 1}</span>
                   <div>
-                    <h3 className="text-[1.125rem]">{step.title}</h3>
-                    <p className="mt-1 text-[0.9688rem] text-stone">{step.text}</p>
+                    <h3 className="text-[0.9rem]">{step.title}</h3>
+                    <p className="mt-1 text-[0.775rem] text-stone">{step.text}</p>
                   </div>
                 </li>
               ))}

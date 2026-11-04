@@ -67,7 +67,7 @@ export default function SolutionsPage() {
         lead="From the solar panels that generate power to the cables that carry it and the chargers that deliver it, our four business areas work together."
         image={img("sustainability")}
       >
-        <ul className="mt-7 space-y-2 text-[0.9688rem]">
+        <ul className="mt-7 space-y-2 text-[0.775rem]">
           {SECTIONS.map((s, i) => (
             <li key={s.id}>
               <a href={`#${s.id}`} className="group inline-flex gap-3">
@@ -94,7 +94,7 @@ export default function SolutionsPage() {
                 <p className="lead text-stone">{s.text}</p>
                 <ul className="mt-8 border-t border-ink/15">
                   {s.points.map((p) => (
-                    <li key={p} className="flex gap-3 border-b border-ink/15 py-3.5 text-[0.9844rem]">
+                    <li key={p} className="flex gap-3 border-b border-ink/15 py-3.5 text-[0.7875rem]">
                       <Check size={19} className="mt-0.5 shrink-0 text-deep" aria-hidden="true" />
                       <span>{p}</span>
                     </li>
@@ -113,9 +113,9 @@ export default function SolutionsPage() {
                 <ol className="mt-12 grid gap-px overflow-hidden rounded-[10px] bg-white/12 md:grid-cols-2 lg:mt-20 lg:grid-cols-4">
                   {STEPS.map((step, n) => (
                     <Reveal as="li" key={step.title} delay={n * 90} className="bg-ink p-6 lg:p-8">
-                      <span className="block text-[3.5rem] leading-none font-medium tracking-[-0.05em] text-leaf">{n + 1}</span>
-                      <h4 className="mt-10 text-[1.375rem] lg:mt-16">{step.title}</h4>
-                      <p className="mt-3 text-[0.9688rem] text-white/65">{step.text}</p>
+                      <span className="block text-[2.8rem] leading-none font-medium tracking-[-0.05em] text-leaf">{n + 1}</span>
+                      <h4 className="mt-10 text-[1.1rem] lg:mt-16">{step.title}</h4>
+                      <p className="mt-3 text-[0.775rem] text-white/65">{step.text}</p>
                     </Reveal>
                   ))}
                 </ol>

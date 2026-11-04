@@ -112,7 +112,7 @@ export default function HomePage() {
                   <Icon size={30} strokeWidth={1.25} className="text-leaf" aria-hidden="true" />
                   <span className="label text-white/35">0{i + 1}</span>
                 </div>
-                <h3 className="mt-14 text-[1.5rem] leading-tight lg:mt-20">{title}</h3>
+                <h3 className="mt-14 text-[1.2rem] leading-tight lg:mt-20">{title}</h3>
                 <p className="mt-3 text-white/60">{text}</p>
               </Reveal>
             ))}

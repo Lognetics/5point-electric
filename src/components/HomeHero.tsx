@@ -51,13 +51,13 @@ export function HomeHero({ image, marquee }: { image: SiteImage; marquee: string
 
           <div className="mt-9 grid gap-7 lg:mt-12 lg:grid-cols-12 lg:items-end">
             <Reveal delay={600} className="lg:col-span-4">
-              <p className="flex items-center gap-2.5 text-[0.9688rem]">
+              <p className="flex items-center gap-2.5 text-[0.775rem]">
                 <span className="h-2 w-2 shrink-0 rounded-full bg-leaf" aria-hidden="true" />
                 Advancing Clean Energy Across Nigeria.
               </p>
             </Reveal>
             <Reveal delay={700} className="lg:col-span-5">
-              <p className="text-white/80 lg:text-[1.0625rem]">
+              <p className="text-white/80 lg:text-[0.85rem]">
                 Driving the transition to sustainable transportation and intelligent energy solutions through advanced
                 electric vehicle charging infrastructure, high-performance electrical systems, and industrial-grade solar
                 technology.
@@ -76,7 +76,7 @@ export function HomeHero({ image, marquee }: { image: SiteImage; marquee: string
       <div className="overflow-hidden border-t border-white/10 bg-ink py-5 text-white" aria-hidden="true">
         <div className="marquee-track flex w-max items-center gap-10">
           {row.map((item, i) => (
-            <span key={i} className="flex items-center gap-10 text-[1.75rem] tracking-[-0.03em] whitespace-nowrap lg:text-[2.5rem]">
+            <span key={i} className="flex items-center gap-10 text-[1.4rem] tracking-[-0.03em] whitespace-nowrap lg:text-[2rem]">
               {item}
               <LogoMark className="h-8 w-8 shrink-0 lg:h-10 lg:w-10" />
             </span>

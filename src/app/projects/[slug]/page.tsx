@@ -71,7 +71,7 @@ export default async function ProjectPage({ params }: Props) {
                 <h2 className="label text-deep">Technical details</h2>
                 <dl className="mt-5 border-t border-ink/15">
                   {project.technicalDetails.map((d) => (
-                    <div key={d.label} className="grid grid-cols-2 gap-4 border-b border-ink/15 py-3 text-[0.9688rem]">
+                    <div key={d.label} className="grid grid-cols-2 gap-4 border-b border-ink/15 py-3 text-[0.775rem]">
                       <dt className="text-stone">{d.label}</dt>
                       <dd>{d.value}</dd>
                     </div>

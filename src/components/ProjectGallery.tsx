@@ -24,7 +24,7 @@ export function ProjectGallery({ projects }: { projects: Project[] }) {
             type="button"
             aria-pressed={filter === f.id}
             onClick={() => setFilter(f.id)}
-            className={`min-h-11 rounded-full border px-5 py-2 text-[0.9375rem] transition-colors ${
+            className={`min-h-11 rounded-full border px-5 py-2 text-[0.75rem] transition-colors ${
               filter === f.id ? "border-ink bg-ink text-white" : "border-ink/20 hover:border-ink"
             }`}
           >
@@ -49,11 +49,11 @@ export function ProjectGallery({ projects }: { projects: Project[] }) {
                   {project.sample && <span className="demo-tag absolute top-3.5 left-3.5">Sample content, demonstration image</span>}
                 </div>
                 <p className="label mt-5 text-deep">{projectCategory(project.category)?.label}</p>
-                <h3 className="mt-2.5 flex items-start justify-between gap-4 text-[1.75rem] leading-tight">
+                <h3 className="mt-2.5 flex items-start justify-between gap-4 text-[1.4rem] leading-tight">
                   {project.title}
                   <ArrowUpRight size={24} className="mt-1 shrink-0 transition-transform duration-500 ease-out-soft group-hover:translate-x-1 group-hover:-translate-y-1" aria-hidden="true" />
                 </h3>
-                <p className="mt-2 flex items-center gap-1.5 text-[0.9375rem] text-stone">
+                <p className="mt-2 flex items-center gap-1.5 text-[0.75rem] text-stone">
                   <MapPin size={15} aria-hidden="true" /> {project.location}
                 </p>
                 <p className="mt-3 max-w-xl text-stone">{project.summary}</p>

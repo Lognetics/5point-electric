@@ -18,8 +18,8 @@ export function Logo({ className = "" }: { className?: string }) {
     <span className={`inline-flex items-center gap-2.5 ${className}`}>
       <LogoMark className="h-10 w-10 shrink-0" />
       <span className="leading-none">
-        <span className="block text-[1.0625rem] font-medium tracking-[-0.02em]">5Point Electric</span>
-        <span className="mt-1 block font-mono text-[0.5938rem] tracking-[0.1em] uppercase opacity-70">Technology Limited</span>
+        <span className="block text-[0.85rem] font-medium tracking-[-0.02em]">5Point Electric</span>
+        <span className="mt-1 block font-mono text-[0.475rem] tracking-[0.1em] uppercase opacity-70">Technology Limited</span>
       </span>
     </span>
   );

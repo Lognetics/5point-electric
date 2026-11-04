@@ -17,7 +17,7 @@ export function Footer() {
   const link = "text-white/85 transition-colors hover:text-leaf";
 
   return (
-    <footer className="overflow-hidden bg-ink text-[0.9688rem] text-white">
+    <footer className="overflow-hidden bg-ink text-[0.775rem] text-white">
       <div className="wrap pt-20 lg:pt-28">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-[1.6fr_0.8fr_1.2fr_1.5fr]">
           <div>
@@ -98,7 +98,7 @@ export function Footer() {
         </div>
       </div>
 
-      <p aria-hidden="true" className="mt-10 text-center text-[14.6vw] leading-[0.76] font-medium tracking-[-0.06em] whitespace-nowrap text-white/[0.07] select-none">
+      <p aria-hidden="true" className="mt-10 text-center text-[11.68vw] leading-[0.76] font-medium tracking-[-0.06em] whitespace-nowrap text-white/[0.07] select-none">
         5Point Electric
       </p>
     </footer>

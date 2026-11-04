@@ -200,7 +200,7 @@ export function EnquiryForm({
 
       <div className="flex flex-col gap-4 sm:col-span-2">
         {formError && (
-          <p role="alert" className="rounded-lg bg-[#FBEEED] px-4 py-3 text-[0.9688rem] text-[#8F231C]">
+          <p role="alert" className="rounded-lg bg-[#FBEEED] px-4 py-3 text-[0.775rem] text-[#8F231C]">
             {formError}
           </p>
         )}

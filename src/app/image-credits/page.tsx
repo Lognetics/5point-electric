@@ -25,7 +25,7 @@ export default function ImageCreditsPage() {
           </p>
           <ul className="mt-8 border-t border-ink/15">
             {getCredits().map((c) => (
-              <li key={c.source} className="border-b border-ink/15 py-4 text-[0.9688rem]">
+              <li key={c.source} className="border-b border-ink/15 py-4 text-[0.775rem]">
                 <a href={c.source} target="_blank" rel="noopener noreferrer" className="font-medium text-deep hover:underline">
                   {c.title}
                 </a>

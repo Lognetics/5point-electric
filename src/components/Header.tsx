@@ -60,7 +60,7 @@ export function Header() {
                 key={link.href}
                 href={link.href}
                 aria-current={isActive(link.href) ? "page" : undefined}
-                className="rounded-full px-4 py-2 text-[0.9375rem] text-white/80 transition-colors hover:bg-white/10 hover:text-white aria-[current=page]:bg-white/10 aria-[current=page]:text-white"
+                className="rounded-full px-4 py-2 text-[0.75rem] text-white/80 transition-colors hover:bg-white/10 hover:text-white aria-[current=page]:bg-white/10 aria-[current=page]:text-white"
               >
                 {link.label}
               </Link>
@@ -100,7 +100,7 @@ export function Header() {
                   href={link.href}
                   aria-current={isActive(link.href) ? "page" : undefined}
                   onClick={() => setMenuFor(null)}
-                  className="flex items-baseline justify-between py-4 text-[2.25rem] leading-tight font-medium tracking-[-0.035em] aria-[current=page]:text-leaf"
+                  className="flex items-baseline justify-between py-4 text-[1.8rem] leading-tight font-medium tracking-[-0.035em] aria-[current=page]:text-leaf"
                 >
                   {link.label}
                   <span className="label text-white/45">0{i + 1}</span>

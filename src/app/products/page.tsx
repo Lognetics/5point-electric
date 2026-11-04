@@ -36,7 +36,7 @@ export default function ProductsPage() {
                 <li key={c.id} className="lg:border-b lg:border-ink/15">
                   <a
                     href={`#${c.id}`}
-                    className="inline-block rounded-full border border-ink/20 px-3.5 py-2 text-[0.9063rem] leading-snug transition-colors hover:border-ink lg:block lg:rounded-none lg:border-0 lg:px-0 lg:py-3 lg:hover:text-deep"
+                    className="inline-block rounded-full border border-ink/20 px-3.5 py-2 text-[0.725rem] leading-snug transition-colors hover:border-ink lg:block lg:rounded-none lg:border-0 lg:px-0 lg:py-3 lg:hover:text-deep"
                   >
                     {c.label}
                   </a>
@@ -47,7 +47,7 @@ export default function ProductsPage() {
 
           <div className="min-w-0">
             {hasSamples && (
-              <p className="mb-14 rounded-[10px] bg-white px-5 py-4 text-[0.9688rem] text-stone">
+              <p className="mb-14 rounded-[10px] bg-white px-5 py-4 text-[0.775rem] text-stone">
                 Listings marked &ldquo;Sample listing&rdquo; show how the catalogue will look. They are not real products,
                 and verified details will replace them.
               </p>
@@ -79,8 +79,8 @@ export default function ProductsPage() {
                                 {product.sample && <span className="demo-tag absolute top-3.5 left-3.5">Sample listing</span>}
                               </div>
                               <div className="flex flex-col p-6 lg:p-8">
-                                <h3 className="text-[1.5rem] leading-tight">{product.title}</h3>
-                                <p className="mt-3 flex-1 text-[0.9688rem] text-stone">{product.summary}</p>
+                                <h3 className="text-[1.2rem] leading-tight">{product.title}</h3>
+                                <p className="mt-3 flex-1 text-[0.775rem] text-stone">{product.summary}</p>
                                 <span className="link-arrow mt-7 self-start">
                                   Request Product Information <ArrowUpRight size={16} aria-hidden="true" />
                                 </span>

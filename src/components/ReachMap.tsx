@@ -27,7 +27,7 @@ export function ReachMap() {
             onBlur={() => setActive(null)}
             className="group flex items-baseline justify-between gap-4 border-b border-white/15 py-5 outline-none lg:py-7"
           >
-            <span className={`d-3 transition-colors duration-300 lg:!text-[3.5rem] ${active === c.name ? "text-leaf" : ""}`}>{c.name}</span>
+            <span className={`d-3 transition-colors duration-300 lg:!text-[2.8rem] ${active === c.name ? "text-leaf" : ""}`}>{c.name}</span>
             <span className="label text-right text-white/55">{c.note}</span>
           </li>
         ))}
@@ -59,7 +59,7 @@ export function ReachMap() {
               <g key={c.name}>
                 <circle cx={c.point.x} cy={c.point.y} r="12" fill="#63C27A" className="map-pulse" style={{ animationDelay: `${i * 0.6}s` }} />
                 <circle cx={c.point.x} cy={c.point.y} r={on ? 11 : 7.5} fill={on ? "#fff" : "#63C27A"} stroke="#10241A" strokeWidth="2.5" style={{ transition: "r .3s, fill .3s" }} />
-                <text x={c.point.x + 18} y={c.point.y + 8} fill="#fff" fontSize="24" fontWeight="500" paintOrder="stroke" stroke="#10241A" strokeWidth="6">
+                <text x={c.point.x + 18} y={c.point.y + 8} fill="#fff" fontSize="19.2" fontWeight="500" paintOrder="stroke" stroke="#10241A" strokeWidth="6">
                   {c.name}
                 </text>
               </g>

@@ -58,7 +58,7 @@ export default async function ProductPage({ params }: Props) {
                   <h2 className="label text-white/50">Technical specifications</h2>
                   <dl className="mt-3 border-t border-white/15">
                     {product.specifications.map((spec) => (
-                      <div key={spec.label} className="grid grid-cols-2 gap-4 border-b border-white/15 py-3 text-[0.9688rem]">
+                      <div key={spec.label} className="grid grid-cols-2 gap-4 border-b border-white/15 py-3 text-[0.775rem]">
                         <dt className="text-white/60">{spec.label}</dt>
                         <dd>{spec.value}</dd>
                       </div>
@@ -72,7 +72,7 @@ export default async function ProductPage({ params }: Props) {
                   <h2 className="label text-white/50">Application areas</h2>
                   <ul className="mt-3 flex flex-wrap gap-2">
                     {product.applications.map((a) => (
-                      <li key={a} className="rounded-full border border-white/20 px-3.5 py-1.5 text-[0.9063rem]">{a}</li>
+                      <li key={a} className="rounded-full border border-white/20 px-3.5 py-1.5 text-[0.725rem]">{a}</li>
                     ))}
                   </ul>
                 </div>

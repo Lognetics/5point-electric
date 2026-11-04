@@ -17,7 +17,6 @@ export function Reveal({ children, className, delay = 0, as: Tag = "div" }: Prop
           observer.disconnect();
         }
       },
-      { rootMargin: "0px 0px -6% 0px" },
     );
     observer.observe(el);
     return () => observer.disconnect();
