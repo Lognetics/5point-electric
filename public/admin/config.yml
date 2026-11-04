@@ -1,0 +1,221 @@
+# Replace repo and base_url before going live. See README, "Connecting the CMS".
+backend:
+  name: github
+  repo: Lognetics/5point-electric
+  branch: main
+  base_url: https://www.example.com
+  auth_endpoint: api/cms/auth
+
+# Lets `npm run cms` edit local files during development.
+local_backend: true
+
+media_folder: public/images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: products
+    label: Products
+    label_singular: Product
+    folder: content/products
+    format: json
+    extension: json
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    summary: "{{title}} ({{category}})"
+    fields:
+      - { name: title, label: Product name, widget: string }
+      - name: category
+        label: Category
+        widget: select
+        options:
+          - { label: Electric Vehicles, value: electric-vehicles }
+          - { label: EV Charging Equipment, value: ev-charging-equipment }
+          - { label: AC Electrical Cables, value: ac-cables }
+          - { label: DC Electrical Cables, value: dc-cables }
+          - { label: Solar Panels, value: solar-panels }
+          - { label: Solar Inverters, value: solar-inverters }
+          - { label: Battery Energy Storage Systems, value: battery-storage }
+          - { label: Industrial Solar Components, value: industrial-solar-components }
+      - { name: summary, label: Short description, widget: text }
+      - { name: description, label: Full description, widget: text, required: false }
+      - { name: image, label: Product image, widget: image }
+      - { name: imageAlt, label: Image description (alt text), widget: string }
+      - name: specifications
+        label: Technical specifications
+        hint: Only publish verified specifications.
+        widget: list
+        required: false
+        fields:
+          - { name: label, label: Specification, widget: string }
+          - { name: value, label: Value, widget: string }
+      - { name: applications, label: Application areas, widget: list, required: false }
+      - { name: sample, label: Sample content (labelled and hidden from search), widget: boolean, default: false, required: false }
+      - { name: order, label: Display order, widget: number, value_type: int, default: 100, required: false }
+
+  - name: projects
+    label: Projects
+    label_singular: Project
+    folder: content/projects
+    format: json
+    extension: json
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    summary: "{{title}} ({{location}})"
+    fields:
+      - { name: title, label: Project title, widget: string }
+      - name: category
+        label: Project category
+        widget: select
+        options:
+          - { label: EV Charging Infrastructure, value: ev-charging }
+          - { label: Solar Energy Installations, value: solar-installations }
+          - { label: Industrial Energy Systems, value: industrial-energy }
+          - { label: Electrical Infrastructure, value: electrical-infrastructure }
+      - { name: location, label: Location, widget: string }
+      - { name: summary, label: Short summary, widget: text }
+      - { name: description, label: Project description, widget: text }
+      - name: images
+        label: Images
+        widget: list
+        min: 1
+        fields:
+          - { name: src, label: Image, widget: image }
+          - { name: alt, label: Image description (alt text), widget: string }
+      - name: technicalDetails
+        label: Technical details
+        hint: Only publish verified details.
+        widget: list
+        required: false
+        fields:
+          - { name: label, label: Detail, widget: string }
+          - { name: value, label: Value, widget: string }
+      - { name: sample, label: Sample content (labelled and hidden from search), widget: boolean, default: false, required: false }
+      - { name: order, label: Display order, widget: number, value_type: int, default: 100, required: false }
+
+  - name: site
+    label: Company information
+    delete: false
+    editor: { preview: false }
+    files:
+      - name: settings
+        label: Contact details and settings
+        file: content/settings.json
+        fields:
+          - { name: companyName, label: Company name, widget: string }
+          - { name: shortName, label: Short name, widget: string }
+          - { name: description, label: Short company description, widget: text }
+          - { name: brandMessage, label: Brand message, widget: string }
+          - { name: address, label: Office address, widget: text }
+          - { name: locations, label: Operational locations, widget: list }
+          - { name: mapQuery, label: Google Maps search text, widget: string }
+          - { name: phone, label: Phone number, widget: string, required: false }
+          - { name: email, label: Email address, widget: string, required: false }
+          - { name: whatsappNumber, label: WhatsApp number with country code, hint: "For example 234 followed by the number. The WhatsApp button appears once this is set.", widget: string, required: false }
+          - { name: whatsappMessage, label: WhatsApp starter message, widget: string, required: false }
+          - name: socials
+            label: Social media links
+            widget: object
+            fields:
+              - { name: linkedin, label: LinkedIn URL, widget: string, required: false }
+              - { name: x, label: X URL, widget: string, required: false }
+              - { name: facebook, label: Facebook URL, widget: string, required: false }
+              - { name: instagram, label: Instagram URL, widget: string, required: false }
+          - { name: showSampleContent, label: Show labelled sample products and projects, hint: "Turn off before launch or once real content is added.", widget: boolean, required: false }
+      - name: company
+        label: About the company
+        file: content/company.json
+        fields:
+          - { name: whoWeAre, label: Who we are, widget: text }
+          - { name: vision, label: Vision, widget: text }
+          - { name: mission, label: Mission, widget: text }
+          - name: values
+            label: Core values
+            widget: list
+            fields:
+              - { name: title, label: Value, widget: string }
+              - { name: description, label: Description, widget: text }
+          - { name: commitment, label: Our commitment, widget: text }
+      - name: images
+        label: Website images
+        file: content/images.json
+        fields:
+          - name: hero
+            label: "Home: hero"
+            widget: object
+            fields:
+              - { name: src, label: Image, widget: image }
+              - { name: alt, label: Image description (alt text), widget: string }
+          - name: intro
+            label: "Home: company introduction"
+            widget: object
+            fields:
+              - { name: src, label: Image, widget: image }
+              - { name: alt, label: Image description (alt text), widget: string }
+          - name: electricVehicles
+            label: "Electric vehicles"
+            widget: object
+            fields:
+              - { name: src, label: Image, widget: image }
+              - { name: alt, label: Image description (alt text), widget: string }
+          - name: solarCharging
+            label: "Solar-powered EV charging"
+            widget: object
+            fields:
+              - { name: src, label: Image, widget: image }
+              - { name: alt, label: Image description (alt text), widget: string }
+          - name: cables
+            label: "AC & DC cables"
+            widget: object
+            fields:
+              - { name: src, label: Image, widget: image }
+              - { name: alt, label: Image description (alt text), widget: string }
+          - name: industrialSolar
+            label: "Industrial solar"
+            widget: object
+            fields:
+              - { name: src, label: Image, widget: image }
+              - { name: alt, label: Image description (alt text), widget: string }
+          - name: showcaseCharging
+            label: "Home showcase: solar EV charging"
+            widget: object
+            fields:
+              - { name: src, label: Image, widget: image }
+              - { name: alt, label: Image description (alt text), widget: string }
+          - name: showcaseEv
+            label: "Home showcase: EV charging"
+            widget: object
+            fields:
+              - { name: src, label: Image, widget: image }
+              - { name: alt, label: Image description (alt text), widget: string }
+          - name: showcaseSolar
+            label: "Home showcase: industrial solar"
+            widget: object
+            fields:
+              - { name: src, label: Image, widget: image }
+              - { name: alt, label: Image description (alt text), widget: string }
+          - name: showcaseCables
+            label: "Home showcase: cables"
+            widget: object
+            fields:
+              - { name: src, label: Image, widget: image }
+              - { name: alt, label: Image description (alt text), widget: string }
+          - name: sustainability
+            label: "Home: sustainability"
+            widget: object
+            fields:
+              - { name: src, label: Image, widget: image }
+              - { name: alt, label: Image description (alt text), widget: string }
+          - name: about
+            label: "About: who we are"
+            widget: object
+            fields:
+              - { name: src, label: Image, widget: image }
+              - { name: alt, label: Image description (alt text), widget: string }
+          - name: commitment
+            label: "About: our commitment"
+            widget: object
+            fields:
+              - { name: src, label: Image, widget: image }
+              - { name: alt, label: Image description (alt text), widget: string }

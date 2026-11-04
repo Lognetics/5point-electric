@@ -1,0 +1,133 @@
+[
+  {
+    "files": [
+      "hero.jpg"
+    ],
+    "title": "SolarPoweredEVChargingStation4",
+    "author": "Raysonho @ Open Grid Scheduler / Scalable Grid Engine",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:SolarPoweredEVChargingStation4.jpg"
+  },
+  {
+    "files": [
+      "canopy-wide.jpg"
+    ],
+    "title": "SolarPoweredEVChargingStation2",
+    "author": "Raysonho @ Open Grid Scheduler / Scalable Grid Engine",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:SolarPoweredEVChargingStation2.jpg"
+  },
+  {
+    "files": [
+      "canopy-front.jpg"
+    ],
+    "title": "SolarPoweredEVChargingStation",
+    "author": "Raysonho @ Open Grid Scheduler / Scalable Grid Engine",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:SolarPoweredEVChargingStation.jpg"
+  },
+  {
+    "files": [
+      "canopy-site.jpg"
+    ],
+    "title": "SolarPoweredEVCharging",
+    "author": "Raysonho @ Open Grid Scheduler / Grid Engine",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:SolarPoweredEVCharging.jpg"
+  },
+  {
+    "files": [
+      "ev-city.jpg"
+    ],
+    "title": "Close-up of an electric car charging. Traffic lights in a blurry background",
+    "author": "Ivan Radic",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Close-up_of_an_electric_car_charging._Traffic_lights_in_a_blurry_background.jpg"
+  },
+  {
+    "files": [
+      "ev-connector.jpg"
+    ],
+    "title": "Close-up of an electric car charging station with a car plugged in",
+    "author": "Ivan Radic",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Close-up_of_an_electric_car_charging_station_with_a_car_plugged_in.jpg"
+  },
+  {
+    "files": [
+      "solar-rows.jpg"
+    ],
+    "title": "Aerial picture of an agrivoltaics solar plant with walls of vertical bifacial modules near Aasen, Donaueschingen Germany",
+    "author": "Tobi Kellner",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Aerial_picture_of_an_agrivoltaics_solar_plant_with_walls_of_vertical_bifacial_modules_near_Aasen,_Donaueschingen_Germany.jpg"
+  },
+  {
+    "files": [
+      "solar-aerial.jpg"
+    ],
+    "title": "Mead, Nebraska solar farm aerial 2026 (cropped)",
+    "author": "AllTheUsernamesAreInUse",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Mead,_Nebraska_solar_farm_aerial_2026_(cropped).jpg"
+  },
+  {
+    "files": [
+      "technicians.jpg"
+    ],
+    "title": "Solar technicians",
+    "author": "SAgbley",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Solar_technicians.jpg"
+  },
+  {
+    "files": [
+      "rooftop.jpg"
+    ],
+    "title": "Rooftop Photovoltaic Array",
+    "author": "Lucas Braun",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Rooftop_Photovoltaic_Array.jpg"
+  },
+  {
+    "files": [
+      "cable-detail.jpg",
+      "cable-coil.jpg"
+    ],
+    "title": "Pougny, electric cable drums (1)",
+    "author": "Cjp24",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Pougny,_electric_cable_drums_(1).jpg"
+  },
+  {
+    "files": [
+      "inverter.jpg"
+    ],
+    "title": "Solar park inverter and mounts",
+    "author": "Lauri Veerde",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Solar_park_inverter_and_mounts.jpg"
+  },
+  {
+    "files": [
+      "storage.jpg"
+    ],
+    "title": "Tesvolt battery energy storage system Rheineck",
+    "author": "Kecko from Eastern Switzerland",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Tesvolt_battery_energy_storage_system_Rheineck.jpg"
+  }
+]

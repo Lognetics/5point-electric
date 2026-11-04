@@ -1,0 +1,20 @@
+{
+  "title": "Sample: electrical infrastructure works",
+  "category": "electrical-infrastructure",
+  "location": "Sample location",
+  "summary": "Sample entry showing how a verified project will appear. This is not a completed 5Point project.",
+  "description": "This is sample content with demonstration imagery. It does not describe work carried out by 5Point Electric Technology Limited. Replace it in the CMS with a verified project title, location, description, photographs, and technical details.",
+  "images": [
+    {
+      "src": "/images/cable-coil.jpg",
+      "alt": "Heavy black power cable wound on a drum"
+    },
+    {
+      "src": "/images/cable-detail.jpg",
+      "alt": "Close view of coiled power cable"
+    }
+  ],
+  "technicalDetails": [],
+  "sample": true,
+  "order": 4
+}

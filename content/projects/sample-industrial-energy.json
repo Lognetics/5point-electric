@@ -1,0 +1,20 @@
+{
+  "title": "Sample: industrial energy system",
+  "category": "industrial-energy",
+  "location": "Sample location",
+  "summary": "Sample entry showing how a verified project will appear. This is not a completed 5Point project.",
+  "description": "This is sample content with demonstration imagery. It does not describe work carried out by 5Point Electric Technology Limited. Replace it in the CMS with a verified project title, location, description, photographs, and technical details.",
+  "images": [
+    {
+      "src": "/images/solar-aerial.jpg",
+      "alt": "Aerial view of a large solar plant"
+    },
+    {
+      "src": "/images/inverter.jpg",
+      "alt": "Aerial view of a large solar plant"
+    }
+  ],
+  "technicalDetails": [],
+  "sample": true,
+  "order": 3
+}

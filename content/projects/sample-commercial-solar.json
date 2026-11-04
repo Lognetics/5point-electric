@@ -1,0 +1,16 @@
+{
+  "title": "Sample: commercial solar installation",
+  "category": "solar-installations",
+  "location": "Sample location",
+  "summary": "Sample entry showing how a verified project will appear. This is not a completed 5Point project.",
+  "description": "This is sample content with demonstration imagery. It does not describe work carried out by 5Point Electric Technology Limited. Replace it in the CMS with a verified project title, location, description, photographs, and technical details.",
+  "images": [
+    {
+      "src": "/images/rooftop.jpg",
+      "alt": "Engineers inspecting a rooftop solar array"
+    }
+  ],
+  "technicalDetails": [],
+  "sample": true,
+  "order": 2
+}

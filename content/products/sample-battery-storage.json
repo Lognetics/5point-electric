@@ -1,0 +1,28 @@
+{
+  "title": "Sample battery storage listing",
+  "category": "battery-storage",
+  "summary": "Sample listing that shows how this product will appear. Verified product details will replace it.",
+  "description": "This is sample content, not a real product. Replace it in the CMS with a verified product name, description, specifications, and application areas.",
+  "image": "/images/storage.jpg",
+  "imageAlt": "Containerised energy storage enclosure",
+  "specifications": [
+    {
+      "label": "Model",
+      "value": "To be confirmed"
+    },
+    {
+      "label": "Technical ratings",
+      "value": "To be confirmed"
+    },
+    {
+      "label": "Certifications",
+      "value": "To be confirmed"
+    }
+  ],
+  "applications": [
+    "Backup power",
+    "Solar energy storage"
+  ],
+  "sample": true,
+  "order": 7
+}

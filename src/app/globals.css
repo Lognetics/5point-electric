@@ -1,0 +1,265 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #101d2c;
+  --color-navy-soft: #1a2a3c;
+  --color-blue: #1479e8;
+  /* Slightly deeper Electric Blue: keeps small text and button labels at WCAG AA contrast. */
+  --color-blue-ink: #0f6ad4;
+  --color-blue-deep: #0c58b0;
+  --color-green: #35b96b;
+  --color-mist: #f4f6f8;
+  --color-charcoal: #252b33;
+  --color-slate: #5a6572;
+  --color-line: #dfe4e9;
+
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-display: var(--font-manrope), system-ui, sans-serif;
+
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 96px;
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    background: #fff;
+    color: var(--color-charcoal);
+    font-family: var(--font-sans);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    color: inherit;
+    letter-spacing: -0.022em;
+    line-height: 1.12;
+    font-weight: 600;
+    text-wrap: balance;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-blue);
+    outline-offset: 3px;
+  }
+  ::selection {
+    background: var(--color-blue);
+    color: #fff;
+  }
+}
+
+@layer components {
+  .wrap {
+    width: 100%;
+    max-width: 1320px;
+    margin-inline: auto;
+    padding-inline: clamp(1.25rem, 4vw, 3rem);
+  }
+  .section {
+    padding-block: clamp(4.5rem, 9vw, 8.5rem);
+  }
+  .display-1 {
+    font-size: clamp(2.6rem, 6.2vw, 5.25rem);
+    line-height: 1.04;
+    letter-spacing: -0.032em;
+  }
+  .display-2 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    line-height: 1.08;
+    letter-spacing: -0.028em;
+  }
+  .lead {
+    font-size: clamp(1.0625rem, 1.4vw, 1.25rem);
+    line-height: 1.6;
+  }
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.625rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+  }
+  .eyebrow::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 999px;
+    background: var(--color-green);
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 3.125rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    font-size: 0.9688rem;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+  }
+  .btn-sm {
+    min-height: 2.625rem;
+    padding: 0.5rem 1.125rem;
+    font-size: 0.9063rem;
+  }
+  .btn-primary {
+    background: var(--color-blue-ink);
+    color: #fff;
+  }
+  .btn-primary:hover {
+    background: var(--color-blue-deep);
+  }
+  .btn-light {
+    background: #fff;
+    color: var(--color-navy);
+  }
+  .btn-light:hover {
+    background: var(--color-mist);
+  }
+  .btn-ghost-light {
+    border-color: rgb(255 255 255 / 0.45);
+    color: #fff;
+  }
+  .btn-ghost-light:hover {
+    background: #fff;
+    border-color: #fff;
+    color: var(--color-navy);
+  }
+  .btn-ghost-dark {
+    border-color: var(--color-navy);
+    color: var(--color-navy);
+  }
+  .btn-ghost-dark:hover {
+    background: var(--color-navy);
+    color: #fff;
+  }
+
+  .text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: 600;
+    font-size: 0.9688rem;
+    color: var(--color-blue-ink);
+  }
+  .text-link svg {
+    transition: transform 0.25s var(--ease-out-soft);
+  }
+  .text-link:hover svg,
+  .group:hover .text-link svg {
+    transform: translateX(4px);
+  }
+
+  .field-label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-size: 0.9063rem;
+    font-weight: 500;
+    color: var(--color-navy);
+  }
+  .field {
+    display: block;
+    width: 100%;
+    min-height: 3.125rem;
+    padding: 0.7rem 0.875rem;
+    background: #fff;
+    border: 1px solid #c4ccd4;
+    border-radius: 3px;
+    font-size: 1rem;
+    color: var(--color-charcoal);
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  .field:hover {
+    border-color: #8e99a5;
+  }
+  .field:focus {
+    outline: none;
+    border-color: var(--color-blue);
+    box-shadow: 0 0 0 3px rgb(20 121 232 / 0.18);
+  }
+  .field[aria-invalid="true"] {
+    border-color: #c5352b;
+  }
+
+  .demo-tag {
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    background: rgb(16 29 44 / 0.78);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.4;
+    border-radius: 2px;
+    backdrop-filter: blur(4px);
+  }
+
+  .dot-field {
+    background-image: radial-gradient(rgb(255 255 255 / 0.13) 1.2px, transparent 1.3px);
+    background-size: 22px 22px;
+  }
+}
+
+/* Scroll reveal. Only hides content once JavaScript has confirmed it can reveal it again. */
+.js [data-reveal] {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.8s var(--ease-out-soft), transform 0.8s var(--ease-out-soft);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+.js [data-reveal][data-visible] {
+  opacity: 1;
+  transform: none;
+}
+
+/* Page transition */
+@keyframes page-enter {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.page-enter {
+  animation: page-enter 0.45s ease-out both;
+}
+
+/* Hero image settling in */
+@keyframes hero-settle {
+  from { transform: scale(1.04); }
+  to { transform: scale(1); }
+}
+.hero-settle {
+  animation: hero-settle 1.8s var(--ease-out-soft) both;
+}
+
+/* Map location markers */
+@keyframes map-pulse {
+  0% { transform: scale(0.5); opacity: 0.8; }
+  100% { transform: scale(2.4); opacity: 0; }
+}
+.map-pulse {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: map-pulse 2.8s ease-out infinite;
+}
+
+/* Energy moving along the how-it-works line */
+@keyframes flow {
+  to { background-position: 40px 0; }
+}
+.energy-line {
+  background-image: linear-gradient(90deg, var(--color-green) 45%, transparent 45%);
+  background-size: 20px 2px;
+  animation: flow 1.6s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .js [data-reveal] { opacity: 1; transform: none; transition: none; }
+  .page-enter, .hero-settle, .map-pulse, .energy-line { animation: none; }
+}

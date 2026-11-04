@@ -1,0 +1,14 @@
+{
+  "whoWeAre": "5Point Electric Technology Limited is an electric mobility and clean energy technology company operating in Nigeria. We work across electric vehicles, solar-powered EV charging stations, high-grade AC and DC electrical cables, and industrial-grade solar energy systems, serving individuals, businesses, industries, and institutions from our base in Abuja and across Lagos and Port Harcourt.",
+  "vision": "To contribute to a future where sustainable transportation and reliable clean energy infrastructure are accessible, efficient, and widely adopted.",
+  "mission": "To deliver dependable electric mobility and renewable energy solutions through innovative technology, engineering excellence, and customer-focused service.",
+  "values": [
+    { "title": "Innovation", "description": "We look for better ways to move and power people, businesses, and institutions." },
+    { "title": "Reliability", "description": "We treat dependable performance as the measure of any energy system." },
+    { "title": "Excellence", "description": "We hold our engineering and our service to a high standard." },
+    { "title": "Sustainability", "description": "We favour solutions that support a cleaner energy future." },
+    { "title": "Integrity", "description": "We are straightforward about what we offer and what a project requires." },
+    { "title": "Customer Commitment", "description": "We shape each solution around the needs of the customer in front of us." }
+  ],
+  "commitment": "We are committed to delivering dependable energy infrastructure and to supporting Nigeria's transition towards cleaner transportation and energy systems. That means taking time to understand each customer's requirements, recommending solutions suited to the way they will be used, and standing behind the quality of the products and systems we provide."
+}

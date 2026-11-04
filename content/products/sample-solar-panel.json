@@ -1,0 +1,28 @@
+{
+  "title": "Sample solar panel listing",
+  "category": "solar-panels",
+  "summary": "Sample listing that shows how this product will appear. Verified product details will replace it.",
+  "description": "This is sample content, not a real product. Replace it in the CMS with a verified product name, description, specifications, and application areas.",
+  "image": "/images/rooftop.jpg",
+  "imageAlt": "Rooftop solar panel array",
+  "specifications": [
+    {
+      "label": "Model",
+      "value": "To be confirmed"
+    },
+    {
+      "label": "Technical ratings",
+      "value": "To be confirmed"
+    },
+    {
+      "label": "Certifications",
+      "value": "To be confirmed"
+    }
+  ],
+  "applications": [
+    "Commercial rooftops",
+    "Ground-mounted arrays"
+  ],
+  "sample": true,
+  "order": 5
+}
