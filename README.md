@@ -19,7 +19,7 @@ npm run dev                  # http://localhost:3000
 | Phone, email, social links, WhatsApp number | CMS: Company information > Contact details and settings |
 | Turn off sample products and projects | Same screen: "Show labelled sample products and projects" |
 | Real products, projects, and photography | CMS: Products, Projects, Website images |
-| Live domain | `NEXT_PUBLIC_SITE_URL` (also sets the sitemap and canonical URLs) |
+| Live domain | https://www.5pointselectric.com (default in `src/lib/site.ts`; override with `NEXT_PUBLIC_SITE_URL`) |
 | Enquiry email delivery | `RESEND_API_KEY`, `ENQUIRY_TO_EMAIL`, `ENQUIRY_FROM_EMAIL` |
 | Spam check (recommended) | `NEXT_PUBLIC_TURNSTILE_SITE_KEY`, `TURNSTILE_SECRET_KEY` |
 | Privacy notice for form data, reviewed by your legal adviser | Not yet included |
@@ -35,9 +35,9 @@ The WhatsApp button stays hidden until a number is set, and unset contact detail
 **In production, connecting the CMS:**
 
 1. Put this project in a GitHub repository, and have the host redeploy on each commit.
-2. Create a GitHub OAuth app with the callback URL `https://<your-domain>/api/cms/callback`.
+2. Create a GitHub OAuth app with the callback URL `https://www.5pointselectric.com/api/cms/callback`.
 3. Set `GITHUB_OAUTH_CLIENT_ID` and `GITHUB_OAUTH_CLIENT_SECRET`.
-4. In `public/admin/config.yml`, set `backend.repo` and `backend.base_url`.
+4. `public/admin/config.yml` already points at the `Lognetics/5point-electric` repository and the live domain.
 
 Editors need write access to the repository. Each save is a commit, and the site updates once the redeploy finishes.
 

@@ -45,6 +45,8 @@ export default function HomePage() {
       title: slide.title,
       tab: slide.tab,
       image: slide.image,
+      mobileImage: slide.mobileImage,
+      position: slide.position,
       primary: slide.primary,
       secondary: slide.secondary,
       text: slide.text || car?.summary || "",

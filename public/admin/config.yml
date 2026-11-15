@@ -3,7 +3,7 @@ backend:
   name: github
   repo: Lognetics/5point-electric
   branch: main
-  base_url: https://www.example.com
+  base_url: https://www.5pointselectric.com
   auth_endpoint: api/cms/auth
 
 # Lets `npm run cms` edit local files during development.
@@ -201,6 +201,16 @@ collections:
                   - { name: src, label: Image, widget: image }
                   - { name: alt, label: Image description (alt text), widget: string }
                   - { name: demo, label: Demonstration image (not a 5Points photo), widget: boolean, required: false }
+              - name: mobileImage
+                label: Phone image (optional)
+                hint: A portrait photo for phones. Leave empty to use the main image.
+                widget: object
+                required: false
+                fields:
+                  - { name: src, label: Image, widget: image }
+                  - { name: alt, label: Image description (alt text), widget: string }
+                  - { name: demo, label: Demonstration image (not a 5Points photo), widget: boolean, required: false }
+              - { name: position, label: Focal point, hint: "Which part of the photo to keep in view, as horizontal then vertical percentages, e.g. 50% 60%", widget: string, required: false }
               - name: primary
                 label: Main button
                 widget: object

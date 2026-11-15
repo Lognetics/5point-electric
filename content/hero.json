@@ -5,37 +5,80 @@
       "eyebrow": "Advancing Clean Energy Across Nigeria.",
       "title": "Powering the Future of Mobility and Clean Energy.",
       "text": "Driving the transition to sustainable transportation and intelligent energy solutions through advanced electric vehicle charging infrastructure, high-performance electrical systems, and industrial-grade solar technology.",
-      "image": { "src": "/images/cars/avatr-06t/01.jpg", "alt": "Black 2026 AVATR 06T electric shooting brake parked at a solar-powered electric vehicle charging station", "demo": false },
-      "primary": { "label": "Explore Our Solutions", "href": "/solutions" },
-      "secondary": { "label": "Contact Our Team", "href": "/contact" },
-      "tab": "5Points Electric"
+      "image": {
+        "src": "/images/cars/avatr-06t/01.jpg",
+        "alt": "Black 2026 AVATR 06T electric shooting brake parked at a solar-powered electric vehicle charging station",
+        "demo": false
+      },
+      "primary": {
+        "label": "Explore Our Solutions",
+        "href": "/solutions"
+      },
+      "secondary": {
+        "label": "Contact Our Team",
+        "href": "/contact"
+      },
+      "tab": "5Points Electric",
+      "position": "50% 62%"
     },
     {
       "eyebrow": "Now available · Fully Electric SUV",
       "title": "2026 Xiaomi YU7 Max",
       "car": "xiaomi-yu7-max",
-      "image": { "src": "/images/cars/xiaomi-yu7-max/01.jpg", "alt": "Green 2026 Xiaomi YU7 Max at a solar-powered EV charging station", "demo": false },
-      "primary": { "label": "View the YU7 Max", "href": "/cars/xiaomi-yu7-max" },
-      "secondary": { "label": "Shop All Cars", "href": "/cars" },
-      "tab": "Xiaomi YU7 Max"
+      "image": {
+        "src": "/images/cars/xiaomi-yu7-max/01.jpg",
+        "alt": "Green 2026 Xiaomi YU7 Max at a solar-powered EV charging station",
+        "demo": false
+      },
+      "primary": {
+        "label": "View the YU7 Max",
+        "href": "/cars/xiaomi-yu7-max"
+      },
+      "secondary": {
+        "label": "Shop All Cars",
+        "href": "/cars"
+      },
+      "tab": "Xiaomi YU7 Max",
+      "position": "50% 66%"
     },
     {
       "eyebrow": "Now available · Plug-In Hybrid Luxury SUV",
       "title": "2026 ZEEKR 9X Ultra",
       "car": "zeekr-9x-ultra",
-      "image": { "src": "/images/cars/zeekr-9x-ultra/01.jpg", "alt": "Black 2026 ZEEKR 9X Ultra plug-in hybrid SUV in a showroom", "demo": false },
-      "primary": { "label": "View the 9X Ultra", "href": "/cars/zeekr-9x-ultra" },
-      "secondary": { "label": "Shop All Cars", "href": "/cars" },
-      "tab": "ZEEKR 9X Ultra"
+      "image": {
+        "src": "/images/cars/zeekr-9x-ultra/01.jpg",
+        "alt": "Black 2026 ZEEKR 9X Ultra plug-in hybrid SUV in a showroom",
+        "demo": false
+      },
+      "primary": {
+        "label": "View the 9X Ultra",
+        "href": "/cars/zeekr-9x-ultra"
+      },
+      "secondary": {
+        "label": "Shop All Cars",
+        "href": "/cars"
+      },
+      "tab": "ZEEKR 9X Ultra",
+      "position": "50% 62%"
     },
     {
       "eyebrow": "Solar-Powered EV Charging Stations",
       "title": "Charge electric vehicles with the power of the sun.",
       "text": "Developing sustainable EV charging infrastructure powered by solar energy, helping reduce dependence on conventional electricity sources while supporting the growth of electric mobility.",
-      "image": { "src": "/images/hero-canopy.jpg", "alt": "Electric cars plugged in at a solar-powered charging canopy in a tree-lined car park" },
-      "primary": { "label": "Explore Solution", "href": "/solutions#solar-ev-charging" },
-      "secondary": { "label": "Discuss Your Project", "href": "/contact?service=Solar-Powered%20EV%20Charging%20Stations#enquiry" },
-      "tab": "Solar EV Charging"
+      "image": {
+        "src": "/images/hero-canopy.jpg",
+        "alt": "Electric cars plugged in at a solar-powered charging canopy in a tree-lined car park"
+      },
+      "primary": {
+        "label": "Explore Solution",
+        "href": "/solutions#solar-ev-charging"
+      },
+      "secondary": {
+        "label": "Discuss Your Project",
+        "href": "/contact?service=Solar-Powered%20EV%20Charging%20Stations#enquiry"
+      },
+      "tab": "Solar EV Charging",
+      "position": "45% 50%"
     }
   ]
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { getImageProps } from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight, Pause, Play } from "lucide-react";
 import { Cta } from "./Cta";
@@ -12,20 +12,22 @@ export type HeroSlide = {
   text: string;
   tab: string;
   image: { src: string; alt: string; demo?: boolean };
+  mobileImage?: { src: string; alt: string; demo?: boolean };
+  position?: string;
   primary: { label: string; href: string };
   secondary?: { label: string; href: string };
   price?: string;
   stats?: { label: string; value: string }[];
 };
 
-/** Full-screen hero carousel. Rotates on its own, pauses on hover, focus, or the pause button, and swipes on touch. */
+/** Full-screen hero carousel with background photos. Rotates on its own, pauses for keyboard focus or the pause button, and swipes on touch. */
 export function HeroSlider({ slides, interval = 7 }: { slides: HeroSlide[]; interval?: number }) {
   const [index, setIndex] = useState(0);
   const [userPaused, setUserPaused] = useState(false);
-  const [hovering, setHovering] = useState(false);
+  const [keyboardFocus, setKeyboardFocus] = useState(false);
   const [cycle, setCycle] = useState(0);
   const touchX = useRef<number | null>(null);
-  const paused = userPaused || hovering;
+  const paused = userPaused || keyboardFocus;
 
   useEffect(() => {
     if (prefersReducedMotion()) setUserPaused(true);
@@ -49,10 +51,8 @@ export function HeroSlider({ slides, interval = 7 }: { slides: HeroSlide[]; inte
       aria-roledescription="carousel"
       aria-label="Featured"
       className="relative isolate h-svh min-h-[40rem] overflow-hidden bg-ink text-white"
-      onPointerEnter={(e) => e.pointerType === "mouse" && setHovering(true)}
-      onPointerLeave={(e) => e.pointerType === "mouse" && setHovering(false)}
-      onFocus={() => setHovering(true)}
-      onBlur={(e) => !e.currentTarget.contains(e.relatedTarget as Node) && setHovering(false)}
+      onFocus={(e) => setKeyboardFocus(e.target.matches(":focus-visible"))}
+      onBlur={(e) => !e.currentTarget.contains(e.relatedTarget as Node) && setKeyboardFocus(false)}
       onTouchStart={(e) => (touchX.current = e.touches[0].clientX)}
       onTouchEnd={(e) => {
         if (touchX.current === null) return;
@@ -77,21 +77,13 @@ export function HeroSlider({ slides, interval = 7 }: { slides: HeroSlide[]; inte
               data-active={active ? "" : undefined}
               className="hs-slide absolute inset-0"
             >
-              {/* Background: the photo itself on phones, a soft colour wash of it on large screens */}
-              <div className="absolute inset-x-0 top-0 -z-20 h-[68%] overflow-hidden lg:h-full">
-                <Image
-                  src={slide.image.src}
-                  alt=""
-                  fill
-                  priority={i === 0}
-                  sizes="100vw"
-                  className="hs-zoom object-cover lg:scale-125 lg:blur-[60px] lg:brightness-[0.45] lg:saturate-150"
-                />
-              </div>
-              <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_top,var(--color-ink)_32%,rgb(10_21_16/0.55)_58%,rgb(10_21_16/0.15)_80%,rgb(10_21_16/0.45))] lg:bg-[linear-gradient(100deg,rgb(10_21_16/0.92)_20%,rgb(10_21_16/0.55)_60%,rgb(10_21_16/0.25))]" />
+              <SlideBackground slide={slide} priority={i === 0} />
+              <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_top,var(--color-ink)_30%,rgb(10_21_16/0.5)_58%,rgb(10_21_16/0.1)_80%,rgb(10_21_16/0.5))] lg:bg-[linear-gradient(90deg,rgb(10_21_16/0.55)_30%,rgb(10_21_16/0.15)_60%,transparent_85%),linear-gradient(to_top,rgb(10_21_16/0.85),transparent_30%)]" />
+              {slide.image.demo !== false && <span className="demo-tag absolute top-24 right-5 lg:top-28 lg:right-14">Demonstration image</span>}
+              <span className="sr-only">{slide.image.alt}</span>
 
               <div className="wrap grid h-full items-end gap-10 pt-32 pb-36 lg:grid-cols-12 lg:items-center lg:pb-28">
-                <div className="lg:col-span-6 xl:col-span-6">
+                <div className="lg:col-span-7 xl:col-span-6">
                   {slide.eyebrow && (
                     <p className="hs-in flex items-center gap-2.5 text-[0.775rem]" style={{ "--d": 0 } as React.CSSProperties}>
                       <span className="h-2 w-2 shrink-0 rounded-full bg-leaf" aria-hidden="true" />
@@ -128,17 +120,7 @@ export function HeroSlider({ slides, interval = 7 }: { slides: HeroSlide[]; inte
                   </div>
                 </div>
 
-                {/* Sharp photo card on large screens */}
-                <div className="hidden lg:col-span-5 lg:col-start-8 lg:block">
-                  <div className="hs-card relative mx-auto aspect-[4/5] h-[min(68svh,44rem)] max-w-full overflow-hidden rounded-[18px] shadow-2xl shadow-black/40">
-                    <Image src={slide.image.src} alt={slide.image.alt} fill priority={i === 0} sizes="40vw" className="hs-zoom object-cover" />
-                    {slide.image.demo !== false && <span className="demo-tag absolute top-3.5 left-3.5">Demonstration image</span>}
-                  </div>
-                </div>
               </div>
-              {/* On phones the background is the photo itself, so it carries the label */}
-              {slide.image.demo !== false && <span className="demo-tag absolute top-24 right-5 lg:hidden">Demonstration image</span>}
-              <span className="sr-only lg:hidden">{slide.image.alt}</span>
             </div>
           );
         })}
@@ -189,6 +171,28 @@ export function HeroSlider({ slides, interval = 7 }: { slides: HeroSlide[]; inte
         </div>
       </div>
     </section>
+  );
+}
+
+/** The slide photo, with a portrait crop for phones when one is supplied. */
+function SlideBackground({ slide, priority }: { slide: HeroSlide; priority: boolean }) {
+  const common = { alt: "", fill: true, sizes: "100vw" } as const;
+  const wide = getImageProps({ ...common, src: slide.image.src, sizes: "64vw" }).props;
+  const { srcSet: phoneSrcSet, ...img } = getImageProps({ ...common, src: (slide.mobileImage ?? slide.image).src, priority, sizes: "(min-width: 1024px) 64vw, 100vw" }).props;
+  return (
+    // Phones: photo across the top of the screen. Large screens: photo bleeds in from the right and fades into the text side.
+    <div className="absolute inset-x-0 top-0 -z-20 h-[68%] overflow-hidden lg:left-[36%] lg:h-full lg:[mask-image:linear-gradient(to_right,transparent,#000_34%)]">
+      <picture>
+        <source media="(min-width: 1024px)" srcSet={wide.srcSet} sizes="64vw" />
+        <img
+          {...img}
+          srcSet={phoneSrcSet}
+          alt=""
+          className="hs-zoom object-cover"
+          style={{ ...img.style, objectPosition: slide.position ?? "50% 50%" }}
+        />
+      </picture>
+    </div>
   );
 }
 

@@ -95,6 +95,10 @@ const heroSchema = z.object({
         text: z.string().optional(),
         car: z.string().optional(),
         image,
+        /** Optional portrait photo for phones; the main image is used everywhere else. */
+        mobileImage: image.optional(),
+        /** Focal point, e.g. "50% 60%" keeps the car in view when the photo is cropped. */
+        position: z.string().default("50% 50%"),
         primary: link,
         secondary: link.optional(),
         tab: z.string(),

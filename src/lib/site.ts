@@ -1,4 +1,4 @@
-export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000").replace(/\/$/, "");
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://www.5pointselectric.com").replace(/\/$/, "");
 
 export const NAV_LINKS = [
   { href: "/", label: "Home" },
