@@ -84,6 +84,25 @@ const carSchema = z.object({
   order: z.number().default(100),
 });
 
+const link = z.object({ label: z.string(), href: z.string() });
+const heroSchema = z.object({
+  interval: z.number().min(3).default(7),
+  slides: z
+    .array(
+      z.object({
+        eyebrow: z.string().default(""),
+        title: z.string(),
+        text: z.string().optional(),
+        car: z.string().optional(),
+        image,
+        primary: link,
+        secondary: link.optional(),
+        tab: z.string(),
+      }),
+    )
+    .min(1),
+});
+
 const creditSchema = z.object({
   files: z.array(z.string()),
   title: z.string(),
@@ -97,6 +116,7 @@ export type Settings = z.infer<typeof settingsSchema>;
 export type Product = z.infer<typeof productSchema> & { slug: string };
 export type Project = z.infer<typeof projectSchema> & { slug: string };
 export type SiteImage = z.infer<typeof image>;
+export type Hero = z.infer<typeof heroSchema>;
 export type Car = z.infer<typeof carSchema> & { slug: string };
 
 function readJson(relativePath: string): unknown {
@@ -151,3 +171,5 @@ export const getProjects = cache((): Project[] => {
 });
 
 export const getCars = cache((): Car[] => readCollection("cars", carSchema).sort(byOrder));
+
+export const getHero = cache(() => heroSchema.parse(readJson("hero.json")));

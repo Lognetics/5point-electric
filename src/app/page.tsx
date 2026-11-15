@@ -13,8 +13,8 @@ import { SplitReveal } from "@/components/SplitReveal";
 import { StackedSolutions } from "@/components/StackedSolutions";
 import { WordScrub } from "@/components/WordScrub";
 import { CarCard } from "@/components/CarCard";
-import { getCars, getImages } from "@/lib/content";
-import { POWERTRAINS } from "@/lib/cars";
+import { getCars, getHero, getImages } from "@/lib/content";
+import { formatPrice, POWERTRAINS } from "@/lib/cars";
 import { SOLUTIONS } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -37,10 +37,25 @@ export default function HomePage() {
   const img = getImages();
   const cars = getCars();
   const featured = cars.filter((c) => c.featured).slice(0, 4);
+  const hero = getHero();
+  const slides = hero.slides.map((slide) => {
+    const car = slide.car ? cars.find((c) => c.slug === slide.car) : undefined;
+    return {
+      eyebrow: slide.eyebrow,
+      title: slide.title,
+      tab: slide.tab,
+      image: slide.image,
+      primary: slide.primary,
+      secondary: slide.secondary,
+      text: slide.text || car?.summary || "",
+      price: car ? formatPrice(car.price) : undefined,
+      stats: car?.highlights.slice(0, 3),
+    };
+  });
 
   return (
     <>
-      <HomeHero image={img("hero")} marquee={SOLUTIONS.map((s) => s.cardTitle)} />
+      <HomeHero slides={slides} interval={hero.interval} marquee={SOLUTIONS.map((s) => s.cardTitle)} />
 
       {/* Company introduction */}
       <section className="section">

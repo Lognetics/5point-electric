@@ -242,3 +242,21 @@ html.intro-on .intro { animation: intro-failsafe 0.3s 4s forwards; }
   .js [data-reveal] { opacity: 1; transform: none; transition: none; }
   .page-enter, .marquee-track, .map-pulse { animation: none; }
 }
+
+/* Home hero slider */
+.hs-slide { opacity: 0; visibility: hidden; transition: opacity 1s ease, visibility 0s 1s; }
+.hs-slide[data-active] { opacity: 1; visibility: visible; transition: opacity 1s ease, visibility 0s; }
+.hs-in { opacity: 0; transform: translateY(28px); transition: opacity 0.9s var(--ease-out-soft), transform 1.1s var(--ease-out-soft); }
+[data-active] .hs-in { opacity: 1; transform: none; transition-delay: calc(var(--d, 0) * 1ms + 250ms); }
+.hs-zoom { transform: scale(1.08); transition: transform 8s linear; }
+[data-active] .hs-zoom { transform: scale(1); }
+.hs-card { clip-path: inset(10% 10% 10% 10% round 18px); transition: clip-path 1.3s var(--ease-out-soft) 0.15s; }
+[data-active] .hs-card { clip-path: inset(0 0 0 0 round 18px); }
+@keyframes hs-progress { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+.hs-bar { transform-origin: left; transform: scaleX(0); }
+.hs-bar[data-run] { animation: hs-progress var(--dur, 7s) linear forwards; }
+.hs-bar[data-done] { transform: scaleX(1); }
+[data-paused] .hs-bar[data-run] { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) {
+  .hs-slide, .hs-slide[data-active], .hs-in, [data-active] .hs-in, .hs-zoom, .hs-card { transition: none; transform: none; clip-path: none; }
+}

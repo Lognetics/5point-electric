@@ -179,6 +179,41 @@ collections:
               - { name: facebook, label: Facebook URL, widget: string, required: false }
               - { name: instagram, label: Instagram URL, widget: string, required: false }
           - { name: showSampleContent, label: Show labelled sample products and projects, hint: "Turn off before launch or once real content is added.", widget: boolean, required: false }
+      - name: hero
+        label: Home page hero slider
+        file: content/hero.json
+        fields:
+          - { name: interval, label: Seconds per slide, widget: number, value_type: int, default: 7 }
+          - name: slides
+            label: Slides
+            hint: The first slide's title is the page's main heading.
+            widget: list
+            fields:
+              - { name: tab, label: Short label for the slide tab, widget: string }
+              - { name: eyebrow, label: Small line above the title, widget: string, required: false }
+              - { name: title, label: Title, widget: string }
+              - { name: text, label: Supporting text, hint: Leave empty on a car slide to use the car's short description., widget: text, required: false }
+              - { name: car, label: Car file name (optional), hint: "For example xiaomi-yu7-max. Shows that car's price and key figures.", widget: string, required: false }
+              - name: image
+                label: Image
+                widget: object
+                fields:
+                  - { name: src, label: Image, widget: image }
+                  - { name: alt, label: Image description (alt text), widget: string }
+                  - { name: demo, label: Demonstration image (not a 5Points photo), widget: boolean, required: false }
+              - name: primary
+                label: Main button
+                widget: object
+                fields:
+                  - { name: label, label: Text, widget: string }
+                  - { name: href, label: Link, widget: string }
+              - name: secondary
+                label: Second button
+                widget: object
+                required: false
+                fields:
+                  - { name: label, label: Text, widget: string }
+                  - { name: href, label: Link, widget: string }
       - name: company
         label: About the company
         file: content/company.json
