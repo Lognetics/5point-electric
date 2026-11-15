@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 const SECTIONS = [
   {
     id: "electric-mobility",
-    imageKey: "electricVehicles",
+    imageKey: "mobility",
     service: "Electric Vehicles",
     title: "Electric Mobility Solutions",
     text: "We support the move to cleaner transportation in Nigeria with electric mobility technologies, EV infrastructure, and the supporting solutions that make electric vehicles practical to adopt and run.",
@@ -88,7 +88,7 @@ export default function SolutionsPage() {
             </div>
             <div className="mt-12 grid gap-10 lg:mt-20 lg:grid-cols-12 lg:gap-8">
               <div className={`lg:col-span-7 ${i % 2 === 1 ? "lg:order-2 lg:col-start-6" : ""}`}>
-                <ParallaxImage src={img(s.imageKey).src} alt={img(s.imageKey).alt} sizes="(min-width: 1024px) 58vw, 100vw" demo="Demonstration image" className="aspect-[4/3]" />
+                <ParallaxImage src={img(s.imageKey).src} alt={img(s.imageKey).alt} sizes="(min-width: 1024px) 58vw, 100vw" demo={img(s.imageKey).demo === false ? undefined : "Demonstration image"} className="aspect-[4/3]" />
               </div>
               <Reveal className={`flex flex-col justify-end lg:col-span-4 ${i % 2 === 1 ? "lg:order-1" : "lg:col-start-9"}`}>
                 <p className="lead text-stone">{s.text}</p>
@@ -100,8 +100,9 @@ export default function SolutionsPage() {
                     </li>
                   ))}
                 </ul>
-                <div className="mt-9">
+                <div className="mt-9 flex flex-col gap-3 sm:flex-row lg:flex-col lg:items-start">
                   <Cta href={contactHref(s.service)}>Discuss Your Project</Cta>
+                  {s.id === "electric-mobility" && <Cta href="/cars" variant="outline">Shop Cars</Cta>}
                 </div>
               </Reveal>
             </div>

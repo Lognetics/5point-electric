@@ -1,0 +1,164 @@
+{
+  "title": "2026 ZEEKR 9X Ultra",
+  "make": "ZEEKR",
+  "model": "9X Ultra",
+  "year": 2026,
+  "headline": "Plug-In Hybrid Luxury SUV",
+  "powertrain": "hybrid",
+  "bodyType": "suv",
+  "price": 250000000,
+  "summary": "A plug-in hybrid luxury SUV with 897 HP combined, up to 288 km on electric power alone and up to 1,160 km combined range (CLTC).",
+  "highlights": [
+    {
+      "label": "Power",
+      "value": "897 HP"
+    },
+    {
+      "label": "Combined range",
+      "value": "1,160 km (CLTC)"
+    },
+    {
+      "label": "0–100 km/h",
+      "value": "3.9 s"
+    },
+    {
+      "label": "Electric range",
+      "value": "288 km"
+    }
+  ],
+  "specifications": [
+    {
+      "label": "Engine",
+      "value": "2.0L Turbocharged Petrol Engine"
+    },
+    {
+      "label": "Power",
+      "value": "897 HP combined system output"
+    },
+    {
+      "label": "Torque",
+      "value": "935 Nm combined torque"
+    },
+    {
+      "label": "Drivetrain",
+      "value": "Dual-Motor All-Wheel Drive (AWD)"
+    },
+    {
+      "label": "Battery",
+      "value": "55 kWh CATL Battery"
+    },
+    {
+      "label": "Electric Range",
+      "value": "Up to 288 km on electric power alone (CLTC)"
+    },
+    {
+      "label": "Combined Range",
+      "value": "Up to 1,160 km (electricity + petrol, CLTC)"
+    },
+    {
+      "label": "Acceleration",
+      "value": "0–100 km/h in 3.9 seconds"
+    },
+    {
+      "label": "Charging",
+      "value": "20%–80% in approximately 9 minutes with compatible ultra-fast DC charging"
+    },
+    {
+      "label": "Seating",
+      "value": "5 passengers (2+3 configuration)"
+    },
+    {
+      "label": "Suspension",
+      "value": "Adaptive dual-chamber air suspension for adjustable ride height and improved comfort"
+    },
+    {
+      "label": "Seats",
+      "value": "Heated, ventilated and massage-function seats"
+    },
+    {
+      "label": "Display",
+      "value": "Dual 16-inch OLED screens"
+    },
+    {
+      "label": "Audio",
+      "value": "Premium Naim sound system"
+    },
+    {
+      "label": "Safety",
+      "value": "LiDAR-powered advanced driver-assistance technology"
+    },
+    {
+      "label": "V2L",
+      "value": "Can power external electrical appliances using the vehicle's battery."
+    }
+  ],
+  "availability": "Available at 5Point Electric Technology Limited for immediate pickup and delivery nationwide.",
+  "images": [
+    {
+      "src": "/images/cars/zeekr-9x-ultra/01.jpg",
+      "alt": "2026 ZEEKR 9X Ultra, side three-quarter view"
+    },
+    {
+      "src": "/images/cars/zeekr-9x-ultra/02.jpg",
+      "alt": "2026 ZEEKR 9X Ultra, front view"
+    },
+    {
+      "src": "/images/cars/zeekr-9x-ultra/03.jpg",
+      "alt": "2026 ZEEKR 9X Ultra, dashboard"
+    },
+    {
+      "src": "/images/cars/zeekr-9x-ultra/04.jpg",
+      "alt": "2026 ZEEKR 9X Ultra, dashboard screens"
+    },
+    {
+      "src": "/images/cars/zeekr-9x-ultra/05.jpg",
+      "alt": "2026 ZEEKR 9X Ultra, front cabin"
+    },
+    {
+      "src": "/images/cars/zeekr-9x-ultra/06.jpg",
+      "alt": "2026 ZEEKR 9X Ultra, dual dashboard screens"
+    },
+    {
+      "src": "/images/cars/zeekr-9x-ultra/07.jpg",
+      "alt": "2026 ZEEKR 9X Ultra, steering wheel"
+    },
+    {
+      "src": "/images/cars/zeekr-9x-ultra/08.jpg",
+      "alt": "2026 ZEEKR 9X Ultra, rear cabin"
+    },
+    {
+      "src": "/images/cars/zeekr-9x-ultra/09.jpg",
+      "alt": "2026 ZEEKR 9X Ultra, rear seat with fold-out table"
+    },
+    {
+      "src": "/images/cars/zeekr-9x-ultra/10.jpg",
+      "alt": "2026 ZEEKR 9X Ultra, rear entertainment screen"
+    },
+    {
+      "src": "/images/cars/zeekr-9x-ultra/11.jpg",
+      "alt": "2026 ZEEKR 9X Ultra, rear seats"
+    },
+    {
+      "src": "/images/cars/zeekr-9x-ultra/12.jpg",
+      "alt": "2026 ZEEKR 9X Ultra, door trim"
+    },
+    {
+      "src": "/images/cars/zeekr-9x-ultra/13.jpg",
+      "alt": "2026 ZEEKR 9X Ultra, centre console"
+    },
+    {
+      "src": "/images/cars/zeekr-9x-ultra/14.jpg",
+      "alt": "2026 ZEEKR 9X Ultra, rear seat controls"
+    },
+    {
+      "src": "/images/cars/zeekr-9x-ultra/15.jpg",
+      "alt": "2026 ZEEKR 9X Ultra, rear centre console"
+    },
+    {
+      "src": "/images/cars/zeekr-9x-ultra/16.jpg",
+      "alt": "2026 ZEEKR 9X Ultra, centre console detail"
+    }
+  ],
+  "featured": true,
+  "order": 2
+}

@@ -7,3 +7,6 @@ out
 *.tsbuildinfo
 next-env.d.ts
 .DS_Store
+
+# Raw product photos and WhatsApp screenshots supplied by 5Point (processed copies live in public/images/cars)
+/5Points Website Products */

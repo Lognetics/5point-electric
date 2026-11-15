@@ -5,7 +5,8 @@ import { ArrowUpRight } from "lucide-react";
 import { Cta } from "@/components/Cta";
 import { Reveal } from "@/components/Reveal";
 import { PageHero } from "@/components/PageHero";
-import { getProducts } from "@/lib/content";
+import { CarCard } from "@/components/CarCard";
+import { getCars, getProducts } from "@/lib/content";
 import { PRODUCT_CATEGORIES } from "@/lib/taxonomy";
 import { contactHref } from "@/lib/site";
 
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
 
 export default function ProductsPage() {
   const products = getProducts();
+  const cars = getCars();
   const hasSamples = products.some((p) => p.sample);
   return (
     <>
@@ -60,7 +62,20 @@ export default function ProductsPage() {
                     <p className="label mb-4 text-deep">{String(n + 1).padStart(2, "0")} / {String(PRODUCT_CATEGORIES.length).padStart(2, "0")}</p>
                     <h2 id={`${category.id}-title`} className="d-3">{category.label}</h2>
                     <p className="mt-3 max-w-2xl text-stone">{category.blurb}</p>
-                    {items.length > 0 ? (
+                    {category.id === "electric-vehicles" ? (
+                      <div className="mt-9">
+                        <ul className="grid gap-x-6 gap-y-10 sm:grid-cols-2 xl:grid-cols-3">
+                          {cars.slice(0, 3).map((car) => (
+                            <li key={car.slug}>
+                              <CarCard car={car} sizes="(min-width: 1280px) 25vw, (min-width: 640px) 40vw, 100vw" />
+                            </li>
+                          ))}
+                        </ul>
+                        <div className="mt-10">
+                          <Cta href="/cars">Shop all {cars.length} cars</Cta>
+                        </div>
+                      </div>
+                    ) : items.length > 0 ? (
                       <ul className={`mt-9 grid gap-x-7 gap-y-12 ${items.length > 1 ? "sm:grid-cols-2" : ""}`}>
                         {items.map((product) => (
                           <Reveal as="li" key={product.slug}>

@@ -1,0 +1,120 @@
+{
+  "title": "2026 BYD Tang DM-i",
+  "make": "BYD",
+  "model": "Tang DM-i",
+  "year": 2026,
+  "headline": "Plug-In Hybrid SUV",
+  "powertrain": "hybrid",
+  "bodyType": "suv",
+  "price": 82000000,
+  "summary": "A seven-seat plug-in hybrid SUV with up to 110 km on electric power alone and up to 1,160 km of combined range.",
+  "highlights": [
+    {
+      "label": "Power",
+      "value": "271 HP"
+    },
+    {
+      "label": "Combined range",
+      "value": "1,160 km"
+    },
+    {
+      "label": "0–100 km/h",
+      "value": "7.5 s"
+    },
+    {
+      "label": "Seating",
+      "value": "7"
+    }
+  ],
+  "specifications": [
+    {
+      "label": "Engine",
+      "value": "1.5L Turbocharged Petrol Engine"
+    },
+    {
+      "label": "Power",
+      "value": "271 HP electric motor output"
+    },
+    {
+      "label": "Torque",
+      "value": "315 Nm for responsive acceleration"
+    },
+    {
+      "label": "Battery",
+      "value": "21.5 kWh BYD Blade Battery"
+    },
+    {
+      "label": "Electric Range",
+      "value": "Up to 110 km on electric power alone"
+    },
+    {
+      "label": "Combined Range",
+      "value": "Up to 1,160 km (electricity + petrol)"
+    },
+    {
+      "label": "Seating",
+      "value": "7-Seater (2+3+2 seating arrangement)"
+    },
+    {
+      "label": "Acceleration",
+      "value": "0–100 km/h in 7.5 seconds"
+    },
+    {
+      "label": "Seats",
+      "value": "Heated and ventilated front seats"
+    },
+    {
+      "label": "Display",
+      "value": "15.6-inch rotating touchscreen"
+    },
+    {
+      "label": "Sunroof",
+      "value": "Panoramic sunroof"
+    },
+    {
+      "label": "Camera",
+      "value": "360° surround-view camera"
+    },
+    {
+      "label": "V2L",
+      "value": "Powers external electrical appliances using the vehicle's battery."
+    }
+  ],
+  "availability": "Available at 5Point Electric Technology Limited for immediate pickup and delivery nationwide.",
+  "images": [
+    {
+      "src": "/images/cars/byd-tang-dm-i/01.jpg",
+      "alt": "2026 BYD Tang DM-i, front three-quarter view"
+    },
+    {
+      "src": "/images/cars/byd-tang-dm-i/02.jpg",
+      "alt": "2026 BYD Tang DM-i, front view"
+    },
+    {
+      "src": "/images/cars/byd-tang-dm-i/03.jpg",
+      "alt": "2026 BYD Tang DM-i, front view in a showroom"
+    },
+    {
+      "src": "/images/cars/byd-tang-dm-i/04.jpg",
+      "alt": "2026 BYD Tang DM-i, rear view"
+    },
+    {
+      "src": "/images/cars/byd-tang-dm-i/05.jpg",
+      "alt": "2026 BYD Tang DM-i, dashboard and touchscreen"
+    },
+    {
+      "src": "/images/cars/byd-tang-dm-i/06.jpg",
+      "alt": "2026 BYD Tang DM-i, passenger-side dashboard"
+    },
+    {
+      "src": "/images/cars/byd-tang-dm-i/07.jpg",
+      "alt": "2026 BYD Tang DM-i, gear selector"
+    },
+    {
+      "src": "/images/cars/byd-tang-dm-i/08.jpg",
+      "alt": "2026 BYD Tang DM-i, boot"
+    }
+  ],
+  "featured": false,
+  "order": 7
+}

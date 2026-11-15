@@ -1,0 +1,140 @@
+{
+  "title": "2026 Geely EX5",
+  "make": "Geely",
+  "model": "EX5",
+  "year": 2026,
+  "headline": "Fully Electric SUV",
+  "powertrain": "electric",
+  "bodyType": "suv",
+  "price": 63000000,
+  "summary": "A front-wheel-drive electric SUV with 218 HP, a 60.22 kWh LFP battery, up to 495 km of range (NEDC) and 461 litres of boot space.",
+  "highlights": [
+    {
+      "label": "Power",
+      "value": "218 HP"
+    },
+    {
+      "label": "Range",
+      "value": "495 km (NEDC)"
+    },
+    {
+      "label": "0–100 km/h",
+      "value": "6.9 s"
+    },
+    {
+      "label": "Seating",
+      "value": "5"
+    }
+  ],
+  "specifications": [
+    {
+      "label": "Motor",
+      "value": "160 kW Electric Motor (218 HP)"
+    },
+    {
+      "label": "Torque",
+      "value": "320 Nm for quick, responsive acceleration"
+    },
+    {
+      "label": "Battery",
+      "value": "60.22 kWh Lithium Iron Phosphate (LFP) Battery"
+    },
+    {
+      "label": "Driving Range",
+      "value": "Up to 495 km (NEDC) on a full charge"
+    },
+    {
+      "label": "Acceleration",
+      "value": "0–100 km/h in 6.9 seconds"
+    },
+    {
+      "label": "Drivetrain",
+      "value": "Front-Wheel Drive (FWD)"
+    },
+    {
+      "label": "Charging",
+      "value": "30%–80% in approximately 20 minutes with DC fast charging"
+    },
+    {
+      "label": "Seating",
+      "value": "5 passengers"
+    },
+    {
+      "label": "Display",
+      "value": "Large touchscreen infotainment system"
+    },
+    {
+      "label": "Camera",
+      "value": "360° surround-view camera"
+    },
+    {
+      "label": "Boot Space",
+      "value": "461 litres, expandable to 1,877 litres"
+    },
+    {
+      "label": "V2L",
+      "value": "Can power external electrical appliances using the vehicle's battery."
+    }
+  ],
+  "availability": "Available at 5Point Electric Technology Limited for immediate pickup and delivery nationwide.",
+  "images": [
+    {
+      "src": "/images/cars/geely-ex5/01.jpg",
+      "alt": "2026 Geely EX5, front three-quarter view"
+    },
+    {
+      "src": "/images/cars/geely-ex5/02.jpg",
+      "alt": "2026 Geely EX5, rear view"
+    },
+    {
+      "src": "/images/cars/geely-ex5/03.jpg",
+      "alt": "2026 Geely EX5, alloy wheel"
+    },
+    {
+      "src": "/images/cars/geely-ex5/04.jpg",
+      "alt": "2026 Geely EX5, dashboard and touchscreen"
+    },
+    {
+      "src": "/images/cars/geely-ex5/05.jpg",
+      "alt": "2026 Geely EX5, dashboard"
+    },
+    {
+      "src": "/images/cars/geely-ex5/06.jpg",
+      "alt": "2026 Geely EX5, steering wheel"
+    },
+    {
+      "src": "/images/cars/geely-ex5/07.jpg",
+      "alt": "2026 Geely EX5, steering wheel and driver display"
+    },
+    {
+      "src": "/images/cars/geely-ex5/08.jpg",
+      "alt": "2026 Geely EX5, touchscreen"
+    },
+    {
+      "src": "/images/cars/geely-ex5/09.jpg",
+      "alt": "2026 Geely EX5, centre console"
+    },
+    {
+      "src": "/images/cars/geely-ex5/10.jpg",
+      "alt": "2026 Geely EX5, front seat"
+    },
+    {
+      "src": "/images/cars/geely-ex5/11.jpg",
+      "alt": "2026 Geely EX5, rear seats"
+    },
+    {
+      "src": "/images/cars/geely-ex5/12.jpg",
+      "alt": "2026 Geely EX5, door trim"
+    },
+    {
+      "src": "/images/cars/geely-ex5/13.jpg",
+      "alt": "2026 Geely EX5, rear air vents"
+    },
+    {
+      "src": "/images/cars/geely-ex5/14.jpg",
+      "alt": "2026 Geely EX5, boot with EV AC charger"
+    }
+  ],
+  "featured": true,
+  "order": 4
+}

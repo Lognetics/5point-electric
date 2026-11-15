@@ -41,6 +41,12 @@ The WhatsApp button stays hidden until a number is set, and unset contact detail
 
 Editors need write access to the repository. Each save is a commit, and the site updates once the redeploy finishes.
 
+## Cars for sale
+
+Each car is a file in `content/cars/`, editable in the CMS under "Cars for sale". The first photo is the cover, and the first three key figures show on the car card. Cars marked "Feature on the home page" appear in the home page's Shop Cars section. Photos live in `public/images/cars/`; number plates were blurred before upload, so blur any new plates the same way.
+
+The original photo and screenshot folder (`5Points Website Products /`) is ignored by git so that WhatsApp screenshots are never published.
+
 ## Content rules
 
 - Do not publish unverified specifications, certifications, brands, statistics, or projects.

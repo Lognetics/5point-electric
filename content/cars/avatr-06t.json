@@ -1,0 +1,148 @@
+{
+  "title": "2026 AVATR 06T",
+  "make": "AVATR",
+  "model": "06T",
+  "year": 2026,
+  "headline": "Fully Electric Shooting Brake",
+  "powertrain": "electric",
+  "bodyType": "shooting-brake",
+  "price": 112000000,
+  "summary": "A tri-motor, all-wheel-drive electric shooting brake with about 955 HP, 0–100 km/h in 2.78 seconds and up to 680 km of range (CLTC).",
+  "highlights": [
+    {
+      "label": "Power",
+      "value": "955 HP"
+    },
+    {
+      "label": "Range",
+      "value": "680 km (CLTC)"
+    },
+    {
+      "label": "0–100 km/h",
+      "value": "2.78 s"
+    },
+    {
+      "label": "Seating",
+      "value": "5"
+    }
+  ],
+  "specifications": [
+    {
+      "label": "Power",
+      "value": "712 kW (Approximately 955 HP) from three electric motors"
+    },
+    {
+      "label": "Torque",
+      "value": "996 Nm for exceptional acceleration"
+    },
+    {
+      "label": "Drivetrain",
+      "value": "Tri-Motor All-Wheel Drive (AWD)"
+    },
+    {
+      "label": "Battery",
+      "value": "89.33 kWh CATL LFP Battery"
+    },
+    {
+      "label": "Driving Range",
+      "value": "Up to 680 km (CLTC) on a full charge"
+    },
+    {
+      "label": "Acceleration",
+      "value": "0–100 km/h in 2.78 seconds"
+    },
+    {
+      "label": "Top Speed",
+      "value": "240 km/h"
+    },
+    {
+      "label": "Charging",
+      "value": "30%–80% in under 10 minutes under compatible ultra-fast DC charging conditions"
+    },
+    {
+      "label": "Seating",
+      "value": "5 passengers"
+    },
+    {
+      "label": "Display",
+      "value": "35.4-inch panoramic display and 15.6-inch central touchscreen"
+    },
+    {
+      "label": "Seats",
+      "value": "Heated, ventilated and massage-function seats"
+    },
+    {
+      "label": "Sound System",
+      "value": "25-speaker Meridian premium audio system"
+    },
+    {
+      "label": "Safety",
+      "value": "9 airbags and advanced driver-assistance technology"
+    }
+  ],
+  "availability": "Available at 5Point Electric Technology Limited for immediate pickup and delivery nationwide.",
+  "images": [
+    {
+      "src": "/images/cars/avatr-06t/01.jpg",
+      "alt": "2026 AVATR 06T, front view"
+    },
+    {
+      "src": "/images/cars/avatr-06t/02.jpg",
+      "alt": "2026 AVATR 06T, front three-quarter view"
+    },
+    {
+      "src": "/images/cars/avatr-06t/03.jpg",
+      "alt": "2026 AVATR 06T, side view"
+    },
+    {
+      "src": "/images/cars/avatr-06t/04.jpg",
+      "alt": "2026 AVATR 06T, alloy wheel"
+    },
+    {
+      "src": "/images/cars/avatr-06t/05.jpg",
+      "alt": "2026 AVATR 06T, rear view"
+    },
+    {
+      "src": "/images/cars/avatr-06t/06.jpg",
+      "alt": "2026 AVATR 06T, dashboard and steering wheel"
+    },
+    {
+      "src": "/images/cars/avatr-06t/07.jpg",
+      "alt": "2026 AVATR 06T, front cabin and centre console"
+    },
+    {
+      "src": "/images/cars/avatr-06t/08.jpg",
+      "alt": "2026 AVATR 06T, cabin from the rear seats"
+    },
+    {
+      "src": "/images/cars/avatr-06t/09.jpg",
+      "alt": "2026 AVATR 06T, panoramic display"
+    },
+    {
+      "src": "/images/cars/avatr-06t/10.jpg",
+      "alt": "2026 AVATR 06T, rear seats"
+    },
+    {
+      "src": "/images/cars/avatr-06t/11.jpg",
+      "alt": "2026 AVATR 06T, door speaker"
+    },
+    {
+      "src": "/images/cars/avatr-06t/12.jpg",
+      "alt": "2026 AVATR 06T, rear centre console"
+    },
+    {
+      "src": "/images/cars/avatr-06t/13.jpg",
+      "alt": "2026 AVATR 06T, front seat through the open door"
+    },
+    {
+      "src": "/images/cars/avatr-06t/14.jpg",
+      "alt": "2026 AVATR 06T, view through the windscreen"
+    },
+    {
+      "src": "/images/cars/avatr-06t/15.jpg",
+      "alt": "2026 AVATR 06T, glass roof"
+    }
+  ],
+  "featured": true,
+  "order": 3
+}

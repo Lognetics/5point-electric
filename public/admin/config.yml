@@ -13,6 +13,62 @@ media_folder: public/images/uploads
 public_folder: /images/uploads
 
 collections:
+
+  - name: cars
+    label: Cars for sale
+    label_singular: Car
+    folder: content/cars
+    format: json
+    extension: json
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    summary: "{{title}} ({{powertrain}})"
+    fields:
+      - { name: title, label: Full name, hint: "For example 2026 Geely EX5", widget: string }
+      - { name: make, label: Make, widget: string }
+      - { name: model, label: Model, widget: string }
+      - { name: year, label: Year, widget: number, value_type: int }
+      - { name: headline, label: Short type line, hint: "For example Fully Electric SUV", widget: string }
+      - name: powertrain
+        label: Category
+        widget: select
+        options:
+          - { label: Fully Electric, value: electric }
+          - { label: Plug-In Hybrid, value: hybrid }
+      - name: bodyType
+        label: Body type
+        widget: select
+        options:
+          - { label: SUV, value: suv }
+          - { label: Hatchback, value: hatchback }
+          - { label: Shooting Brake, value: shooting-brake }
+          - { label: Pickup, value: pickup }
+          - { label: Sedan, value: sedan }
+      - { name: price, label: Price in naira, hint: "Numbers only. Leave empty to show Price on request.", widget: number, value_type: int, required: false }
+      - { name: summary, label: Short description, widget: text }
+      - name: highlights
+        label: Key figures (first three show on the car card)
+        widget: list
+        fields:
+          - { name: label, label: Label, widget: string }
+          - { name: value, label: Value, widget: string }
+      - name: specifications
+        label: Specifications
+        widget: list
+        fields:
+          - { name: label, label: Specification, widget: string }
+          - { name: value, label: Value, widget: string }
+      - { name: availability, label: Availability note, widget: string, required: false }
+      - name: images
+        label: Photos (the first is the cover)
+        widget: list
+        min: 1
+        fields:
+          - { name: src, label: Photo, widget: image }
+          - { name: alt, label: Photo description (alt text), widget: string }
+      - { name: featured, label: Feature on the home page, widget: boolean, default: false, required: false }
+      - { name: order, label: Display order, widget: number, value_type: int, default: 100, required: false }
   - name: products
     label: Products
     label_singular: Product
@@ -147,81 +203,102 @@ collections:
             fields:
               - { name: src, label: Image, widget: image }
               - { name: alt, label: Image description (alt text), widget: string }
+              - { name: demo, label: Demonstration image (not a 5Point photo), widget: boolean, required: false }
           - name: intro
             label: "Home: company introduction"
             widget: object
             fields:
               - { name: src, label: Image, widget: image }
               - { name: alt, label: Image description (alt text), widget: string }
+              - { name: demo, label: Demonstration image (not a 5Point photo), widget: boolean, required: false }
           - name: introSecondary
             label: "Home: company introduction (second image)"
             widget: object
             fields:
               - { name: src, label: Image, widget: image }
               - { name: alt, label: Image description (alt text), widget: string }
+              - { name: demo, label: Demonstration image (not a 5Point photo), widget: boolean, required: false }
           - name: electricVehicles
             label: "Electric vehicles"
             widget: object
             fields:
               - { name: src, label: Image, widget: image }
               - { name: alt, label: Image description (alt text), widget: string }
+              - { name: demo, label: Demonstration image (not a 5Point photo), widget: boolean, required: false }
           - name: solarCharging
             label: "Solar-powered EV charging"
             widget: object
             fields:
               - { name: src, label: Image, widget: image }
               - { name: alt, label: Image description (alt text), widget: string }
+              - { name: demo, label: Demonstration image (not a 5Point photo), widget: boolean, required: false }
           - name: cables
             label: "AC & DC cables"
             widget: object
             fields:
               - { name: src, label: Image, widget: image }
               - { name: alt, label: Image description (alt text), widget: string }
+              - { name: demo, label: Demonstration image (not a 5Point photo), widget: boolean, required: false }
           - name: industrialSolar
             label: "Industrial solar"
             widget: object
             fields:
               - { name: src, label: Image, widget: image }
               - { name: alt, label: Image description (alt text), widget: string }
+              - { name: demo, label: Demonstration image (not a 5Point photo), widget: boolean, required: false }
           - name: showcaseCharging
             label: "Home showcase: solar EV charging"
             widget: object
             fields:
               - { name: src, label: Image, widget: image }
               - { name: alt, label: Image description (alt text), widget: string }
+              - { name: demo, label: Demonstration image (not a 5Point photo), widget: boolean, required: false }
           - name: showcaseEv
             label: "Home showcase: EV charging"
             widget: object
             fields:
               - { name: src, label: Image, widget: image }
               - { name: alt, label: Image description (alt text), widget: string }
+              - { name: demo, label: Demonstration image (not a 5Point photo), widget: boolean, required: false }
           - name: showcaseSolar
             label: "Home showcase: industrial solar"
             widget: object
             fields:
               - { name: src, label: Image, widget: image }
               - { name: alt, label: Image description (alt text), widget: string }
+              - { name: demo, label: Demonstration image (not a 5Point photo), widget: boolean, required: false }
           - name: showcaseCables
             label: "Home showcase: cables"
             widget: object
             fields:
               - { name: src, label: Image, widget: image }
               - { name: alt, label: Image description (alt text), widget: string }
+              - { name: demo, label: Demonstration image (not a 5Point photo), widget: boolean, required: false }
           - name: sustainability
             label: "Home: sustainability"
             widget: object
             fields:
               - { name: src, label: Image, widget: image }
               - { name: alt, label: Image description (alt text), widget: string }
+              - { name: demo, label: Demonstration image (not a 5Point photo), widget: boolean, required: false }
           - name: about
             label: "About: who we are"
             widget: object
             fields:
               - { name: src, label: Image, widget: image }
               - { name: alt, label: Image description (alt text), widget: string }
+              - { name: demo, label: Demonstration image (not a 5Point photo), widget: boolean, required: false }
           - name: commitment
             label: "About: our commitment"
             widget: object
             fields:
               - { name: src, label: Image, widget: image }
               - { name: alt, label: Image description (alt text), widget: string }
+              - { name: demo, label: Demonstration image (not a 5Point photo), widget: boolean, required: false }
+          - name: mobility
+            label: "Solutions: electric mobility"
+            widget: object
+            fields:
+              - { name: src, label: Image, widget: image }
+              - { name: alt, label: Image description (alt text), widget: string }
+              - { name: demo, label: Demonstration image (not a 5Point photo), widget: boolean, required: false }

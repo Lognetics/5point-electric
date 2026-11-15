@@ -8,12 +8,14 @@
     "alt": "Solar panels angled towards a bright sky with scattered clouds"
   },
   "introSecondary": {
-    "src": "/images/charge-port.jpg",
-    "alt": "Charging connector plugged into the port of an electric car"
+    "src": "/images/cars/xiaomi-yu7-max/01.jpg",
+    "alt": "Green 2026 Xiaomi YU7 Max parked at a solar-powered EV charging station",
+    "demo": false
   },
   "electricVehicles": {
-    "src": "/images/ev-plugged.jpg",
-    "alt": "White electric car connected to a charging post by a coiled cable"
+    "src": "/images/cars/zeekr-9x-ultra-wide.jpg",
+    "alt": "Black 2026 ZEEKR 9X Ultra plug-in hybrid SUV, front view",
+    "demo": false
   },
   "solarCharging": {
     "src": "/images/hero-canopy.jpg",
@@ -54,5 +56,10 @@
   "commitment": {
     "src": "/images/tech-panel.jpg",
     "alt": "Technician using a drill to install a solar panel under a blue sky"
+  },
+  "mobility": {
+    "src": "/images/cars/avatr-06t-wide.jpg",
+    "alt": "Black 2026 AVATR 06T electric shooting brake at a solar-powered EV charging station",
+    "demo": false
   }
 }

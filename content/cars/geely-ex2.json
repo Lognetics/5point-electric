@@ -1,0 +1,128 @@
+{
+  "title": "2026 Geely EX2",
+  "make": "Geely",
+  "model": "EX2",
+  "year": 2026,
+  "headline": "Fully Electric Hatchback",
+  "powertrain": "electric",
+  "bodyType": "hatchback",
+  "price": 36000000,
+  "summary": "A rear-wheel-drive electric hatchback with up to 395 km of range (NEDC), a 70-litre front trunk and a 540° panoramic camera.",
+  "highlights": [
+    {
+      "label": "Power",
+      "value": "116 HP"
+    },
+    {
+      "label": "Range",
+      "value": "395 km (NEDC)"
+    },
+    {
+      "label": "0–100 km/h",
+      "value": "11.5 s"
+    },
+    {
+      "label": "Seating",
+      "value": "5"
+    }
+  ],
+  "specifications": [
+    {
+      "label": "Motor",
+      "value": "85 kW Electric Motor (116 HP)"
+    },
+    {
+      "label": "Torque",
+      "value": "150 Nm for responsive acceleration"
+    },
+    {
+      "label": "Battery",
+      "value": "40.8 kWh Lithium Iron Phosphate (LFP) Battery"
+    },
+    {
+      "label": "Driving Range",
+      "value": "Up to 395 km (NEDC) on a full charge"
+    },
+    {
+      "label": "Drivetrain",
+      "value": "Rear-Wheel Drive (RWD)"
+    },
+    {
+      "label": "Acceleration",
+      "value": "0–100 km/h in 11.5 seconds"
+    },
+    {
+      "label": "Fast Charging",
+      "value": "30%–80% in approximately 25 minutes"
+    },
+    {
+      "label": "Seating",
+      "value": "5 passengers"
+    },
+    {
+      "label": "Display",
+      "value": "14.6-inch touchscreen"
+    },
+    {
+      "label": "Camera",
+      "value": "540° panoramic camera with transparent chassis view"
+    },
+    {
+      "label": "Storage",
+      "value": "70L front trunk and 375L rear boot"
+    },
+    {
+      "label": "V2L",
+      "value": "Can power external electrical appliances using the vehicle's battery."
+    }
+  ],
+  "availability": "Available at 5Point Electric Technology Limited for immediate pickup and delivery nationwide.",
+  "images": [
+    {
+      "src": "/images/cars/geely-ex2/01.jpg",
+      "alt": "2026 Geely EX2, front three-quarter view"
+    },
+    {
+      "src": "/images/cars/geely-ex2/02.jpg",
+      "alt": "2026 Geely EX2, front three-quarter view in a showroom"
+    },
+    {
+      "src": "/images/cars/geely-ex2/03.jpg",
+      "alt": "2026 Geely EX2, front view"
+    },
+    {
+      "src": "/images/cars/geely-ex2/04.jpg",
+      "alt": "2026 Geely EX2, rear lights at night"
+    },
+    {
+      "src": "/images/cars/geely-ex2/05.jpg",
+      "alt": "2026 Geely EX2, steering wheel and touchscreen"
+    },
+    {
+      "src": "/images/cars/geely-ex2/06.jpg",
+      "alt": "2026 Geely EX2, dashboard at night"
+    },
+    {
+      "src": "/images/cars/geely-ex2/07.jpg",
+      "alt": "2026 Geely EX2, door ambient lighting"
+    },
+    {
+      "src": "/images/cars/geely-ex2/08.jpg",
+      "alt": "2026 Geely EX2, door trim lighting"
+    },
+    {
+      "src": "/images/cars/geely-ex2/09.jpg",
+      "alt": "2026 Geely EX2, dashboard and touchscreen"
+    },
+    {
+      "src": "/images/cars/geely-ex2/10.jpg",
+      "alt": "2026 Geely EX2, centre console"
+    },
+    {
+      "src": "/images/cars/geely-ex2/11.jpg",
+      "alt": "2026 Geely EX2, rear seats"
+    }
+  ],
+  "featured": false,
+  "order": 5
+}

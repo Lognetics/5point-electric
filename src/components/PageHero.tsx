@@ -49,7 +49,7 @@ export function PageHero({ eyebrow, title, lead, image, children }: Props) {
               src={image.src}
               alt={image.alt}
               sizes="100vw"
-              demo="Demonstration image"
+              demo={image.demo === false ? undefined : "Demonstration image"}
               className="aspect-[4/3] sm:aspect-[21/10]"
             />
           </div>

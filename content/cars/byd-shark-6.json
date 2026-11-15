@@ -1,0 +1,120 @@
+{
+  "title": "2026 BYD Shark 6",
+  "make": "BYD",
+  "model": "Shark 6",
+  "year": 2026,
+  "headline": "Plug-In Hybrid Pickup",
+  "powertrain": "hybrid",
+  "bodyType": "pickup",
+  "price": 95000000,
+  "summary": "A plug-in hybrid pickup with 430 HP, intelligent all-wheel drive and up to 520 km of combined range.",
+  "highlights": [
+    {
+      "label": "Power",
+      "value": "430 HP"
+    },
+    {
+      "label": "Combined range",
+      "value": "520 km"
+    },
+    {
+      "label": "Electric range",
+      "value": "60 km"
+    },
+    {
+      "label": "Drivetrain",
+      "value": "AWD"
+    }
+  ],
+  "specifications": [
+    {
+      "label": "Engine",
+      "value": "1.5L Turbocharged Petrol Engine"
+    },
+    {
+      "label": "Power",
+      "value": "430 HP combined output"
+    },
+    {
+      "label": "Torque",
+      "value": "650 Nm"
+    },
+    {
+      "label": "Drivetrain",
+      "value": "Intelligent All-Wheel Drive (AWD)"
+    },
+    {
+      "label": "Battery",
+      "value": "29.6 kWh BYD Blade Battery"
+    },
+    {
+      "label": "Electric Range",
+      "value": "Up to 60 km on electric power alone"
+    },
+    {
+      "label": "Combined Range",
+      "value": "Up to 520 km (electricity + petrol)"
+    },
+    {
+      "label": "Seats",
+      "value": "Heated and ventilated front seats"
+    },
+    {
+      "label": "Display",
+      "value": "12.8-inch rotating touchscreen"
+    },
+    {
+      "label": "Camera",
+      "value": "360° surround-view camera"
+    },
+    {
+      "label": "V2L",
+      "value": "Powers external electrical appliances using the vehicle's battery."
+    }
+  ],
+  "availability": "Available at 5Point Electric Technology Limited for immediate pickup or delivery nationwide.",
+  "images": [
+    {
+      "src": "/images/cars/byd-shark-6/01.jpg",
+      "alt": "2026 BYD Shark 6, front three-quarter view"
+    },
+    {
+      "src": "/images/cars/byd-shark-6/02.jpg",
+      "alt": "2026 BYD Shark 6, front view"
+    },
+    {
+      "src": "/images/cars/byd-shark-6/03.jpg",
+      "alt": "2026 BYD Shark 6, rear load bed"
+    },
+    {
+      "src": "/images/cars/byd-shark-6/04.jpg",
+      "alt": "2026 BYD Shark 6, side mirror"
+    },
+    {
+      "src": "/images/cars/byd-shark-6/05.jpg",
+      "alt": "2026 BYD Shark 6, side mirror close-up"
+    },
+    {
+      "src": "/images/cars/byd-shark-6/06.jpg",
+      "alt": "2026 BYD Shark 6, steering wheel and driver display"
+    },
+    {
+      "src": "/images/cars/byd-shark-6/07.jpg",
+      "alt": "2026 BYD Shark 6, dashboard and touchscreen"
+    },
+    {
+      "src": "/images/cars/byd-shark-6/08.jpg",
+      "alt": "2026 BYD Shark 6, centre console switches"
+    },
+    {
+      "src": "/images/cars/byd-shark-6/09.jpg",
+      "alt": "2026 BYD Shark 6, centre console"
+    },
+    {
+      "src": "/images/cars/byd-shark-6/10.jpg",
+      "alt": "2026 BYD Shark 6, air vents and touchscreen"
+    }
+  ],
+  "featured": false,
+  "order": 6
+}

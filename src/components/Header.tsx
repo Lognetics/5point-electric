@@ -54,7 +54,7 @@ export function Header() {
             <Logo />
           </Link>
 
-          <nav aria-label="Main" className="hidden items-center gap-1 lg:flex">
+          <nav aria-label="Main" className="hidden items-center gap-0.5 xl:flex">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.href}
@@ -74,7 +74,7 @@ export function Header() {
             </Link>
             <button
               type="button"
-              className="grid h-[3.125rem] w-[3.125rem] place-items-center rounded-full bg-white/10 lg:hidden"
+              className="grid h-[3.125rem] w-[3.125rem] place-items-center rounded-full bg-white/10 xl:hidden"
               aria-label={open ? "Close menu" : "Open menu"}
               aria-expanded={open}
               aria-controls="mobile-menu"
@@ -91,7 +91,7 @@ export function Header() {
           id="mobile-menu"
           aria-label="Mobile"
           data-lenis-prevent=""
-          className="page-enter fixed inset-0 -z-10 overflow-y-auto bg-ink pt-28 text-white lg:hidden"
+          className="page-enter fixed inset-0 -z-10 overflow-y-auto bg-ink pt-28 text-white xl:hidden"
         >
           <ul className="wrap">
             {NAV_LINKS.map((link, i) => (

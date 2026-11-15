@@ -1,0 +1,148 @@
+{
+  "title": "2026 Geely EX5 EM-i",
+  "make": "Geely",
+  "model": "EX5 EM-i",
+  "year": 2026,
+  "headline": "Plug-In Hybrid SUV",
+  "powertrain": "hybrid",
+  "bodyType": "suv",
+  "price": 61000000,
+  "summary": "A plug-in hybrid SUV with up to 317 HP combined, up to 105 km on electric power alone and up to 1,000 km of combined range.",
+  "highlights": [
+    {
+      "label": "Power",
+      "value": "317 HP"
+    },
+    {
+      "label": "Combined range",
+      "value": "1,000 km"
+    },
+    {
+      "label": "0–100 km/h",
+      "value": "8 s"
+    },
+    {
+      "label": "Electric range",
+      "value": "105 km"
+    }
+  ],
+  "specifications": [
+    {
+      "label": "Engine",
+      "value": "1.5L Petrol Engine"
+    },
+    {
+      "label": "Motor",
+      "value": "160 kW Electric Motor (215 HP)"
+    },
+    {
+      "label": "Combined Power",
+      "value": "Up to 317 HP"
+    },
+    {
+      "label": "Torque",
+      "value": "262 Nm from the electric motor"
+    },
+    {
+      "label": "Battery",
+      "value": "18.4 kWh Lithium Iron Phosphate (LFP) Battery"
+    },
+    {
+      "label": "Electric Range",
+      "value": "Up to 105 km on electric power alone"
+    },
+    {
+      "label": "Combined Range",
+      "value": "Up to 1,000 km (electricity + petrol)"
+    },
+    {
+      "label": "Fuel Consumption",
+      "value": "As low as 4.3L per 100 km"
+    },
+    {
+      "label": "Acceleration",
+      "value": "0–100 km/h in 8 seconds"
+    },
+    {
+      "label": "Drivetrain",
+      "value": "Front-Wheel Drive (FWD)"
+    },
+    {
+      "label": "Charging",
+      "value": "30%–80% in approximately 20 minutes with DC fast charging"
+    },
+    {
+      "label": "Seating",
+      "value": "5 passengers"
+    },
+    {
+      "label": "Display",
+      "value": "15.4-inch infotainment touchscreen"
+    },
+    {
+      "label": "V2L",
+      "value": "Can power external electrical appliances using the vehicle's battery."
+    }
+  ],
+  "availability": "Available at 5Point Electric Technology Limited for immediate pickup and delivery nationwide.",
+  "images": [
+    {
+      "src": "/images/cars/geely-ex5-em-i/01.jpg",
+      "alt": "2026 Geely EX5 EM-i, front three-quarter view"
+    },
+    {
+      "src": "/images/cars/geely-ex5-em-i/02.jpg",
+      "alt": "2026 Geely EX5 EM-i, front view"
+    },
+    {
+      "src": "/images/cars/geely-ex5-em-i/03.jpg",
+      "alt": "2026 Geely EX5 EM-i, rear view"
+    },
+    {
+      "src": "/images/cars/geely-ex5-em-i/04.jpg",
+      "alt": "2026 Geely EX5 EM-i, steering wheel and dashboard"
+    },
+    {
+      "src": "/images/cars/geely-ex5-em-i/05.jpg",
+      "alt": "2026 Geely EX5 EM-i, dashboard and touchscreen"
+    },
+    {
+      "src": "/images/cars/geely-ex5-em-i/06.jpg",
+      "alt": "2026 Geely EX5 EM-i, front cabin"
+    },
+    {
+      "src": "/images/cars/geely-ex5-em-i/07.jpg",
+      "alt": "2026 Geely EX5 EM-i, steering wheel"
+    },
+    {
+      "src": "/images/cars/geely-ex5-em-i/08.jpg",
+      "alt": "2026 Geely EX5 EM-i, door trim"
+    },
+    {
+      "src": "/images/cars/geely-ex5-em-i/09.jpg",
+      "alt": "2026 Geely EX5 EM-i, front seats"
+    },
+    {
+      "src": "/images/cars/geely-ex5-em-i/10.jpg",
+      "alt": "2026 Geely EX5 EM-i, centre console"
+    },
+    {
+      "src": "/images/cars/geely-ex5-em-i/11.jpg",
+      "alt": "2026 Geely EX5 EM-i, centre console"
+    },
+    {
+      "src": "/images/cars/geely-ex5-em-i/12.jpg",
+      "alt": "2026 Geely EX5 EM-i, centre console"
+    },
+    {
+      "src": "/images/cars/geely-ex5-em-i/13.jpg",
+      "alt": "2026 Geely EX5 EM-i, boot"
+    },
+    {
+      "src": "/images/cars/geely-ex5-em-i/14.jpg",
+      "alt": "2026 Geely EX5 EM-i, rear seat air vents"
+    }
+  ],
+  "featured": false,
+  "order": 8
+}

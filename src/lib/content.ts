@@ -6,7 +6,8 @@ import { PRODUCT_CATEGORIES, PROJECT_CATEGORIES } from "./taxonomy";
 
 const CONTENT_DIR = path.join(process.cwd(), "content");
 
-const image = z.object({ src: z.string().min(1), alt: z.string() });
+// demo: false marks a real 5Point photo, so no "Demonstration image" label is shown.
+const image = z.object({ src: z.string().min(1), alt: z.string(), demo: z.boolean().optional() });
 const detail = z.object({ label: z.string(), value: z.string() });
 const ids = <T extends { id: string }>(list: readonly T[]) =>
   list.map((c) => c.id) as [T["id"], ...T["id"][]];
@@ -65,6 +66,24 @@ const projectSchema = z.object({
   order: z.number().default(100),
 });
 
+const carSchema = z.object({
+  title: z.string(),
+  make: z.string(),
+  model: z.string(),
+  year: z.number(),
+  headline: z.string(),
+  powertrain: z.enum(["electric", "hybrid"]),
+  bodyType: z.enum(["suv", "hatchback", "shooting-brake", "pickup", "sedan"]),
+  price: z.number().nullable().default(null),
+  summary: z.string(),
+  highlights: z.array(detail).default([]),
+  specifications: z.array(detail).default([]),
+  availability: z.string().default(""),
+  images: z.array(image).min(1),
+  featured: z.boolean().default(false),
+  order: z.number().default(100),
+});
+
 const creditSchema = z.object({
   files: z.array(z.string()),
   title: z.string(),
@@ -78,6 +97,7 @@ export type Settings = z.infer<typeof settingsSchema>;
 export type Product = z.infer<typeof productSchema> & { slug: string };
 export type Project = z.infer<typeof projectSchema> & { slug: string };
 export type SiteImage = z.infer<typeof image>;
+export type Car = z.infer<typeof carSchema> & { slug: string };
 
 function readJson(relativePath: string): unknown {
   return JSON.parse(fs.readFileSync(path.join(CONTENT_DIR, relativePath), "utf8"));
@@ -129,3 +149,5 @@ export const getProjects = cache((): Project[] => {
     .filter((p) => showSamples || !p.sample)
     .sort(byOrder);
 });
+
+export const getCars = cache((): Car[] => readCollection("cars", carSchema).sort(byOrder));

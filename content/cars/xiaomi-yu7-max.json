@@ -1,0 +1,120 @@
+{
+  "title": "2026 Xiaomi YU7 Max",
+  "make": "Xiaomi",
+  "model": "YU7 Max",
+  "year": 2026,
+  "headline": "Fully Electric SUV",
+  "powertrain": "electric",
+  "bodyType": "suv",
+  "price": 122000000,
+  "summary": "A dual-motor, all-wheel-drive electric SUV with 691 HP, a 101.7 kWh CATL battery and up to 760 km of range (CLTC).",
+  "highlights": [
+    {
+      "label": "Power",
+      "value": "691 HP"
+    },
+    {
+      "label": "Range",
+      "value": "760 km (CLTC)"
+    },
+    {
+      "label": "0–100 km/h",
+      "value": "3.23 s"
+    },
+    {
+      "label": "Seating",
+      "value": "5"
+    }
+  ],
+  "specifications": [
+    {
+      "label": "Power",
+      "value": "508 kW (691 HP) combined motor output"
+    },
+    {
+      "label": "Torque",
+      "value": "866 Nm for powerful acceleration"
+    },
+    {
+      "label": "Drivetrain",
+      "value": "Dual-Motor All-Wheel Drive (AWD)"
+    },
+    {
+      "label": "Battery",
+      "value": "101.7 kWh CATL NMC Battery"
+    },
+    {
+      "label": "Driving Range",
+      "value": "Up to 760 km (CLTC) on a full charge"
+    },
+    {
+      "label": "Acceleration",
+      "value": "0–100 km/h in 3.23 seconds"
+    },
+    {
+      "label": "Top Speed",
+      "value": "253 km/h"
+    },
+    {
+      "label": "Charging",
+      "value": "10%–80% in approximately 12 minutes with compatible ultra-fast DC charging"
+    },
+    {
+      "label": "Seating",
+      "value": "5 passengers"
+    },
+    {
+      "label": "Suspension",
+      "value": "Adaptive air suspension for improved ride comfort"
+    },
+    {
+      "label": "Braking",
+      "value": "Brembo high-performance braking system"
+    },
+    {
+      "label": "Display",
+      "value": "Xiaomi HyperVision panoramic display"
+    },
+    {
+      "label": "Seats",
+      "value": "Heated, ventilated and massage-function front seats"
+    }
+  ],
+  "availability": "Available at 5Point Electric Technology Limited for immediate pickup and delivery nationwide.",
+  "images": [
+    {
+      "src": "/images/cars/xiaomi-yu7-max/01.jpg",
+      "alt": "2026 Xiaomi YU7 Max, front three-quarter view"
+    },
+    {
+      "src": "/images/cars/xiaomi-yu7-max/02.jpg",
+      "alt": "2026 Xiaomi YU7 Max, front view"
+    },
+    {
+      "src": "/images/cars/xiaomi-yu7-max/03.jpg",
+      "alt": "2026 Xiaomi YU7 Max, rear view"
+    },
+    {
+      "src": "/images/cars/xiaomi-yu7-max/04.jpg",
+      "alt": "2026 Xiaomi YU7 Max, dashboard and front cabin"
+    },
+    {
+      "src": "/images/cars/xiaomi-yu7-max/05.jpg",
+      "alt": "2026 Xiaomi YU7 Max, steering wheel and driver display"
+    },
+    {
+      "src": "/images/cars/xiaomi-yu7-max/06.jpg",
+      "alt": "2026 Xiaomi YU7 Max, central touchscreen"
+    },
+    {
+      "src": "/images/cars/xiaomi-yu7-max/07.jpg",
+      "alt": "2026 Xiaomi YU7 Max, front seats"
+    },
+    {
+      "src": "/images/cars/xiaomi-yu7-max/08.jpg",
+      "alt": "2026 Xiaomi YU7 Max, rear centre armrest"
+    }
+  ],
+  "featured": true,
+  "order": 1
+}

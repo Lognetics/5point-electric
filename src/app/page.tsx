@@ -12,7 +12,9 @@ import { ScrubSpin } from "@/components/ScrubSpin";
 import { SplitReveal } from "@/components/SplitReveal";
 import { StackedSolutions } from "@/components/StackedSolutions";
 import { WordScrub } from "@/components/WordScrub";
-import { getImages } from "@/lib/content";
+import { CarCard } from "@/components/CarCard";
+import { getCars, getImages } from "@/lib/content";
+import { POWERTRAINS } from "@/lib/cars";
 import { SOLUTIONS } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -33,6 +35,8 @@ const ADVANTAGES = [
 
 export default function HomePage() {
   const img = getImages();
+  const cars = getCars();
+  const featured = cars.filter((c) => c.featured).slice(0, 4);
 
   return (
     <>
@@ -72,6 +76,41 @@ export default function HomePage() {
               </div>
               <ParallaxImage src={img("intro").src} alt={img("intro").alt} sizes="(min-width: 1024px) 50vw, 100vw" className="aspect-[16/10]" />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Cars for sale */}
+      <section className="section bg-white">
+        <div className="wrap">
+          <div className="grid gap-8 lg:grid-cols-12 lg:items-end">
+            <div className="lg:col-span-7">
+              <p className="label mb-7 text-deep">Shop Cars</p>
+              <SplitReveal className="d-2 max-w-[14ch]">Electric vehicles, available now.</SplitReveal>
+            </div>
+            <Reveal className="lg:col-span-4 lg:col-start-9">
+              <p className="lead text-stone">
+                Fully electric and plug-in hybrid cars from Xiaomi, ZEEKR, AVATR, Geely, and BYD, ready for pickup and
+                delivery nationwide.
+              </p>
+              <div className="mt-7 flex flex-wrap gap-2">
+                {POWERTRAINS.map((p) => (
+                  <a key={p.id} href={`/cars?type=${p.id}`} className="rounded-full border border-ink/20 px-4 py-2 text-[0.775rem] transition-colors hover:border-ink">
+                    {p.label} <span className="ml-1 text-stone">{cars.filter((c) => c.powertrain === p.id).length}</span>
+                  </a>
+                ))}
+              </div>
+            </Reveal>
+          </div>
+          <ul className="mt-14 grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:mt-20 xl:grid-cols-4">
+            {featured.map((car, i) => (
+              <Reveal as="li" key={car.slug} delay={i * 80}>
+                <CarCard car={car} />
+              </Reveal>
+            ))}
+          </ul>
+          <div className="mt-14 flex justify-center">
+            <Cta href="/cars">Shop all {cars.length} cars</Cta>
           </div>
         </div>
       </section>
