@@ -5,7 +5,7 @@ import { PageHero } from "@/components/PageHero";
 export const metadata: Metadata = {
   title: "Get a Quote: EV Charging, Solar Systems & Cables in Nigeria",
   description:
-    "Request a quotation or consultation from 5Point Electric Technology for EV charging stations, industrial solar systems, electric vehicles, and AC and DC cables in Nigeria.",
+    "Request a quotation or consultation from 5Points Electric Technology for EV charging stations, industrial solar systems, electric vehicles, and AC and DC cables in Nigeria.",
   alternates: { canonical: "/quote" },
 };
 

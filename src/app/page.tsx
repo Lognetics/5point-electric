@@ -18,7 +18,7 @@ import { POWERTRAINS } from "@/lib/cars";
 import { SOLUTIONS } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: { absolute: "EV Charging & Solar Energy Solutions in Nigeria | 5Point Electric Technology" },
+  title: { absolute: "EV Charging & Solar Energy Solutions in Nigeria | 5Points Electric Technology" },
   description:
     "Electric vehicle charging stations, solar-powered EV charging, AC and DC electrical cables, and industrial solar systems in Nigeria. Serving Abuja, Lagos, and Port Harcourt.",
   alternates: { canonical: "/" },
@@ -45,7 +45,7 @@ export default function HomePage() {
       {/* Company introduction */}
       <section className="section">
         <div className="wrap">
-          <p className="label mb-7 text-deep">About 5Point</p>
+          <p className="label mb-7 text-deep">About 5Points</p>
           <SplitReveal className="d-2 max-w-[16ch]">Engineering a Cleaner, Smarter Energy Future.</SplitReveal>
 
           <div className="mt-14 grid gap-12 lg:mt-24 lg:grid-cols-12 lg:gap-8">
@@ -61,7 +61,7 @@ export default function HomePage() {
               <div className="space-y-7">
                 <WordScrub
                   className="d-3"
-                  text="5Point Electric Technology Limited is an electric mobility and clean energy solutions provider committed to advancing sustainable transportation and energy infrastructure in Nigeria."
+                  text="5Points Electric Technology Limited is an electric mobility and clean energy solutions provider committed to advancing sustainable transportation and energy infrastructure in Nigeria."
                 />
                 <Reveal>
                   <p className="lead text-stone">
@@ -137,7 +137,7 @@ export default function HomePage() {
           <ApertureOutline strokeWidth={0.22} />
         </ScrubSpin>
         <div className="wrap relative">
-          <p className="label mb-7 text-leaf">Why Choose 5Point Electric Technology?</p>
+          <p className="label mb-7 text-leaf">Why Choose 5Points Electric Technology?</p>
           <SplitReveal className="d-1 max-w-[17ch]">Built on Engineering. Driven by Innovation. Powered by Sustainability.</SplitReveal>
           <ul className="mt-16 grid border-t border-l border-white/12 sm:grid-cols-2 lg:mt-28 lg:grid-cols-3">
             {ADVANTAGES.map(({ icon: Icon, title, text }, i) => (
@@ -180,7 +180,7 @@ export default function HomePage() {
 
       {/* Showcase */}
       <HorizontalShowcase
-        intro="The kinds of infrastructure we work with. These are demonstration images, and verified 5Point projects will be published as they are documented."
+        intro="The kinds of infrastructure we work with. These are demonstration images, and verified 5Points projects will be published as they are documented."
         items={[
           { title: "Solar-powered EV charging infrastructure", href: "/solutions#solar-ev-charging", image: img("showcaseCharging") },
           { title: "Electric vehicle charging installations", href: "/solutions#electric-mobility", image: img("showcaseEv") },

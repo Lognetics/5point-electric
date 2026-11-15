@@ -16,20 +16,20 @@ const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono"
 const BOOT_SCRIPT = `(function(){var d=document.documentElement;d.classList.add('js');try{if(location.pathname==='/'&&!sessionStorage.getItem('5p-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches){d.classList.add('intro-on')}}catch(e){}})()`;
 
 const DESCRIPTION =
-  "5Point Electric Technology Limited provides EV charging infrastructure, solar-powered EV charging stations, AC and DC electrical cables, and industrial solar systems in Abuja, Lagos, and Port Harcourt, Nigeria.";
+  "5Points Electric Technology Limited provides EV charging infrastructure, solar-powered EV charging stations, AC and DC electrical cables, and industrial solar systems in Abuja, Lagos, and Port Harcourt, Nigeria.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "EV Charging & Solar Energy Solutions in Nigeria | 5Point Electric Technology",
-    template: "%s | 5Point Electric Technology",
+    default: "EV Charging & Solar Energy Solutions in Nigeria | 5Points Electric Technology",
+    template: "%s | 5Points Electric Technology",
   },
   description: DESCRIPTION,
-  applicationName: "5Point Electric Technology",
+  applicationName: "5Points Electric Technology",
   openGraph: {
     type: "website",
     locale: "en_NG",
-    siteName: "5Point Electric Technology",
+    siteName: "5Points Electric Technology",
     description: DESCRIPTION,
   },
   twitter: { card: "summary_large_image" },

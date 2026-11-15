@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { LOGO_BLADES, LOGO_CORE, LOGO_RING } from "@/lib/logo-paths";
 
-export const alt = "5Point Electric Technology: Powering the Future of Mobility and Clean Energy";
+export const alt = "5Points Electric Technology: Powering the Future of Mobility and Clean Energy";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -17,7 +17,7 @@ export default function OpengraphImage() {
           ))}
           <path fill="#3F9152" d={LOGO_CORE} />
         </svg>
-        5Point Electric Technology
+        5Points Electric Technology
       </div>
       <div style={{ fontSize: 76, fontWeight: 700, lineHeight: 1.08, letterSpacing: -2, maxWidth: 1000 }}>
         Powering the Future of Mobility and Clean Energy.

@@ -6,7 +6,7 @@ import { PRODUCT_CATEGORIES, PROJECT_CATEGORIES } from "./taxonomy";
 
 const CONTENT_DIR = path.join(process.cwd(), "content");
 
-// demo: false marks a real 5Point photo, so no "Demonstration image" label is shown.
+// demo: false marks a real 5Points photo, so no "Demonstration image" label is shown.
 const image = z.object({ src: z.string().min(1), alt: z.string(), demo: z.boolean().optional() });
 const detail = z.object({ label: z.string(), value: z.string() });
 const ids = <T extends { id: string }>(list: readonly T[]) =>

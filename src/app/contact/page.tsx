@@ -8,7 +8,7 @@ import { mapsDirectionsHref, mapsEmbedSrc, whatsappHref } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact Us: EV Charging & Solar Solutions in Abuja, Lagos, Port Harcourt",
   description:
-    "Contact 5Point Electric Technology Limited about EV charging stations, solar systems, and electrical cables. Office in the Central Business District, Abuja, Nigeria.",
+    "Contact 5Points Electric Technology Limited about EV charging stations, solar systems, and electrical cables. Office in the Central Business District, Abuja, Nigeria.",
   alternates: { canonical: "/contact" },
 };
 
@@ -85,7 +85,7 @@ export default function ContactPage() {
           </a>
         </div>
         <iframe
-          title="Map showing the 5Point Electric Technology office in Abuja"
+          title="Map showing the 5Points Electric Technology office in Abuja"
           src={mapsEmbedSrc(s.mapQuery)}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"

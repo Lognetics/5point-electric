@@ -1,4 +1,4 @@
-# 5Point Electric Technology Limited: corporate website
+# 5Points Electric Technology Limited: corporate website
 
 Built with Next.js (App Router), TypeScript, Tailwind CSS, GSAP, and Lenis. Content lives in `content/` as JSON and is edited through Decap CMS at `/admin`.
 

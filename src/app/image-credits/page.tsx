@@ -15,7 +15,7 @@ export default function ImageCreditsPage() {
       <PageHero
         eyebrow="Image Credits"
         title="Photography sources and licences."
-        lead="These demonstration images come from Pexels and Wikimedia Commons. They do not depict 5Point projects, and the people and sites shown have no connection with the company."
+        lead="These demonstration images come from Pexels and Wikimedia Commons. They do not depict 5Points projects, and the people and sites shown have no connection with the company."
       />
       <section className="section">
         <div className="wrap max-w-4xl">

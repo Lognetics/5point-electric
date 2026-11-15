@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const title = `${car.title} | ${car.headline}`;
   return {
     title,
-    description: `${car.summary} ${formatPrice(car.price)}. Available in Nigeria from 5Point Electric Technology.`,
+    description: `${car.summary} ${formatPrice(car.price)}. Available in Nigeria from 5Points Electric Technology.`,
     alternates: { canonical: `/cars/${car.slug}` },
     openGraph: { title, description: car.summary, images: [car.images[0].src] },
   };
@@ -37,7 +37,7 @@ export default async function CarPage({ params }: Props) {
   const car = find((await params).slug);
   if (!car) notFound();
   const s = getSettings();
-  const whatsapp = whatsappHref(s.whatsappNumber, `Hello 5Point Electric Technology, I'm interested in the ${car.title}.`);
+  const whatsapp = whatsappHref(s.whatsappNumber, `Hello 5Points Electric Technology, I'm interested in the ${car.title}.`);
   const related = getCars()
     .filter((c) => c.slug !== car.slug)
     .sort((a, b) => Number(b.powertrain === car.powertrain) - Number(a.powertrain === car.powertrain))

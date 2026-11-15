@@ -6,7 +6,7 @@ import { getProjects } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Projects: EV Charging & Solar Energy Infrastructure in Nigeria",
   description:
-    "Project portfolio for EV charging infrastructure, solar energy installations, industrial energy systems, and electrical infrastructure by 5Point Electric Technology.",
+    "Project portfolio for EV charging infrastructure, solar energy installations, industrial energy systems, and electrical infrastructure by 5Points Electric Technology.",
   alternates: { canonical: "/projects" },
 };
 
@@ -25,7 +25,7 @@ export default function ProjectsPage() {
           {hasSamples && (
             <p className="mb-10 rounded-[10px] bg-white px-5 py-4 text-[0.775rem] text-stone">
               The entries below are clearly labelled samples showing how the portfolio will look. They are not completed
-              5Point projects, and verified projects will replace them.
+              5Points projects, and verified projects will replace them.
             </p>
           )}
           <ProjectGallery projects={projects} />

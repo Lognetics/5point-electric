@@ -6,7 +6,7 @@ import { getCars } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Shop Electric Cars & Plug-In Hybrids in Nigeria",
   description:
-    "Buy fully electric cars and plug-in hybrids in Nigeria from 5Point Electric Technology, including Xiaomi, ZEEKR, AVATR, Geely, and BYD models. Pickup and delivery nationwide.",
+    "Buy fully electric cars and plug-in hybrids in Nigeria from 5Points Electric Technology, including Xiaomi, ZEEKR, AVATR, Geely, and BYD models. Pickup and delivery nationwide.",
   alternates: { canonical: "/cars" },
 };
 
@@ -17,7 +17,7 @@ export default function CarsPage() {
       <PageHero
         eyebrow="Shop Cars"
         title="Electric and plug-in hybrid cars, ready to drive."
-        lead="Browse fully electric and plug-in hybrid vehicles available at 5Point Electric Technology, with pickup and delivery nationwide."
+        lead="Browse fully electric and plug-in hybrid vehicles available at 5Points Electric Technology, with pickup and delivery nationwide."
       />
       <section className="section !pt-14 lg:!pt-20">
         <div className="wrap">

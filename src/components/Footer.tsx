@@ -21,7 +21,7 @@ export function Footer() {
       <div className="wrap pt-20 lg:pt-28">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-[1.6fr_0.8fr_1.2fr_1.5fr]">
           <div>
-            <Link href="/" aria-label="5Point Electric Technology home" className="inline-block">
+            <Link href="/" aria-label="5Points Electric Technology home" className="inline-block">
               <LogoMark className="h-14 w-14" />
             </Link>
             <p className="mt-6 max-w-sm text-white/65">{s.description}</p>
@@ -92,14 +92,14 @@ export function Footer() {
         <div className="mt-16 flex flex-col gap-3 border-t border-white/12 pt-6 text-sm text-white/50 md:flex-row md:items-start md:justify-between">
           <p>&copy; {new Date().getFullYear()} {s.companyName}. All rights reserved.</p>
           <p className="max-w-xl md:text-right">
-            Photography is illustrative unless stated otherwise and does not depict 5Point projects.{" "}
+            Photography is illustrative unless stated otherwise and does not depict 5Points projects.{" "}
             <Link href="/image-credits" className="underline underline-offset-2 hover:text-white">Image credits</Link>
           </p>
         </div>
       </div>
 
       <p aria-hidden="true" className="mt-10 text-center text-[11.68vw] leading-[0.76] font-medium tracking-[-0.06em] whitespace-nowrap text-white/[0.07] select-none">
-        5Point Electric
+        5Points Electric
       </p>
     </footer>
   );

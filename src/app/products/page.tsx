@@ -13,7 +13,7 @@ import { contactHref } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Products: EV Chargers, Solar Systems & AC and DC Cables in Nigeria",
   description:
-    "Browse electric vehicles, EV charging equipment, AC and DC electrical cables, solar panels, inverters, and battery energy storage from 5Point Electric Technology in Nigeria.",
+    "Browse electric vehicles, EV charging equipment, AC and DC electrical cables, solar panels, inverters, and battery energy storage from 5Points Electric Technology in Nigeria.",
   alternates: { canonical: "/products" },
 };
 

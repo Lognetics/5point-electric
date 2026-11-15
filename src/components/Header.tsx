@@ -50,7 +50,7 @@ export function Header() {
         }`}
       >
         <div className="flex h-[66px] items-center justify-between gap-6 rounded-full border border-white/10 bg-ink/65 pr-2 pl-3 text-white backdrop-blur-xl">
-          <Link href="/" aria-label="5Point Electric Technology home" className="shrink-0">
+          <Link href="/" aria-label="5Points Electric Technology home" className="shrink-0">
             <Logo />
           </Link>
 

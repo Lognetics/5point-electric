@@ -12,7 +12,7 @@ import { getCompany, getImages } from "@/lib/content";
 export const metadata: Metadata = {
   title: "About Us: Renewable Energy & Electric Mobility Company in Nigeria",
   description:
-    "5Point Electric Technology Limited is an electric mobility and clean energy technology company operating in Abuja, Lagos, and Port Harcourt. Our vision, mission, and values.",
+    "5Points Electric Technology Limited is an electric mobility and clean energy technology company operating in Abuja, Lagos, and Port Harcourt. Our vision, mission, and values.",
   alternates: { canonical: "/about" },
 };
 
