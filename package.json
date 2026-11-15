@@ -7,7 +7,10 @@
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
-    "cms": "npx decap-server"
+    "cms": "npx decap-server",
+    "images": "node scripts/build-images.mjs",
+    "predev": "node scripts/build-images.mjs",
+    "prebuild": "node scripts/build-images.mjs"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",

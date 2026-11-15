@@ -25,7 +25,13 @@ const baseHeaders = [
 
 const config: NextConfig = {
   poweredByHeader: false,
-  images: { formats: ["image/avif", "image/webp"], qualities: [75, 85] },
+  // Images are resized at build time (scripts/build-images.mjs), not by Vercel's paid optimiser.
+  images: {
+    loader: "custom",
+    loaderFile: "./src/lib/image-loader.ts",
+    deviceSizes: [640, 1080, 1920],
+    imageSizes: [128, 384],
+  },
   async headers() {
     return [
       { source: "/:path*", headers: baseHeaders },
