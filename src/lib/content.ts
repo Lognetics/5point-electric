@@ -7,7 +7,14 @@ import { PRODUCT_CATEGORIES, PROJECT_CATEGORIES } from "./taxonomy";
 const CONTENT_DIR = path.join(process.cwd(), "content");
 
 // demo: false marks a real 5Points photo, so no "Demonstration image" label is shown.
-const image = z.object({ src: z.string().min(1), alt: z.string(), demo: z.boolean().optional() });
+const image = z.object({
+  src: z.string().min(1),
+  alt: z.string(),
+  demo: z.boolean().optional(),
+  /** Focal point when the photo is cropped, e.g. "50% 30%". */
+  position: z.string().optional(),
+});
+const video = z.object({ src: z.string().min(1), poster: z.string().min(1), alt: z.string() });
 const detail = z.object({ label: z.string(), value: z.string() });
 const ids = <T extends { id: string }>(list: readonly T[]) =>
   list.map((c) => c.id) as [T["id"], ...T["id"][]];
@@ -61,6 +68,7 @@ const projectSchema = z.object({
   summary: z.string(),
   description: z.string(),
   images: z.array(image).min(1),
+  videos: z.array(video).default([]),
   technicalDetails: z.array(detail).default([]),
   sample: z.boolean().default(false),
   order: z.number().default(100),
@@ -107,6 +115,21 @@ const heroSchema = z.object({
     .min(1),
 });
 
+const promoSchema = z.object({
+  enabled: z.boolean().default(false),
+  popup: z.boolean().default(true),
+  /** ISO date-time; the banner and popup disappear on their own after this. */
+  endsAt: z.string().refine((v) => !Number.isNaN(Date.parse(v)), "endsAt must be a date"),
+  endsLabel: z.string(),
+  eyebrow: z.string(),
+  title: z.string(),
+  text: z.string(),
+  image,
+  primary: link,
+  secondary: link.optional(),
+  phones: z.array(z.string()).default([]),
+});
+
 const creditSchema = z.object({
   files: z.array(z.string()),
   title: z.string(),
@@ -121,6 +144,8 @@ export type Product = z.infer<typeof productSchema> & { slug: string };
 export type Project = z.infer<typeof projectSchema> & { slug: string };
 export type SiteImage = z.infer<typeof image>;
 export type Hero = z.infer<typeof heroSchema>;
+export type SiteVideo = z.infer<typeof video>;
+export type Promo = z.infer<typeof promoSchema>;
 export type Car = z.infer<typeof carSchema> & { slug: string };
 
 function readJson(relativePath: string): unknown {
@@ -177,3 +202,9 @@ export const getProjects = cache((): Project[] => {
 export const getCars = cache((): Car[] => readCollection("cars", carSchema).sort(byOrder));
 
 export const getHero = cache(() => heroSchema.parse(readJson("hero.json")));
+
+/** The current promotion, or null when it is switched off or has ended. */
+export const getPromo = cache((): Promo | null => {
+  const promo = promoSchema.parse(readJson("promo.json"));
+  return promo.enabled && Date.parse(promo.endsAt) > Date.now() ? promo : null;
+});

@@ -1,0 +1,17 @@
+{
+  "enabled": true,
+  "popup": true,
+  "endsAt": "2026-11-27T23:59:59+01:00",
+  "endsLabel": "Friday 27 November 2026",
+  "eyebrow": "Black Friday Promo",
+  "title": "Buy one electric vehicle, get a free solar generator.",
+  "text": "Our Black Friday offer runs for a limited time only. You can also fast-charge your EV for ₦350 per kW at our solar-powered charging station at the Silverbird Entertainment Centre, Central Business District, Abuja.",
+  "image": {
+    "src": "/images/station/black-friday-promo.jpg",
+    "alt": "5Points Black Friday promo: buy one electric vehicle and get a free solar generator. Fast charge your EV at ₦350 per kW at Silverbird Entertainment Centre, Abuja. Promo ends Friday 27 November 2026.",
+    "demo": false
+  },
+  "primary": { "label": "Shop electric cars", "href": "/cars?type=electric" },
+  "secondary": { "label": "Claim the offer", "href": "/contact?service=Electric%20Vehicles#enquiry" },
+  "phones": ["09113021010", "09063315492"]
+}

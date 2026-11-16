@@ -87,7 +87,7 @@ export function getMenu(): MenuSection[] {
       intro: "Our portfolio across charging, solar, industrial energy, and electrical infrastructure.",
       overview: "All projects",
       links: PROJECT_CATEGORIES.map((c) => ({ label: c.label, href: `/projects?category=${c.id}` })),
-      feature: feature("showcaseSolar", "Infrastructure for a cleaner energy future", "/projects"),
+      feature: feature("station", "Our solar-powered EV charging station in Abuja", "/projects/solar-ev-charging-station-abuja"),
     },
     {
       label: "Contact",

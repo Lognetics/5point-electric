@@ -1,0 +1,40 @@
+{
+  "title": "Solar-Powered EV Charging Station, Abuja",
+  "category": "ev-charging",
+  "location": "Silverbird Entertainment Centre, Central Business District, Abuja",
+  "summary": "A solar canopy over the Silverbird Entertainment Centre car park, with charging bays for electric vehicles beneath it.",
+  "description": "Our solar-powered electric vehicle charging station is in the car park of the Silverbird Entertainment Centre in Abuja's Central Business District. Solar panels on the canopy roof generate electricity on site, and drivers charge their electric vehicles in the shaded bays below.\n\nThe station is open to EV drivers. Contact us for charging rates and directions.",
+  "images": [
+    {
+      "src": "/images/station/station-canopy.jpg",
+      "alt": "Electric cars parked beneath the Solar Powered Electric Vehicle Charging Station canopy at the Silverbird Entertainment Centre, Abuja",
+      "demo": false,
+      "position": "50% 40%"
+    }
+  ],
+  "videos": [
+    {
+      "src": "/videos/station-aerial.mp4",
+      "poster": "/images/station/poster-aerial.jpg",
+      "alt": "Aerial drone view of the solar panels covering the charging canopy"
+    },
+    {
+      "src": "/videos/station-charging.mp4",
+      "poster": "/images/station/poster-charging.jpg",
+      "alt": "A charging connector plugged into an electric car under the canopy"
+    },
+    {
+      "src": "/videos/station-canopy.mp4",
+      "poster": "/images/station/poster-canopy.jpg",
+      "alt": "Walking past electric cars parked under the solar charging canopy"
+    },
+    {
+      "src": "/videos/station-panels.mp4",
+      "poster": "/images/station/poster-panels.jpg",
+      "alt": "Looking up at the solar panels on the canopy roof"
+    }
+  ],
+  "technicalDetails": [],
+  "sample": false,
+  "order": 0
+}

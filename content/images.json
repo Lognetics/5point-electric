@@ -18,8 +18,10 @@
     "demo": false
   },
   "solarCharging": {
-    "src": "/images/hero-canopy.jpg",
-    "alt": "Solar-powered EV charging canopy with electric cars plugged in"
+    "src": "/images/station/station-canopy.jpg",
+    "alt": "Electric cars parked beneath the Solar Powered Electric Vehicle Charging Station canopy at the Silverbird Entertainment Centre, Abuja",
+    "demo": false,
+    "position": "50% 38%"
   },
   "cables": {
     "src": "/images/cables-color.jpg",
@@ -30,8 +32,10 @@
     "alt": "Aerial view of a large industrial roof covered in solar panels"
   },
   "showcaseCharging": {
-    "src": "/images/hero-canopy.jpg",
-    "alt": "Solar canopy above electric vehicle charging bays"
+    "src": "/images/station/station-canopy.jpg",
+    "alt": "Electric cars parked beneath the Solar Powered Electric Vehicle Charging Station canopy at the Silverbird Entertainment Centre, Abuja",
+    "demo": false,
+    "position": "50% 40%"
   },
   "showcaseEv": {
     "src": "/images/charge-hand.jpg",
@@ -60,6 +64,11 @@
   "mobility": {
     "src": "/images/cars/avatr-06t-wide.jpg",
     "alt": "Black 2026 AVATR 06T electric shooting brake at a solar-powered EV charging station",
+    "demo": false
+  },
+  "station": {
+    "src": "/images/station/station-canopy.jpg",
+    "alt": "Electric cars parked beneath the Solar Powered Electric Vehicle Charging Station canopy at the Silverbird Entertainment Centre, Abuja",
     "demo": false
   }
 }

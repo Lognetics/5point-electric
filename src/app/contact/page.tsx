@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ExternalLink, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { EnquiryForm } from "@/components/EnquiryForm";
 import { PageHero } from "@/components/PageHero";
+import { StationVideo } from "@/components/StationVideo";
 import { getSettings } from "@/lib/content";
 import { mapsDirectionsHref, mapsEmbedSrc, whatsappHref } from "@/lib/site";
 
@@ -84,13 +85,27 @@ export default function ContactPage() {
             Open in Google Maps <ExternalLink size={16} aria-hidden="true" />
           </a>
         </div>
-        <iframe
-          title="Map showing the 5Points Electric Technology office in Abuja"
-          src={mapsEmbedSrc(s.mapQuery)}
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          className="block h-[30rem] w-full rounded-[14px] border-0 lg:h-[38rem]"
-        />
+        <div className="grid gap-5 lg:grid-cols-12 lg:gap-6">
+          <iframe
+            title="Map showing the 5Points Electric Technology office in Abuja"
+            src={mapsEmbedSrc(s.mapQuery)}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="block h-[30rem] w-full rounded-[14px] border-0 lg:col-span-8 lg:h-[38rem]"
+          />
+          <div className="relative lg:col-span-4">
+            <StationVideo
+              src="/videos/station-canopy.mp4"
+              poster="/images/station/poster-canopy.jpg"
+              label="Electric cars parked under the 5Points solar charging canopy at the Silverbird Entertainment Centre"
+              className="aspect-[4/5] lg:aspect-auto lg:h-full"
+            />
+            <div className="pointer-events-none absolute inset-x-0 top-0 rounded-t-[14px] bg-gradient-to-b from-ink/75 to-transparent p-5 pb-16 text-white">
+              <p className="label text-leaf">Charge your EV here</p>
+              <p className="mt-2 text-[0.85rem] leading-snug">Our solar-powered charging station is on site at the Silverbird Entertainment Centre.</p>
+            </div>
+          </div>
+        </div>
       </section>
     </>
   );

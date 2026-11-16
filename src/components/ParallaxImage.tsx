@@ -12,10 +12,12 @@ type Props = {
   priority?: boolean;
   demo?: string;
   radius?: string;
+  /** Focal point when cropped, e.g. "50% 30%". */
+  position?: string;
 };
 
 /** Image that wipes open on entry and drifts slightly against the scroll. */
-export function ParallaxImage({ src, alt, sizes, className = "", priority, demo, radius = "14px" }: Props) {
+export function ParallaxImage({ src, alt, sizes, className = "", priority, demo, radius = "14px", position }: Props) {
   const root = useRef<HTMLDivElement>(null);
   const inner = useRef<HTMLDivElement>(null);
 
@@ -48,7 +50,7 @@ export function ParallaxImage({ src, alt, sizes, className = "", priority, demo,
   return (
     <div ref={root} className={`relative overflow-hidden bg-moss ${className}`} style={{ borderRadius: radius }}>
       <div ref={inner} className="absolute -inset-y-[7%] inset-x-0">
-        <Image src={src} alt={alt} fill priority={priority} sizes={sizes} className="object-cover" />
+        <Image src={src} alt={alt} fill priority={priority} sizes={sizes} className="object-cover" style={position ? { objectPosition: position } : undefined} />
       </div>
       {demo && <span className="demo-tag absolute top-3.5 left-3.5">{demo}</span>}
     </div>

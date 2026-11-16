@@ -5,6 +5,7 @@ import { ArrowLeft, MapPin } from "lucide-react";
 import { Cta } from "@/components/Cta";
 import { ParallaxImage } from "@/components/ParallaxImage";
 import { SplitReveal } from "@/components/SplitReveal";
+import { StationVideo } from "@/components/StationVideo";
 import { getProjects } from "@/lib/content";
 import { projectCategory } from "@/lib/taxonomy";
 import { contactHref } from "@/lib/site";
@@ -35,6 +36,9 @@ export default async function ProjectPage({ params }: Props) {
   const project = find((await params).slug);
   if (!project) notFound();
   const [lead, ...rest] = project.images;
+  // Projects with video show the lead photo and two clips side by side at the top.
+  const heroVideos = project.videos.slice(0, 2);
+  const moreVideos = project.videos.slice(2);
 
   return (
     <>
@@ -48,14 +52,24 @@ export default async function ProjectPage({ params }: Props) {
           <p className="mt-6 flex items-center gap-1.5 text-white/70">
             <MapPin size={16} aria-hidden="true" /> {project.location}
           </p>
-          <ParallaxImage
-            priority
-            src={lead.src}
-            alt={lead.alt}
-            sizes="100vw"
-            demo={project.sample ? "Sample content, demonstration image" : undefined}
-            className="mt-12 aspect-[4/3] sm:aspect-[21/10]"
-          />
+          {heroVideos.length > 0 ? (
+            <div className="mt-12 grid gap-4 sm:grid-cols-3 lg:gap-6">
+              <ParallaxImage priority src={lead.src} alt={lead.alt} position={lead.position} sizes="(min-width: 640px) 33vw, 100vw" className="aspect-[3/4]" />
+              {heroVideos.map((v) => (
+                <StationVideo key={v.src} src={v.src} poster={v.poster} label={v.alt} className="aspect-[3/4]" />
+              ))}
+            </div>
+          ) : (
+            <ParallaxImage
+              priority
+              src={lead.src}
+              alt={lead.alt}
+              position={lead.position}
+              sizes="100vw"
+              demo={project.sample ? "Sample content, demonstration image" : undefined}
+              className="mt-12 aspect-[4/3] sm:aspect-[21/10]"
+            />
+          )}
         </div>
       </section>
 
@@ -81,11 +95,21 @@ export default async function ProjectPage({ params }: Props) {
             )}
           </div>
 
+          {moreVideos.length > 0 && (
+            <ul className="mt-16 grid gap-7 sm:grid-cols-2">
+              {moreVideos.map((v) => (
+                <li key={v.src}>
+                  <StationVideo src={v.src} poster={v.poster} label={v.alt} className="aspect-[4/5]" />
+                </li>
+              ))}
+            </ul>
+          )}
+
           {rest.length > 0 && (
             <ul className="mt-16 grid gap-7 sm:grid-cols-2">
               {rest.map((image) => (
                 <li key={image.src}>
-                  <ParallaxImage src={image.src} alt={image.alt} sizes="(min-width: 640px) 50vw, 100vw" demo={project.sample ? "Demonstration image" : undefined} className="aspect-[5/4]" />
+                  <ParallaxImage src={image.src} alt={image.alt} position={image.position} sizes="(min-width: 640px) 50vw, 100vw" demo={project.sample ? "Demonstration image" : undefined} className="aspect-[5/4]" />
                 </li>
               ))}
             </ul>

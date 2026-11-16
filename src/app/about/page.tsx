@@ -6,6 +6,7 @@ import { ParallaxImage } from "@/components/ParallaxImage";
 import { Reveal } from "@/components/Reveal";
 import { ScrubSpin } from "@/components/ScrubSpin";
 import { SplitReveal } from "@/components/SplitReveal";
+import { StationVideo } from "@/components/StationVideo";
 import { WordScrub } from "@/components/WordScrub";
 import { getCompany, getImages } from "@/lib/content";
 
@@ -66,8 +67,15 @@ export default function AboutPage() {
 
       <section id="commitment" className="pb-24 lg:pb-44">
         <div className="wrap grid gap-12 lg:grid-cols-12 lg:gap-8">
-          <div className="lg:col-span-7">
-            <ParallaxImage src={img("commitment").src} alt={img("commitment").alt} sizes="(min-width: 1024px) 58vw, 100vw" demo="Demonstration image" className="aspect-[5/4]" />
+          <div className="grid grid-cols-2 gap-4 lg:col-span-7 lg:gap-6">
+            <ParallaxImage src={img("station").src} alt={img("station").alt} position="50% 40%" sizes="(min-width: 1024px) 29vw, 50vw" className="aspect-[3/4]" />
+            <StationVideo
+              src="/videos/station-charging.mp4"
+              poster="/images/station/poster-charging.jpg"
+              label="A charging connector plugged into an electric car at the 5Points solar charging station"
+              caption="Charging in Abuja"
+              className="mt-12 aspect-[3/4] lg:mt-20"
+            />
           </div>
           <div className="flex flex-col justify-center lg:col-span-4 lg:col-start-9">
             <SplitReveal className="d-2">Our Commitment</SplitReveal>

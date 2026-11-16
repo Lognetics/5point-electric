@@ -139,6 +139,16 @@ collections:
         fields:
           - { name: src, label: Image, widget: image }
           - { name: alt, label: Image description (alt text), widget: string }
+          - { name: position, label: "Focal point when cropped (optional, e.g. 50% 40%)", widget: string, required: false }
+      - name: videos
+        label: Videos
+        hint: Short silent clips (MP4). They loop without sound. Add a still image from the clip as its poster.
+        widget: list
+        required: false
+        fields:
+          - { name: src, label: Video (MP4), widget: file, media_folder: /public/videos, public_folder: /videos }
+          - { name: poster, label: Poster image, widget: image }
+          - { name: alt, label: What the video shows, widget: string }
       - name: technicalDetails
         label: Technical details
         hint: Only publish verified details.
@@ -238,6 +248,38 @@ collections:
               - { name: title, label: Value, widget: string }
               - { name: description, label: Description, widget: text }
           - { name: commitment, label: Our commitment, widget: text }
+      - name: promo
+        label: Promotion (banner and popup)
+        file: content/promo.json
+        fields:
+          - { name: enabled, label: Show the promotion, widget: boolean, default: false }
+          - { name: popup, label: Also show a popup when visitors arrive, widget: boolean, default: true }
+          - { name: endsAt, label: Ends at (hidden automatically after this), widget: datetime, format: "YYYY-MM-DDTHH:mm:ssZ", picker_utc: false }
+          - { name: endsLabel, label: End date as shown on the site, widget: string, hint: "e.g. Friday 27 November 2026" }
+          - { name: eyebrow, label: Badge text, widget: string }
+          - { name: title, label: Headline, widget: string }
+          - { name: text, label: Text, widget: text }
+          - name: image
+            label: Promo artwork
+            widget: object
+            fields:
+              - { name: src, label: Image, widget: image }
+              - { name: alt, label: "Image description (alt text, include the offer details)", widget: text }
+              - { name: demo, label: Demonstration image, widget: boolean, default: false, required: false }
+          - name: primary
+            label: Main button
+            widget: object
+            fields:
+              - { name: label, label: Label, widget: string }
+              - { name: href, label: Link, widget: string }
+          - name: secondary
+            label: Second button
+            widget: object
+            required: false
+            fields:
+              - { name: label, label: Label, widget: string }
+              - { name: href, label: Link, widget: string }
+          - { name: phones, label: Call or WhatsApp numbers, widget: list, field: { name: phone, label: Phone, widget: string }, required: false }
       - name: images
         label: Website images
         file: content/images.json
@@ -249,6 +291,7 @@ collections:
               - { name: src, label: Image, widget: image }
               - { name: alt, label: Image description (alt text), widget: string }
               - { name: demo, label: Demonstration image (not a 5Points photo), widget: boolean, required: false }
+              - { name: position, label: "Focal point when cropped (optional, e.g. 50% 40%)", widget: string, required: false }
           - name: intro
             label: "Home: company introduction"
             widget: object
@@ -256,6 +299,7 @@ collections:
               - { name: src, label: Image, widget: image }
               - { name: alt, label: Image description (alt text), widget: string }
               - { name: demo, label: Demonstration image (not a 5Points photo), widget: boolean, required: false }
+              - { name: position, label: "Focal point when cropped (optional, e.g. 50% 40%)", widget: string, required: false }
           - name: introSecondary
             label: "Home: company introduction (second image)"
             widget: object
@@ -263,6 +307,7 @@ collections:
               - { name: src, label: Image, widget: image }
               - { name: alt, label: Image description (alt text), widget: string }
               - { name: demo, label: Demonstration image (not a 5Points photo), widget: boolean, required: false }
+              - { name: position, label: "Focal point when cropped (optional, e.g. 50% 40%)", widget: string, required: false }
           - name: electricVehicles
             label: "Electric vehicles"
             widget: object
@@ -270,6 +315,7 @@ collections:
               - { name: src, label: Image, widget: image }
               - { name: alt, label: Image description (alt text), widget: string }
               - { name: demo, label: Demonstration image (not a 5Points photo), widget: boolean, required: false }
+              - { name: position, label: "Focal point when cropped (optional, e.g. 50% 40%)", widget: string, required: false }
           - name: solarCharging
             label: "Solar-powered EV charging"
             widget: object
@@ -277,6 +323,7 @@ collections:
               - { name: src, label: Image, widget: image }
               - { name: alt, label: Image description (alt text), widget: string }
               - { name: demo, label: Demonstration image (not a 5Points photo), widget: boolean, required: false }
+              - { name: position, label: "Focal point when cropped (optional, e.g. 50% 40%)", widget: string, required: false }
           - name: cables
             label: "AC & DC cables"
             widget: object
@@ -284,6 +331,7 @@ collections:
               - { name: src, label: Image, widget: image }
               - { name: alt, label: Image description (alt text), widget: string }
               - { name: demo, label: Demonstration image (not a 5Points photo), widget: boolean, required: false }
+              - { name: position, label: "Focal point when cropped (optional, e.g. 50% 40%)", widget: string, required: false }
           - name: industrialSolar
             label: "Industrial solar"
             widget: object
@@ -291,6 +339,7 @@ collections:
               - { name: src, label: Image, widget: image }
               - { name: alt, label: Image description (alt text), widget: string }
               - { name: demo, label: Demonstration image (not a 5Points photo), widget: boolean, required: false }
+              - { name: position, label: "Focal point when cropped (optional, e.g. 50% 40%)", widget: string, required: false }
           - name: showcaseCharging
             label: "Home showcase: solar EV charging"
             widget: object
@@ -298,6 +347,7 @@ collections:
               - { name: src, label: Image, widget: image }
               - { name: alt, label: Image description (alt text), widget: string }
               - { name: demo, label: Demonstration image (not a 5Points photo), widget: boolean, required: false }
+              - { name: position, label: "Focal point when cropped (optional, e.g. 50% 40%)", widget: string, required: false }
           - name: showcaseEv
             label: "Home showcase: EV charging"
             widget: object
@@ -305,6 +355,7 @@ collections:
               - { name: src, label: Image, widget: image }
               - { name: alt, label: Image description (alt text), widget: string }
               - { name: demo, label: Demonstration image (not a 5Points photo), widget: boolean, required: false }
+              - { name: position, label: "Focal point when cropped (optional, e.g. 50% 40%)", widget: string, required: false }
           - name: showcaseSolar
             label: "Home showcase: industrial solar"
             widget: object
@@ -312,6 +363,7 @@ collections:
               - { name: src, label: Image, widget: image }
               - { name: alt, label: Image description (alt text), widget: string }
               - { name: demo, label: Demonstration image (not a 5Points photo), widget: boolean, required: false }
+              - { name: position, label: "Focal point when cropped (optional, e.g. 50% 40%)", widget: string, required: false }
           - name: showcaseCables
             label: "Home showcase: cables"
             widget: object
@@ -319,6 +371,7 @@ collections:
               - { name: src, label: Image, widget: image }
               - { name: alt, label: Image description (alt text), widget: string }
               - { name: demo, label: Demonstration image (not a 5Points photo), widget: boolean, required: false }
+              - { name: position, label: "Focal point when cropped (optional, e.g. 50% 40%)", widget: string, required: false }
           - name: sustainability
             label: "Home: sustainability"
             widget: object
@@ -326,6 +379,7 @@ collections:
               - { name: src, label: Image, widget: image }
               - { name: alt, label: Image description (alt text), widget: string }
               - { name: demo, label: Demonstration image (not a 5Points photo), widget: boolean, required: false }
+              - { name: position, label: "Focal point when cropped (optional, e.g. 50% 40%)", widget: string, required: false }
           - name: about
             label: "About: who we are"
             widget: object
@@ -333,6 +387,7 @@ collections:
               - { name: src, label: Image, widget: image }
               - { name: alt, label: Image description (alt text), widget: string }
               - { name: demo, label: Demonstration image (not a 5Points photo), widget: boolean, required: false }
+              - { name: position, label: "Focal point when cropped (optional, e.g. 50% 40%)", widget: string, required: false }
           - name: commitment
             label: "About: our commitment"
             widget: object
@@ -340,6 +395,7 @@ collections:
               - { name: src, label: Image, widget: image }
               - { name: alt, label: Image description (alt text), widget: string }
               - { name: demo, label: Demonstration image (not a 5Points photo), widget: boolean, required: false }
+              - { name: position, label: "Focal point when cropped (optional, e.g. 50% 40%)", widget: string, required: false }
           - name: mobility
             label: "Solutions: electric mobility"
             widget: object
@@ -347,3 +403,12 @@ collections:
               - { name: src, label: Image, widget: image }
               - { name: alt, label: Image description (alt text), widget: string }
               - { name: demo, label: Demonstration image (not a 5Points photo), widget: boolean, required: false }
+              - { name: position, label: "Focal point when cropped (optional, e.g. 50% 40%)", widget: string, required: false }
+          - name: station
+            label: "Our charging station photo (About, Projects menu)"
+            widget: object
+            fields:
+              - { name: src, label: Image, widget: image }
+              - { name: alt, label: Image description (alt text), widget: string }
+              - { name: demo, label: Demonstration image (not a 5Points photo), widget: boolean, required: false }
+              - { name: position, label: "Focal point when cropped (optional, e.g. 50% 40%)", widget: string, required: false }

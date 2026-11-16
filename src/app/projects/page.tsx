@@ -24,8 +24,8 @@ export default function ProjectsPage() {
         <div className="wrap">
           {hasSamples && (
             <p className="mb-10 rounded-[10px] bg-white px-5 py-4 text-[0.775rem] text-stone">
-              The entries below are clearly labelled samples showing how the portfolio will look. They are not completed
-              5Points projects, and verified projects will replace them.
+              Entries labelled as samples show how the portfolio will look. They are not completed 5Points projects,
+              and verified projects will replace them.
             </p>
           )}
           <ProjectGallery projects={projects} />

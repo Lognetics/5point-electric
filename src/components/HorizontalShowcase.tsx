@@ -58,9 +58,10 @@ export function HorizontalShowcase({ items, intro }: { items: Item[]; intro: str
                   alt={item.image.alt}
                   fill
                   sizes="(min-width: 1024px) 46vw, 84vw"
+                  style={item.image.position ? { objectPosition: item.image.position } : undefined}
                   className="object-cover transition-transform duration-[1.4s] ease-out-soft group-hover:scale-[1.04]"
                 />
-                <span className="demo-tag absolute top-3.5 left-3.5">Demonstration image</span>
+                {item.image.demo !== false && <span className="demo-tag absolute top-3.5 left-3.5">Demonstration image</span>}
               </div>
               <div className="mt-4 flex items-start justify-between gap-4">
                 <h3 className="text-xl tracking-[-0.02em] lg:text-2xl">

@@ -10,6 +10,7 @@
   --color-paper: #f4f5ef;
   --color-line: #dcdfd5;
   --color-stone: #59635c;
+  --color-promo: #e3262f; /* Black Friday red, from the promo artwork */
 
   --font-sans: var(--font-geist), system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
@@ -268,3 +269,15 @@ html.intro-on .intro { animation: intro-failsafe 0.3s 4s forwards; }
 }
 .menu-in { animation: menu-in 0.28s var(--ease-out-soft) both; transform-origin: top center; }
 @media (prefers-reduced-motion: reduce) { .menu-in { animation: none; } }
+
+/* Promotion popup */
+@keyframes promo-in {
+  from { opacity: 0; transform: translateY(18px) scale(0.97); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes promo-fade { from { opacity: 0; } to { opacity: 1; } }
+.promo-dialog[open] { animation: promo-in 0.55s var(--ease-out-soft) both; }
+.promo-dialog::backdrop { background: rgb(10 21 16 / 0.72); backdrop-filter: blur(6px); animation: promo-fade 0.4s ease both; }
+@media (prefers-reduced-motion: reduce) {
+  .promo-dialog[open], .promo-dialog::backdrop { animation: none; }
+}

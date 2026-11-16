@@ -13,7 +13,9 @@ import { SplitReveal } from "@/components/SplitReveal";
 import { StackedSolutions } from "@/components/StackedSolutions";
 import { WordScrub } from "@/components/WordScrub";
 import { CarCard } from "@/components/CarCard";
-import { getCars, getHero, getImages } from "@/lib/content";
+import { PromoBanner } from "@/components/PromoBanner";
+import { StationVideo } from "@/components/StationVideo";
+import { getCars, getHero, getImages, getPromo } from "@/lib/content";
 import { formatPrice, POWERTRAINS } from "@/lib/cars";
 import { SOLUTIONS } from "@/lib/site";
 
@@ -38,6 +40,7 @@ export default function HomePage() {
   const cars = getCars();
   const featured = cars.filter((c) => c.featured).slice(0, 4);
   const hero = getHero();
+  const promo = getPromo();
   const slides = hero.slides.map((slide) => {
     const car = slide.car ? cars.find((c) => c.slug === slide.car) : undefined;
     return {
@@ -58,6 +61,8 @@ export default function HomePage() {
   return (
     <>
       <HomeHero slides={slides} interval={hero.interval} marquee={SOLUTIONS.map((s) => s.cardTitle)} />
+
+      {promo && <PromoBanner promo={promo} />}
 
       {/* Company introduction */}
       <section className="section">
@@ -132,6 +137,43 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Our charging station */}
+      <section aria-label="Our charging station" className="section overflow-hidden">
+        <div className="wrap grid gap-14 lg:grid-cols-12 lg:items-center lg:gap-8">
+          <div className="lg:col-span-4">
+            <p className="label mb-7 text-deep">Our charging station</p>
+            <SplitReveal className="d-2 max-w-[14ch]">Solar-powered EV charging, live in Abuja.</SplitReveal>
+            <Reveal>
+              <p className="lead mt-7 text-stone">
+                Our solar canopy at the Silverbird Entertainment Centre, Central Business District, turns sunlight into
+                power for the electric vehicles charging beneath it.
+              </p>
+              <div className="mt-9 flex flex-col gap-3 sm:flex-row lg:flex-col lg:items-start">
+                <Cta href="/projects/solar-ev-charging-station-abuja">See the station</Cta>
+                <Cta href="/contact#office" variant="outline">Get directions</Cta>
+              </div>
+            </Reveal>
+          </div>
+          <ul className="-mx-5 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-2 sm:mx-0 sm:grid sm:grid-cols-3 sm:overflow-visible sm:px-0 lg:col-span-8 lg:gap-6">
+            {[
+              { name: "canopy", label: "Electric cars parked under the solar charging canopy", caption: "The canopy" },
+              { name: "charging", label: "A charging connector plugged into an electric car", caption: "Charging" },
+              { name: "aerial", label: "Aerial view of the solar panels on the canopy roof", caption: "From above" },
+            ].map((v, i) => (
+              <Reveal as="li" key={v.name} delay={i * 90} className={`w-[68vw] shrink-0 snap-center sm:w-auto ${i === 1 ? "sm:mt-16" : ""}`}>
+                <StationVideo
+                  src={`/videos/station-${v.name}.mp4`}
+                  poster={`/images/station/poster-${v.name}.jpg`}
+                  label={v.label}
+                  caption={v.caption}
+                  className="aspect-[9/16]"
+                />
+              </Reveal>
+            ))}
+          </ul>
+        </div>
+      </section>
+
       {/* Core solutions */}
       <section aria-label="Our Core Solutions" className="bg-ink text-white">
         <div className="wrap flex flex-col justify-between gap-6 pt-24 pb-16 md:flex-row md:items-end lg:pt-36 lg:pb-24">
@@ -197,7 +239,7 @@ export default function HomePage() {
 
       {/* Showcase */}
       <HorizontalShowcase
-        intro="The kinds of infrastructure we work with. These are demonstration images, and verified 5Points projects will be published as they are documented."
+        intro="The kinds of infrastructure we work with, starting with our own solar-powered charging station in Abuja. Images marked as demonstrations will be replaced as more 5Points projects are documented."
         items={[
           { title: "Solar-powered EV charging infrastructure", href: "/solutions#solar-ev-charging", image: img("showcaseCharging") },
           { title: "Electric vehicle charging installations", href: "/solutions#electric-mobility", image: img("showcaseEv") },

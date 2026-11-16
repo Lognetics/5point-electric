@@ -50,6 +50,7 @@ export function ProjectGallery({ projects }: { projects: Project[] }) {
                     alt={project.images[0].alt}
                     fill
                     sizes="(min-width: 768px) 50vw, 100vw"
+                    style={project.images[0].position ? { objectPosition: project.images[0].position } : undefined}
                     className="object-cover transition-transform duration-[1.4s] ease-out-soft group-hover:scale-[1.04]"
                   />
                   {project.sample && <span className="demo-tag absolute top-3.5 left-3.5">Sample content, demonstration image</span>}

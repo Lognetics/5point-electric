@@ -3,9 +3,10 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { ApertureIntro } from "@/components/ApertureIntro";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { PromoPopup } from "@/components/Promo";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
-import { getSettings } from "@/lib/content";
+import { getPromo, getSettings } from "@/lib/content";
 import { getMenu } from "@/lib/menu";
 import { SITE_URL } from "@/lib/site";
 import "./globals.css";
@@ -61,6 +62,7 @@ function organizationJsonLd() {
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const promo = getPromo();
   return (
     <html lang="en-NG" className={`${geist.variable} ${geistMono.variable}`} suppressHydrationWarning>
       <head>
@@ -79,6 +81,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main id="main">{children}</main>
         <Footer />
         <WhatsAppButton />
+        {promo?.popup && <PromoPopup promo={promo} />}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

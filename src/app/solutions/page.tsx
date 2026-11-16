@@ -5,6 +5,7 @@ import { PageHero } from "@/components/PageHero";
 import { ParallaxImage } from "@/components/ParallaxImage";
 import { Reveal } from "@/components/Reveal";
 import { SplitReveal } from "@/components/SplitReveal";
+import { StationVideo } from "@/components/StationVideo";
 import { getImages } from "@/lib/content";
 import { contactHref } from "@/lib/site";
 
@@ -88,7 +89,7 @@ export default function SolutionsPage() {
             </div>
             <div className="mt-12 grid gap-10 lg:mt-20 lg:grid-cols-12 lg:gap-8">
               <div className={`lg:col-span-7 ${i % 2 === 1 ? "lg:order-2 lg:col-start-6" : ""}`}>
-                <ParallaxImage src={img(s.imageKey).src} alt={img(s.imageKey).alt} sizes="(min-width: 1024px) 58vw, 100vw" demo={img(s.imageKey).demo === false ? undefined : "Demonstration image"} className="aspect-[4/3]" />
+                <ParallaxImage src={img(s.imageKey).src} alt={img(s.imageKey).alt} position={img(s.imageKey).position} sizes="(min-width: 1024px) 58vw, 100vw" demo={img(s.imageKey).demo === false ? undefined : "Demonstration image"} className="aspect-[4/3]" />
               </div>
               <Reveal className={`flex flex-col justify-end lg:col-span-4 ${i % 2 === 1 ? "lg:order-1" : "lg:col-start-9"}`}>
                 <p className="lead text-stone">{s.text}</p>
@@ -111,15 +112,24 @@ export default function SolutionsPage() {
               <div id="how-it-works" className="mt-20 scroll-mt-28 rounded-[14px] bg-ink p-7 text-white lg:mt-32 lg:p-16">
                 <p className="label mb-6 text-leaf">How it works</p>
                 <SplitReveal as="h3" className="d-2 max-w-[16ch]">How solar-powered EV charging works</SplitReveal>
-                <ol className="mt-12 grid gap-px overflow-hidden rounded-[10px] bg-white/12 md:grid-cols-2 lg:mt-20 lg:grid-cols-4">
-                  {STEPS.map((step, n) => (
-                    <Reveal as="li" key={step.title} delay={n * 90} className="bg-ink p-6 lg:p-8">
-                      <span className="block text-[2.8rem] leading-none font-medium tracking-[-0.05em] text-leaf">{n + 1}</span>
-                      <h4 className="mt-10 text-[1.1rem] lg:mt-16">{step.title}</h4>
-                      <p className="mt-3 text-[0.775rem] text-white/65">{step.text}</p>
-                    </Reveal>
-                  ))}
-                </ol>
+                <div className="mt-12 grid gap-6 lg:mt-20 lg:grid-cols-12">
+                  <ol className="grid gap-px overflow-hidden rounded-[10px] bg-white/12 md:grid-cols-2 lg:col-span-8">
+                    {STEPS.map((step, n) => (
+                      <Reveal as="li" key={step.title} delay={n * 90} className="bg-ink p-6 lg:p-8">
+                        <span className="block text-[2.8rem] leading-none font-medium tracking-[-0.05em] text-leaf">{n + 1}</span>
+                        <h4 className="mt-10 text-[1.1rem] lg:mt-16">{step.title}</h4>
+                        <p className="mt-3 text-[0.775rem] text-white/65">{step.text}</p>
+                      </Reveal>
+                    ))}
+                  </ol>
+                  <StationVideo
+                    src="/videos/station-panels.mp4"
+                    poster="/images/station/poster-panels.jpg"
+                    label="Looking up at the solar panels on the roof of the 5Points charging canopy in Abuja"
+                    caption="Our canopy, Abuja"
+                    className="aspect-[4/5] lg:col-span-4 lg:aspect-auto lg:min-h-[28rem]"
+                  />
+                </div>
               </div>
             )}
           </div>
