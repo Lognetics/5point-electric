@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "@/components/Img";
 import { useRef, type ReactNode } from "react";
 import type { SiteImage } from "@/lib/content";
 import { gsap, prefersReducedMotion, useGSAP } from "./motion";

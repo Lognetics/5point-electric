@@ -35,10 +35,16 @@ export function StationVideo({ src, poster, label, caption, className = "" }: Pr
         if (entry.isIntersecting && !userPaused.current) video.play().catch(() => {});
         else video.pause();
       },
-      { threshold: 0.2 },
+      { threshold: 0.35 },
     );
-    observer.observe(video);
-    return () => observer.disconnect();
+    // Photos come first: clips start downloading only once the page itself has loaded.
+    const start = () => observer.observe(video);
+    if (document.readyState === "complete") start();
+    else window.addEventListener("load", start, { once: true });
+    return () => {
+      window.removeEventListener("load", start);
+      observer.disconnect();
+    };
   }, []);
 
   const toggle = () => {

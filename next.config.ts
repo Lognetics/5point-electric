@@ -35,6 +35,11 @@ const config: NextConfig = {
   async headers() {
     return [
       { source: "/:path*", headers: baseHeaders },
+      // Resized photos and station clips rarely change, so browsers can keep them for a week.
+      ...["/_img/:path*", "/videos/:path*"].map((source) => ({
+        source,
+        headers: [{ key: "Cache-Control", value: "public, max-age=604800, stale-while-revalidate=86400" }],
+      })),
       // The CMS admin loads its editor from a CDN, so it is excluded from the site CSP.
       { source: "/((?!admin|api/cms).*)", headers: [{ key: "Content-Security-Policy", value: csp }] },
     ];

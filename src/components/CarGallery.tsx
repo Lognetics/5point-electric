@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "@/components/Img";
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import type { SiteImage } from "@/lib/content";
