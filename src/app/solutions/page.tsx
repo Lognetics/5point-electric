@@ -108,7 +108,7 @@ export default function SolutionsPage() {
             </div>
 
             {s.id === "solar-ev-charging" && (
-              <div className="mt-20 rounded-[14px] bg-ink p-7 text-white lg:mt-32 lg:p-16">
+              <div id="how-it-works" className="mt-20 scroll-mt-28 rounded-[14px] bg-ink p-7 text-white lg:mt-32 lg:p-16">
                 <p className="label mb-6 text-leaf">How it works</p>
                 <SplitReveal as="h3" className="d-2 max-w-[16ch]">How solar-powered EV charging works</SplitReveal>
                 <ol className="mt-12 grid gap-px overflow-hidden rounded-[10px] bg-white/12 md:grid-cols-2 lg:mt-20 lg:grid-cols-4">

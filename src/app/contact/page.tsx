@@ -77,7 +77,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section aria-labelledby="map-title" className="wrap pb-20 lg:pb-32">
+      <section id="office" aria-labelledby="map-title" className="wrap pb-20 lg:pb-32">
         <div className="flex flex-col justify-between gap-3 pb-7 sm:flex-row sm:items-end">
           <h2 id="map-title" className="d-3">Our Abuja office</h2>
           <a href={mapsDirectionsHref(s.mapQuery)} target="_blank" rel="noopener noreferrer" className="link-arrow">

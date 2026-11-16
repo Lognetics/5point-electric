@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ArrowUpRight, MapPin } from "lucide-react";
 import type { Project } from "@/lib/content";
 import { PROJECT_CATEGORIES, projectCategory } from "@/lib/taxonomy";
@@ -12,6 +12,12 @@ const ALL = "all";
 
 export function ProjectGallery({ projects }: { projects: Project[] }) {
   const [filter, setFilter] = useState<string>(ALL);
+
+  // Menu links such as /projects?category=ev-charging open on that category.
+  useEffect(() => {
+    const category = new URLSearchParams(window.location.search).get("category");
+    if (category && PROJECT_CATEGORIES.some((c) => c.id === category)) setFilter(category);
+  }, []);
   const visible = filter === ALL ? projects : projects.filter((p) => p.category === filter);
   const filters = [{ id: ALL, label: "All projects" }, ...PROJECT_CATEGORIES];
 

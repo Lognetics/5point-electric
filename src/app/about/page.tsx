@@ -23,7 +23,7 @@ export default function AboutPage() {
     <>
       <PageHero eyebrow="About Us" title="An electric mobility and clean energy company for Nigeria." image={img("sustainability")} />
 
-      <section className="section">
+      <section id="who-we-are" className="section">
         <div className="wrap grid gap-10 lg:grid-cols-12">
           <p className="label text-deep lg:col-span-3">Who We Are</p>
           <div className="lg:col-span-9">
@@ -32,7 +32,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-ink text-white">
+      <section id="vision-mission" className="relative overflow-hidden bg-ink text-white">
         <ScrubSpin className="pointer-events-none absolute top-1/2 left-1/2 w-[70vw] -translate-x-1/2 -translate-y-1/2 text-leaf/15" turn={130}>
           <ApertureOutline />
         </ScrubSpin>
@@ -48,7 +48,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="section">
+      <section id="values" className="section">
         <div className="wrap">
           <p className="label mb-7 text-deep">What guides us</p>
           <SplitReveal className="d-2">Our Core Values</SplitReveal>
@@ -64,7 +64,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="pb-24 lg:pb-44">
+      <section id="commitment" className="pb-24 lg:pb-44">
         <div className="wrap grid gap-12 lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-7">
             <ParallaxImage src={img("commitment").src} alt={img("commitment").alt} sizes="(min-width: 1024px) 58vw, 100vw" demo="Demonstration image" className="aspect-[5/4]" />

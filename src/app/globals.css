@@ -260,3 +260,11 @@ html.intro-on .intro { animation: intro-failsafe 0.3s 4s forwards; }
 @media (prefers-reduced-motion: reduce) {
   .hs-slide, .hs-slide[data-active], .hs-in, [data-active] .hs-in, .hs-zoom, .hs-card { transition: none; transform: none; clip-path: none; }
 }
+
+/* Menu dropdown */
+@keyframes menu-in {
+  from { opacity: 0; transform: translateY(-8px) scale(0.99); }
+  to { opacity: 1; transform: none; }
+}
+.menu-in { animation: menu-in 0.28s var(--ease-out-soft) both; transform-origin: top center; }
+@media (prefers-reduced-motion: reduce) { .menu-in { animation: none; } }

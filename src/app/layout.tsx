@@ -6,6 +6,7 @@ import { Header } from "@/components/Header";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { getSettings } from "@/lib/content";
+import { getMenu } from "@/lib/menu";
 import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
@@ -74,7 +75,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </a>
         <SmoothScroll />
         <ApertureIntro />
-        <Header />
+        <Header menu={getMenu()} />
         <main id="main">{children}</main>
         <Footer />
         <WhatsAppButton />
