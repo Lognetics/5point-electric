@@ -1,0 +1,47 @@
+{
+  "description": "",
+  "imageFit": "cover",
+  "price": null,
+  "gallery": [
+    {
+      "src": "/images/products/solar-panel-620w-01.jpg",
+      "alt": "Rows of 620 W monocrystalline solar panels installed on a rooftop overlooking the city",
+      "demo": false
+    },
+    {
+      "src": "/images/products/solar-panel-620w-02.jpg",
+      "alt": "A row of 620 W half-cut monocrystalline solar panels on a flat roof",
+      "demo": false
+    }
+  ],
+  "videos": [],
+  "specifications": [
+    {
+      "label": "Rated power",
+      "value": "620 W"
+    },
+    {
+      "label": "Cell technology",
+      "value": "Half-cut monocrystalline"
+    },
+    {
+      "label": "Efficiency",
+      "value": "High efficiency"
+    }
+  ],
+  "included": [],
+  "ratedFor": [],
+  "warranty": [],
+  "applications": [
+    "Commercial solar",
+    "Industrial solar",
+    "Institutional systems"
+  ],
+  "sample": false,
+  "title": "620W Half-Cut High-Efficiency Monocrystalline Solar Panels",
+  "category": "solar-panels",
+  "summary": "620-watt half-cut, high-efficiency monocrystalline solar panels for commercial, industrial and institutional systems.",
+  "image": "/images/products/solar-panel-620w-01.jpg",
+  "imageAlt": "Rows of 620 W monocrystalline solar panels installed on a rooftop overlooking the city",
+  "order": 1
+}

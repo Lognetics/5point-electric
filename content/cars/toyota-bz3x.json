@@ -1,0 +1,140 @@
+{
+  "title": "2026 Toyota bZ3X",
+  "make": "Toyota",
+  "model": "bZ3X",
+  "year": 2026,
+  "headline": "Fully Electric SUV",
+  "powertrain": "electric",
+  "bodyType": "suv",
+  "price": 95000000,
+  "summary": "A front-wheel-drive electric SUV with up to 610 km of range (CLTC), a 67.9 kWh LFP battery and DC fast charging from 30% to 80% in about 24 minutes.",
+  "highlights": [
+    {
+      "label": "Power",
+      "value": "204 HP"
+    },
+    {
+      "label": "Range",
+      "value": "610 km (CLTC)"
+    },
+    {
+      "label": "Battery",
+      "value": "67.9 kWh LFP"
+    },
+    {
+      "label": "Seating",
+      "value": "5"
+    }
+  ],
+  "specifications": [
+    {
+      "label": "Motor",
+      "value": "150 kW Electric Motor (204 HP)"
+    },
+    {
+      "label": "Torque",
+      "value": "200 Nm for responsive acceleration"
+    },
+    {
+      "label": "Battery",
+      "value": "67.9 kWh Lithium Iron Phosphate (LFP) Battery"
+    },
+    {
+      "label": "Driving Range",
+      "value": "Up to 610 km (CLTC) on a full charge"
+    },
+    {
+      "label": "Drivetrain",
+      "value": "Front-Wheel Drive (FWD)"
+    },
+    {
+      "label": "Charging",
+      "value": "30%–80% in approximately 24 minutes with DC fast charging"
+    },
+    {
+      "label": "Seating",
+      "value": "5 passengers"
+    },
+    {
+      "label": "Display",
+      "value": "14.6-inch central touchscreen"
+    },
+    {
+      "label": "Instrument Cluster",
+      "value": "8.8-inch digital display"
+    },
+    {
+      "label": "Camera",
+      "value": "360° surround-view camera"
+    },
+    {
+      "label": "V2L",
+      "value": "Can power external electrical appliances using the vehicle's battery."
+    }
+  ],
+  "availability": "Available at 5Points Electric Technology Limited for immediate pickup and delivery nationwide.",
+  "featured": false,
+  "order": 9,
+  "images": [
+    {
+      "src": "/images/cars/toyota-bz3x/01.jpg",
+      "alt": "2026 Toyota bZ3X, front view",
+      "demo": false
+    },
+    {
+      "src": "/images/cars/toyota-bz3x/02.jpg",
+      "alt": "2026 Toyota bZ3X, rear three-quarter view",
+      "demo": false
+    },
+    {
+      "src": "/images/cars/toyota-bz3x/03.jpg",
+      "alt": "2026 Toyota bZ3X, rear badge and tail lights",
+      "demo": false
+    },
+    {
+      "src": "/images/cars/toyota-bz3x/04.jpg",
+      "alt": "2026 Toyota bZ3X, cabin and dashboard",
+      "demo": false
+    },
+    {
+      "src": "/images/cars/toyota-bz3x/05.jpg",
+      "alt": "2026 Toyota bZ3X, dashboard and central touchscreen",
+      "demo": false
+    },
+    {
+      "src": "/images/cars/toyota-bz3x/06.jpg",
+      "alt": "2026 Toyota bZ3X, steering wheel and digital instrument cluster",
+      "demo": false
+    },
+    {
+      "src": "/images/cars/toyota-bz3x/07.jpg",
+      "alt": "2026 Toyota bZ3X, front seats and centre console",
+      "demo": false
+    },
+    {
+      "src": "/images/cars/toyota-bz3x/08.jpg",
+      "alt": "2026 Toyota bZ3X, passenger-side dashboard",
+      "demo": false
+    },
+    {
+      "src": "/images/cars/toyota-bz3x/09.jpg",
+      "alt": "2026 Toyota bZ3X, door trim",
+      "demo": false
+    },
+    {
+      "src": "/images/cars/toyota-bz3x/10.jpg",
+      "alt": "2026 Toyota bZ3X, front seat",
+      "demo": false
+    },
+    {
+      "src": "/images/cars/toyota-bz3x/11.jpg",
+      "alt": "2026 Toyota bZ3X, rear seats",
+      "demo": false
+    },
+    {
+      "src": "/images/cars/toyota-bz3x/12.jpg",
+      "alt": "2026 Toyota bZ3X, rear air vents",
+      "demo": false
+    }
+  ]
+}

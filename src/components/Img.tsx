@@ -6,8 +6,9 @@ import NextImage, { type ImageProps } from "next/image";
  * straight away instead of an empty box.
  */
 export default function Img(props: ImageProps) {
-  const { src, style } = props;
-  if (typeof src !== "string" || !src.startsWith("/images/")) return <NextImage {...props} />;
+  const { src, style, className } = props;
+  // Letterboxed (object-contain) images would show the preview around their edges.
+  if (typeof src !== "string" || !src.startsWith("/images/") || className?.includes("object-contain")) return <NextImage {...props} />;
   const preview = `/_img/128${src.replace(/\.(jpe?g|png|webp)$/i, ".webp")}`;
   return (
     <NextImage

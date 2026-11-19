@@ -16,3 +16,6 @@ next-env.d.ts
 
 # Raw station photos and videos supplied by 5Points (copies live in public/images/station and public/videos)
 /Solar world EV station/
+
+# Raw cable, car and battery photos plus WhatsApp instruction screenshots (copies used live in public/)
+/more wire and car images */

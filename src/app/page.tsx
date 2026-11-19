@@ -112,7 +112,7 @@ export default function HomePage() {
             </div>
             <Reveal className="lg:col-span-4 lg:col-start-9">
               <p className="lead text-stone">
-                Fully electric and plug-in hybrid cars from Xiaomi, ZEEKR, AVATR, Geely, and BYD, ready for pickup and
+                Fully electric and plug-in hybrid cars from Xiaomi, ZEEKR, AVATR, Toyota, Geely, and BYD, ready for pickup and
                 delivery nationwide.
               </p>
               <div className="mt-7 flex flex-wrap gap-2">

@@ -1,0 +1,59 @@
+{
+  "description": "",
+  "imageFit": "cover",
+  "price": 147190950,
+  "gallery": [],
+  "videos": [],
+  "specifications": [
+    {
+      "label": "System capacity",
+      "value": "125kW"
+    },
+    {
+      "label": "Battery storage",
+      "value": "240 kWh (15 × 16kWh BOS-B Pro lithium batteries)"
+    },
+    {
+      "label": "Solar panels",
+      "value": "168 × 620W monocrystalline"
+    }
+  ],
+  "included": [
+    "15 × 16kWh BOS-B Pro lithium batteries",
+    "168 × 620W panels",
+    "Battery rack",
+    "Battery management system",
+    "Electric cables and circuit breaker",
+    "Solar combiner box",
+    "Solar mounting rack and buss bar",
+    "Installation",
+    "Logistics and accessories"
+  ],
+  "ratedFor": [
+    "Chillers",
+    "3-phase air conditioners",
+    "Elevator",
+    "Air compressor",
+    "Industrial water heater",
+    "Industrial oven",
+    "Industrial pumping machine",
+    "EV charging station"
+  ],
+  "warranty": [
+    "10-year warranty on lithium batteries",
+    "25-year warranty on solar panels",
+    "5-year warranty on inverters",
+    "1 year free after-sales service support"
+  ],
+  "applications": [
+    "Commercial",
+    "Industrial"
+  ],
+  "sample": false,
+  "title": "Deye 125kW Solar + Inverter Package",
+  "category": "solar-inverters",
+  "summary": "240 kWh storage · 168 × 620W panels. A complete high-voltage solar and battery system, supplied, installed and commissioned.",
+  "image": "/images/products/deye-125kw-package.jpg",
+  "imageAlt": "Industrial battery racks and power equipment of a 125 kW system",
+  "order": 4
+}

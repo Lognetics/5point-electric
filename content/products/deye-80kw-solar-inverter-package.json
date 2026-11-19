@@ -1,0 +1,56 @@
+{
+  "description": "",
+  "imageFit": "cover",
+  "price": 68080000,
+  "gallery": [],
+  "videos": [],
+  "specifications": [
+    {
+      "label": "System capacity",
+      "value": "80kW / 48V High-VAC"
+    },
+    {
+      "label": "Battery storage",
+      "value": "100.1 kWh (7 × 14.3kWh BOS-B lithium batteries)"
+    },
+    {
+      "label": "Solar panels",
+      "value": "78 × 620W monocrystalline"
+    }
+  ],
+  "included": [
+    "7 × 14.3kWh BOS-B lithium batteries",
+    "78 × 620W panels",
+    "Battery management system",
+    "Electric cables and circuit breaker",
+    "Solar combiner box",
+    "Solar mounting rack and buss bar",
+    "Installation",
+    "Logistics and accessories"
+  ],
+  "ratedFor": [
+    "150 lighting points",
+    "30 TVs",
+    "5 fridges and 5 freezers",
+    "Pumping machine",
+    "7 units of 2.5HP air conditioner",
+    "Washing machine"
+  ],
+  "warranty": [
+    "10-year warranty on lithium batteries",
+    "25-year warranty on solar panels",
+    "5-year warranty on inverters",
+    "1 year free after-sales service support"
+  ],
+  "applications": [
+    "Commercial",
+    "Industrial"
+  ],
+  "sample": false,
+  "title": "Deye 80kW High-VAC Solar + Inverter Package",
+  "category": "solar-inverters",
+  "summary": "100.1 kWh storage · 78 × 620W panels. A complete high-voltage solar and battery system, supplied, installed and commissioned.",
+  "image": "/images/products/deye-80kw-package.jpg",
+  "imageAlt": "Two Deye inverters and two lithium battery racks of an 80 kW system",
+  "order": 3
+}

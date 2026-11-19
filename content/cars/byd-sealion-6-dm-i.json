@@ -1,0 +1,119 @@
+{
+  "title": "2026 BYD Sealion 6 DM-i",
+  "make": "BYD",
+  "model": "Sealion 6 DM-i",
+  "year": 2026,
+  "headline": "Plug-In Hybrid SUV",
+  "powertrain": "hybrid",
+  "bodyType": "suv",
+  "price": null,
+  "summary": "A plug-in hybrid SUV with up to 80 km on electric power alone, up to 1,100 km of combined range and fuel use as low as 1.1 L per 100 km.",
+  "highlights": [
+    {
+      "label": "Power",
+      "value": "217 kW"
+    },
+    {
+      "label": "Combined range",
+      "value": "1,100 km"
+    },
+    {
+      "label": "Electric range",
+      "value": "80 km"
+    },
+    {
+      "label": "Seating",
+      "value": "5"
+    }
+  ],
+  "specifications": [
+    {
+      "label": "Engine",
+      "value": "1.5L High-Efficiency Petrol Engine"
+    },
+    {
+      "label": "Power",
+      "value": "217 kW combined system output"
+    },
+    {
+      "label": "Torque",
+      "value": "300 Nm electric motor torque"
+    },
+    {
+      "label": "Drivetrain",
+      "value": "Front-Wheel Drive (FWD)"
+    },
+    {
+      "label": "Battery",
+      "value": "18.3 kWh BYD Blade Battery"
+    },
+    {
+      "label": "Electric Range",
+      "value": "Up to 80 km on electric power alone"
+    },
+    {
+      "label": "Combined Range",
+      "value": "Up to 1,100 km (electricity + petrol)"
+    },
+    {
+      "label": "Fuel Efficiency",
+      "value": "As low as 1.1L per 100 km"
+    },
+    {
+      "label": "Seating",
+      "value": "5 passengers"
+    },
+    {
+      "label": "Display",
+      "value": "15.6-inch rotating touchscreen"
+    },
+    {
+      "label": "Camera",
+      "value": "360° panoramic camera"
+    },
+    {
+      "label": "V2L",
+      "value": "Powers external electrical appliances using the vehicle's battery."
+    }
+  ],
+  "availability": "Available at 5Points Electric Technology Limited for immediate pickup and delivery nationwide.",
+  "featured": false,
+  "order": 10,
+  "images": [
+    {
+      "src": "/images/cars/byd-sealion-6-dm-i/01.jpg",
+      "alt": "2026 BYD Sealion 6 DM-i, front three-quarter view",
+      "demo": false
+    },
+    {
+      "src": "/images/cars/byd-sealion-6-dm-i/02.jpg",
+      "alt": "2026 BYD Sealion 6 DM-i, front view",
+      "demo": false
+    },
+    {
+      "src": "/images/cars/byd-sealion-6-dm-i/03.jpg",
+      "alt": "2026 BYD Sealion 6 DM-i, rear lights",
+      "demo": false
+    },
+    {
+      "src": "/images/cars/byd-sealion-6-dm-i/04.jpg",
+      "alt": "2026 BYD Sealion 6 DM-i, dashboard and rotating touchscreen",
+      "demo": false
+    },
+    {
+      "src": "/images/cars/byd-sealion-6-dm-i/05.jpg",
+      "alt": "2026 BYD Sealion 6 DM-i, front cabin",
+      "demo": false
+    },
+    {
+      "src": "/images/cars/byd-sealion-6-dm-i/06.jpg",
+      "alt": "2026 BYD Sealion 6 DM-i, front seat",
+      "demo": false
+    },
+    {
+      "src": "/images/cars/byd-sealion-6-dm-i/07.jpg",
+      "alt": "2026 BYD Sealion 6 DM-i, rear seats",
+      "demo": false
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "description": "",
+  "imageFit": "contain",
+  "price": null,
+  "gallery": [],
+  "videos": [],
+  "specifications": [
+    {
+      "label": "Cable type",
+      "value": "AC electrical cable"
+    },
+    {
+      "label": "Size",
+      "value": "6mm"
+    }
+  ],
+  "included": [],
+  "ratedFor": [],
+  "warranty": [],
+  "applications": [
+    "Electrical installations",
+    "Power distribution"
+  ],
+  "sample": false,
+  "title": "6mm AC Cable",
+  "category": "ac-cables",
+  "summary": "6mm AC electrical cable for electrical installations and power distribution.",
+  "image": "/images/products/ac-cable-6mm.jpg",
+  "imageAlt": "Coil of black 6mm AC cable, with a cut-away showing its four coloured cores",
+  "order": 1
+}

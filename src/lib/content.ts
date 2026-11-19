@@ -55,7 +55,16 @@ const productSchema = z.object({
   description: z.string().default(""),
   image: z.string(),
   imageAlt: z.string(),
+  /** "contain" suits cut-out product shots on white; "cover" fills the frame. */
+  imageFit: z.enum(["cover", "contain"]).default("cover"),
+  /** Naira; leave empty for "price on request". */
+  price: z.number().nullable().default(null),
+  gallery: z.array(image).default([]),
+  videos: z.array(video).default([]),
   specifications: z.array(detail).default([]),
+  included: z.array(z.string()).default([]),
+  ratedFor: z.array(z.string()).default([]),
+  warranty: z.array(z.string()).default([]),
   applications: z.array(z.string()).default([]),
   sample: z.boolean().default(false),
   order: z.number().default(100),
@@ -70,6 +79,9 @@ const projectSchema = z.object({
   images: z.array(image).min(1),
   videos: z.array(video).default([]),
   technicalDetails: z.array(detail).default([]),
+  /** Long-form write-up. Body text: blank lines between paragraphs, "- " starts a bullet. */
+  sections: z.array(z.object({ heading: z.string(), body: z.string() })).default([]),
+  quote: z.string().default(""),
   sample: z.boolean().default(false),
   order: z.number().default(100),
 });

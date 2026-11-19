@@ -1,0 +1,31 @@
+{
+  "description": "",
+  "imageFit": "cover",
+  "price": null,
+  "gallery": [],
+  "videos": [],
+  "specifications": [
+    {
+      "label": "Cable type",
+      "value": "AC electrical cable"
+    },
+    {
+      "label": "Size",
+      "value": "95mm"
+    }
+  ],
+  "included": [],
+  "ratedFor": [],
+  "warranty": [],
+  "applications": [
+    "Electrical installations",
+    "Power distribution"
+  ],
+  "sample": false,
+  "title": "95mm AC Cable",
+  "category": "ac-cables",
+  "summary": "95mm AC electrical cable for electrical installations and power distribution.",
+  "image": "/images/products/ac-cable-95mm.jpg",
+  "imageAlt": "Drum of black 95mm AC cable in a warehouse",
+  "order": 7
+}

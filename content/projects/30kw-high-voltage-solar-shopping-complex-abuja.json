@@ -1,0 +1,61 @@
+{
+  "title": "30 kW High-Voltage Solar & Battery System for a Shopping Complex",
+  "category": "solar-installations",
+  "location": "Wuse 2, Abuja",
+  "summary": "Multiple businesses under one roof, each losing money the moment the lights go out. A high-voltage system now sits between grid failure and the generator.",
+  "description": "Multiple businesses under one roof, each losing money the moment the lights go out. A high-voltage system now sits between grid failure and the generator.",
+  "images": [
+    {
+      "src": "/images/projects/30kw-high-voltage-solar-shopping-complex-abuja.jpg",
+      "alt": "30 kW high-voltage inverter and lithium battery rack installed at a shopping complex in Wuse 2, Abuja",
+      "demo": false
+    }
+  ],
+  "technicalDetails": [
+    {
+      "label": "System",
+      "value": "30 kW high-voltage"
+    },
+    {
+      "label": "Battery storage",
+      "value": "64 kWh"
+    },
+    {
+      "label": "Solar panels",
+      "value": "36 x 620 W"
+    },
+    {
+      "label": "Facility",
+      "value": "Shopping complex"
+    },
+    {
+      "label": "Primary loads",
+      "value": "Retail lighting, shop equipment, food-outlet refrigeration and common-area services"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "The Challenge",
+      "body": "A shopping complex has a different energy profile from a residential property.\n\nThere are multiple businesses operating under one roof. Customers come and go throughout the day. Shops need lighting. Retailers need their equipment operational. Food businesses depend on refrigeration and other electrical appliances.\n\nFor these businesses, a power interruption is not simply inconvenient. It interrupts business.\n\nThe shopping complex already had a generator available as backup. However, the management wanted another layer of energy security that could take over during power interruptions and reduce the amount of time businesses had to depend on the generator.\n\nThe goal was straightforward: keep the complex operational and minimise downtime."
+    },
+    {
+      "heading": "Why a High-Voltage System?",
+      "body": "For larger commercial applications, system architecture becomes increasingly important.\n\n5Points recommended a 30 kW high-voltage system with 64 kWh of battery storage, designed around the complex's commercial energy requirements.\n\nHigh-voltage battery systems are particularly suited to larger installations where higher energy demands require an appropriate system architecture."
+    },
+    {
+      "heading": "What We Installed",
+      "body": "- 30 kW high-voltage inverter system\n- 64 kWh battery bank\n- 36 units of 620 W solar panels\n- Commercial electrical integration\n- System commissioning and configuration"
+    },
+    {
+      "heading": "The Result",
+      "body": "The installation gives the shopping complex an additional source of dependable electricity between grid availability and generator operation. For the businesses operating inside the complex, this means fewer disruptions to everyday activities.\n\nA customer browsing a shop does not need to know whether the grid has gone off. A restaurant does not need to stop serving because the lights went out. A retailer does not have to immediately reach for the generator switch.\n\nThe energy system works quietly in the background."
+    },
+    {
+      "heading": "Why This Project Matters",
+      "body": "This project demonstrates how 5Points approaches commercial solar installation differently from residential installations. A commercial energy system has to consider multiple users, business continuity, different load patterns, peak consumption, battery storage, generator integration and operational requirements.\n\nThe goal is not simply to put solar on the building. It is to design an energy system around how the business operates."
+    }
+  ],
+  "quote": "This project was majorly for continuity. We have different businesses operating here, and we couldn't afford for power interruptions to keep affecting every paying tenant. The solar system adds another level of reliability.",
+  "sample": false,
+  "order": 1
+}

@@ -1,0 +1,65 @@
+{
+  "title": "50 kW Solar & Battery System for a 14-Room Hotel",
+  "category": "solar-installations",
+  "location": "Surulere, Lagos",
+  "summary": "A guest noticed the hotel always seemed to have electricity, and had no idea it was running on solar. In hospitality, that is the whole point.",
+  "description": "A guest noticed the hotel always seemed to have electricity, and had no idea it was running on solar. In hospitality, that is the whole point.",
+  "images": [
+    {
+      "src": "/images/projects/50kw-solar-battery-system-hotel-lagos.jpg",
+      "alt": "50 kW solar inverter and high-voltage lithium battery rack installed at a 14-room hotel in Surulere, Lagos",
+      "demo": false
+    }
+  ],
+  "technicalDetails": [
+    {
+      "label": "System",
+      "value": "50 kW inverter"
+    },
+    {
+      "label": "Battery storage",
+      "value": "70 kWh"
+    },
+    {
+      "label": "Solar panels",
+      "value": "46 x 620 W"
+    },
+    {
+      "label": "Facility",
+      "value": "14-room hotel"
+    },
+    {
+      "label": "Primary loads",
+      "value": "14 guest rooms, multiple 1.5 HP air conditioners, lighting, refrigeration and common hotel appliances"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "The Challenge",
+      "body": "Hospitality businesses have a unique responsibility. When someone pays for a hotel room, they are paying for more than four walls and a bed. They are paying for comfort, convenience and reliability.\n\nA guest expects to be able to sleep comfortably, use their air conditioner, charge their devices, watch television and access the basic services associated with their stay.\n\nA power interruption that causes a hotel room to become uncomfortable immediately becomes a customer-experience problem.\n\nFor this 14-room hotel, management wanted a more dependable alternative to constant generator dependence."
+    },
+    {
+      "heading": "Understanding the Load",
+      "body": "The hotel had approximately 14 rooms, alongside common hotel appliances and operational loads.\n\nThe 5Points team assessed the expected energy requirements and recommended a 50 kW inverter with 70 kWh of battery storage and 46 solar panels.\n\nThe system was designed to accommodate substantial hotel loads, including multiple air conditioners and common appliances. Under the customer's operating requirements, the system could comfortably support multiple 1.5 HP air conditioners alongside other essential loads."
+    },
+    {
+      "heading": "What We Installed",
+      "body": "- 50 kW inverter\n- 70 kWh battery storage\n- 46 units of 620 W solar panels\n- Complete solar installation\n- System integration and commissioning"
+    },
+    {
+      "heading": "The Moment That Defined the Installation",
+      "body": "One of the most interesting things about this project happened after installation.\n\nA guest staying at the hotel experienced the property's electricity supply without realising there had been a change in the source of power. The guest reportedly commented on how consistently the hotel had electricity and how often the lights seemed to remain available. The hotel staff then explained that the property had installed a solar power system.\n\nThat reaction captures something important about a successful energy installation: the best energy system is sometimes the one the customer does not notice. When everything works, guests do not think about the inverter. They simply experience the comfort."
+    },
+    {
+      "heading": "The Result",
+      "body": "The hotel has continued to operate with the installed system and has expressed satisfaction with its performance.\n\nThe positive experience has also influenced the hotel's interest in deploying similar systems across other properties."
+    },
+    {
+      "heading": "Why This Project Matters",
+      "body": "This installation demonstrates the relationship between energy reliability and hospitality. For hotels, reliable electricity affects guest comfort, air conditioning, lighting, refrigeration, entertainment, front-desk operations, laundry, food service and overall guest perception.\n\nSolar therefore becomes more than an electricity source. It becomes part of the hotel's customer experience infrastructure."
+    }
+  ],
+  "quote": "One of our guests actually commented that we seemed to have electricity all the time, considering the area the hotel was located in. They didn't even realise we were running on solar. For a hotel, that is exactly the kind of experience we want our guests to have.",
+  "sample": false,
+  "order": 2
+}

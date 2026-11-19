@@ -1,0 +1,31 @@
+{
+  "description": "",
+  "imageFit": "contain",
+  "price": null,
+  "gallery": [],
+  "videos": [],
+  "specifications": [
+    {
+      "label": "Cable type",
+      "value": "AC electrical cable"
+    },
+    {
+      "label": "Size",
+      "value": "25mm"
+    }
+  ],
+  "included": [],
+  "ratedFor": [],
+  "warranty": [],
+  "applications": [
+    "Electrical installations",
+    "Power distribution"
+  ],
+  "sample": false,
+  "title": "25mm AC Cable",
+  "category": "ac-cables",
+  "summary": "25mm AC electrical cable for electrical installations and power distribution.",
+  "image": "/images/products/ac-cable-25mm.jpg",
+  "imageAlt": "Coils of red, yellow, blue, green and black 25mm AC cable with a stripped copper conductor",
+  "order": 4
+}

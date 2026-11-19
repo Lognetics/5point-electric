@@ -1,0 +1,61 @@
+{
+  "title": "100 kW Solar & Battery System for a Fuel Station",
+  "category": "solar-installations",
+  "location": "Port Harcourt, Rivers State",
+  "summary": "A business built on selling fuel realised it was spending heavily on fuel to make its own electricity. It started smaller and grew the system to 100 kW.",
+  "description": "A business built on selling fuel realised it was spending heavily on fuel to make its own electricity. It started smaller and grew the system to 100 kW.",
+  "images": [
+    {
+      "src": "/images/projects/100kw-solar-battery-system-fuel-station-port-harcourt.jpg",
+      "alt": "High-voltage solar inverters and lithium battery racks of the type installed at a filling station in Port Harcourt",
+      "demo": false
+    }
+  ],
+  "technicalDetails": [
+    {
+      "label": "System",
+      "value": "100 kW inverter"
+    },
+    {
+      "label": "Battery storage",
+      "value": "139 kWh"
+    },
+    {
+      "label": "Solar panels",
+      "value": "124 panels"
+    },
+    {
+      "label": "Application",
+      "value": "Fuel station"
+    },
+    {
+      "label": "Primary loads",
+      "value": "Forecourt lighting, fuel pumps, security systems, offices and refrigeration"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "The Challenge",
+      "body": "There is an interesting irony behind this project. The customer operates a business built around selling fuel. Yet fuel itself was becoming part of the energy problem.\n\nA fuel station requires electricity for lighting, pumps, security systems, offices, refrigeration and other operational equipment. Maintaining generator operations adds another layer of expenditure beyond the fuel sold to customers.\n\nThere is the cost of diesel. There is generator servicing. There are repairs. There is noise. There is the inconvenience of continuously monitoring fuel consumption. And there is the uncertainty of future generator operating costs.\n\nThe customer wanted a different approach."
+    },
+    {
+      "heading": "From Smaller Capacity to 100 kW",
+      "body": "One of the most valuable aspects of this project is that the customer did not begin with the final 100 kW system. The installation evolved.\n\nThe customer initially deployed a smaller inverter configuration and subsequently upgraded the system as its energy requirements and confidence in the solution increased.\n\nThat progression demonstrates an important advantage of properly designed energy systems: solar infrastructure can evolve with the customer's requirements."
+    },
+    {
+      "heading": "What We Installed",
+      "body": "- 100 kW inverter capacity\n- 139 kWh battery storage\n- 124 solar panels\n- Commercial electrical integration and commissioning"
+    },
+    {
+      "heading": "The Result",
+      "body": "The fuel station now has a substantial solar and battery system supporting its operations.\n\nThe result is not simply an alternative source of electricity. It represents a change in how the business thinks about energy expenditure.\n\nInstead of continuously purchasing fuel to generate electricity, the business has invested in infrastructure capable of generating and storing energy. The customer has reported satisfaction with the system and has continued to upgrade its energy infrastructure."
+    },
+    {
+      "heading": "Why This Project Matters",
+      "body": "This project is particularly strong for demonstrating energy independence and scalability.\n\nIt shows that a solar system does not necessarily have to be treated as a fixed, one-time configuration. A properly designed system can form part of a long-term energy strategy."
+    }
+  ],
+  "quote": "It is interesting because we sell fuel, but we realised we were also spending a lot of money buying fuel to generate our own electricity. Solar gave us a way to reduce that cycle.",
+  "sample": false,
+  "order": 4
+}

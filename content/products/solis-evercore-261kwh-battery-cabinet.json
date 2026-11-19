@@ -1,0 +1,103 @@
+{
+  "description": "The Commercial Outdoor Battery Cabinet features a new structural design, perfectly compatible with the EverCore series energy storage inverters. It supports various applications including grid-connected, hybrid grid-connected/off-grid, and pure off-grid systems. The modular battery cabinet design allows flexible capacity expansion with convenient installation and maintenance. The cabinet integrates a dual cooling system with fans and air conditioning. Featuring explosion-proof construction, it ensures safety and reliability, delivering high return on investment for customers.",
+  "imageFit": "cover",
+  "price": null,
+  "gallery": [
+    {
+      "src": "/images/products/solis-evercore-261kwh-01.jpg",
+      "alt": "Solis EverCore battery cabinet open, showing its stacked battery packs and orange cabling",
+      "demo": false
+    },
+    {
+      "src": "/images/products/solis-evercore-261kwh-02.jpg",
+      "alt": "Inside the Solis EverCore cabinet: two columns of battery packs above the control unit",
+      "demo": false
+    }
+  ],
+  "videos": [
+    {
+      "src": "/videos/evercore-packs.mp4",
+      "poster": "/images/products/poster-evercore-packs.jpg",
+      "alt": "Close-up of the battery packs inside the Solis EverCore cabinet"
+    },
+    {
+      "src": "/videos/evercore-cabinet.mp4",
+      "poster": "/images/products/poster-evercore-cabinet.jpg",
+      "alt": "The closed Solis EverCore outdoor battery cabinet on a pallet in a warehouse"
+    },
+    {
+      "src": "/videos/evercore-inspection.mp4",
+      "poster": "/images/products/poster-evercore-inspection.jpg",
+      "alt": "Technicians inspecting the open Solis EverCore battery cabinet"
+    }
+  ],
+  "specifications": [
+    {
+      "label": "System",
+      "value": "Solis EverCore-261kWh"
+    },
+    {
+      "label": "Rated energy capacity",
+      "value": "261.2 kWh"
+    },
+    {
+      "label": "Max. cycle rate",
+      "value": "0.5P"
+    },
+    {
+      "label": "Usable energy capacity",
+      "value": "258.3 kWh"
+    },
+    {
+      "label": "Ingress protection",
+      "value": "IP55"
+    },
+    {
+      "label": "Cell type",
+      "value": "LFP 3.2V / 314Ah"
+    },
+    {
+      "label": "Cell cycle life",
+      "value": "8000"
+    },
+    {
+      "label": "System battery configuration",
+      "value": "1P260S"
+    },
+    {
+      "label": "Rated voltage",
+      "value": "832V"
+    },
+    {
+      "label": "Operating voltage range",
+      "value": "754 ~ 936V"
+    },
+    {
+      "label": "Rated DC current",
+      "value": "157A"
+    },
+    {
+      "label": "Number of battery packs",
+      "value": "13"
+    },
+    {
+      "label": "Battery pack capacity",
+      "value": "20.1 kWh"
+    }
+  ],
+  "included": [],
+  "ratedFor": [],
+  "warranty": [],
+  "applications": [
+    "Grid-connected systems",
+    "Hybrid grid-connected/off-grid systems",
+    "Off-grid systems"
+  ],
+  "sample": false,
+  "title": "Solis EverCore 261kWh Commercial Outdoor Battery Cabinet",
+  "category": "battery-storage",
+  "summary": "A modular outdoor battery cabinet with 261.2 kWh of rated capacity, built for the Solis EverCore series of energy storage inverters.",
+  "image": "/images/products/solis-evercore-261kwh-01.jpg",
+  "imageAlt": "Solis EverCore battery cabinet open, showing its stacked battery packs and orange cabling",
+  "order": 1
+}

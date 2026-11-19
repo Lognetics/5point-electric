@@ -1,0 +1,56 @@
+{
+  "title": "100 kW High-Voltage Solar Installation for a Manufacturing Facility",
+  "category": "industrial-energy",
+  "location": "Nigeria",
+  "summary": "143 kWh of storage behind an 86.8 kWp array, sized for a facility that runs continuous process load across an extended shift.",
+  "description": "143 kWh of storage behind an 86.8 kWp array, sized for a facility that runs continuous process load across an extended shift.",
+  "images": [
+    {
+      "src": "/images/projects/100kw-high-voltage-solar-manufacturing-facility.jpg",
+      "alt": "100 kW high-voltage solar inverters and battery racks installed for a manufacturing facility in Nigeria",
+      "demo": false
+    }
+  ],
+  "technicalDetails": [
+    {
+      "label": "System",
+      "value": "100 kW / 48 V"
+    },
+    {
+      "label": "Battery storage",
+      "value": "10 × 14.3 kWh"
+    },
+    {
+      "label": "Solar panels",
+      "value": "140 × 620 W"
+    },
+    {
+      "label": "Property",
+      "value": "Manufacturing facility"
+    },
+    {
+      "label": "Primary loads",
+      "value": "180 lighting points, 40 displays, 6 fridges and 6 freezers, process equipment, pumping machine and eight 2.5 HP air conditioners"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "The Challenge",
+      "body": "Manufacturing facilities run long, predictable shifts with high continuous demand. Grid instability does not just interrupt production; voltage sags and surges shorten the life of motors, drives and control electronics."
+    },
+    {
+      "heading": "Our Recommendation",
+      "body": "A 100 kW / 48 V high-VAC package with 143 kWh of lithium storage and a 140-panel array rated at 86.8 kWp.\n\nThe inverter conditions supply continuously, which removes the surge and sag exposure as well as the outages."
+    },
+    {
+      "heading": "What We Installed",
+      "body": "- 100 kW / 48 V high-VAC inverter system\n- 10 × 14.3 kWh lithium batteries\n- 140 × 620 W monocrystalline solar panels\n- Battery management system, combiner box, mounting rack, busbar and complete installation"
+    },
+    {
+      "heading": "The Result",
+      "body": "Rated for 180 lighting points, 40 displays, 6 fridges and 6 freezers, a pumping machine, eight 2.5 HP air conditioners and a washing machine, alongside process equipment."
+    }
+  ],
+  "sample": false,
+  "order": 7
+}

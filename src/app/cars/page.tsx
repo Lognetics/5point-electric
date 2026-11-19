@@ -6,7 +6,7 @@ import { getCars } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Shop Electric Cars & Plug-In Hybrids in Nigeria",
   description:
-    "Buy fully electric cars and plug-in hybrids in Nigeria from 5Points Electric Technology, including Xiaomi, ZEEKR, AVATR, Geely, and BYD models. Pickup and delivery nationwide.",
+    "Buy fully electric cars and plug-in hybrids in Nigeria from 5Points Electric Technology, including Xiaomi, ZEEKR, AVATR, Toyota, Geely, and BYD models. Pickup and delivery nationwide.",
   alternates: { canonical: "/cars" },
 };
 

@@ -1,0 +1,31 @@
+{
+  "description": "",
+  "imageFit": "contain",
+  "price": null,
+  "gallery": [],
+  "videos": [],
+  "specifications": [
+    {
+      "label": "Cable type",
+      "value": "DC electrical cable"
+    },
+    {
+      "label": "Size",
+      "value": "6mm"
+    }
+  ],
+  "included": [],
+  "ratedFor": [],
+  "warranty": [],
+  "applications": [
+    "Solar arrays",
+    "EV charging systems"
+  ],
+  "sample": false,
+  "title": "6mm DC Cable",
+  "category": "dc-cables",
+  "summary": "6mm DC cable for solar arrays, charging systems and other DC energy applications.",
+  "image": "/images/products/dc-cable-6mm.jpg",
+  "imageAlt": "Coils of black 6mm DC cable with red and blue cores",
+  "order": 1
+}

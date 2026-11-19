@@ -1,0 +1,58 @@
+{
+  "description": "",
+  "imageFit": "cover",
+  "price": 47660000,
+  "gallery": [],
+  "videos": [],
+  "specifications": [
+    {
+      "label": "System capacity",
+      "value": "50kW / 48V High-VAC"
+    },
+    {
+      "label": "Battery storage",
+      "value": "71.5 kWh (5 × 14.3kWh BOS-B lithium batteries)"
+    },
+    {
+      "label": "Solar panels",
+      "value": "64 × 620W monocrystalline"
+    }
+  ],
+  "included": [
+    "5 × 14.3kWh BOS-B lithium batteries",
+    "64 × 620W panels",
+    "Battery management system",
+    "Electric cables and circuit breaker",
+    "Solar combiner box",
+    "Solar mounting rack and busbar",
+    "Installation",
+    "Logistics and accessories"
+  ],
+  "ratedFor": [
+    "120 lighting points",
+    "20 TVs",
+    "4 fridges",
+    "4 freezers",
+    "Pumping machine",
+    "EV charger",
+    "5 units of 2.5HP air conditioner",
+    "Washing machine"
+  ],
+  "warranty": [
+    "10-year warranty on lithium batteries",
+    "25-year warranty on solar panels",
+    "5-year warranty on inverters",
+    "1 year free after-sales service support"
+  ],
+  "applications": [
+    "Commercial",
+    "Industrial"
+  ],
+  "sample": false,
+  "title": "Deye 50kW High-VAC Solar + Inverter Package",
+  "category": "solar-inverters",
+  "summary": "71.5 kWh storage · 64 × 620W panels. A complete high-voltage solar and battery system, supplied, installed and commissioned.",
+  "image": "/images/products/deye-50kw-package.jpg",
+  "imageAlt": "Deye inverter beside a stack of lithium battery modules",
+  "order": 2
+}

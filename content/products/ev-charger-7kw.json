@@ -1,0 +1,32 @@
+{
+  "description": "",
+  "imageFit": "cover",
+  "price": 900000,
+  "gallery": [],
+  "videos": [],
+  "specifications": [
+    {
+      "label": "Power output",
+      "value": "7 kW"
+    },
+    {
+      "label": "Charging speed",
+      "value": "Slow charging"
+    }
+  ],
+  "included": [],
+  "ratedFor": [],
+  "warranty": [],
+  "applications": [
+    "Homes",
+    "Offices",
+    "Car parks"
+  ],
+  "sample": false,
+  "title": "7kW Slow EV Charger",
+  "category": "ev-charging-equipment",
+  "summary": "A 7 kW slow charger for electric vehicles.",
+  "image": "/images/products/ev-charger-7kw.jpg",
+  "imageAlt": "Two 7 kW EV chargers in their protective wrapping",
+  "order": 1
+}

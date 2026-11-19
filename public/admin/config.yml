@@ -97,6 +97,32 @@ collections:
       - { name: description, label: Full description, widget: text, required: false }
       - { name: image, label: Product image, widget: image }
       - { name: imageAlt, label: Image description (alt text), widget: string }
+      - name: imageFit
+        label: Image fit
+        hint: "Use 'Show whole image' for cut-out product photos on a white background."
+        widget: select
+        default: cover
+        required: false
+        options:
+          - { label: Fill the frame, value: cover }
+          - { label: Show whole image, value: contain }
+      - { name: price, label: "Price in Naira (leave empty for price on request)", widget: number, value_type: int, required: false }
+      - name: gallery
+        label: More photos (shown as a gallery on the product page)
+        widget: list
+        required: false
+        fields:
+          - { name: src, label: Image, widget: image }
+          - { name: alt, label: Image description (alt text), widget: string }
+      - name: videos
+        label: Videos
+        hint: Short silent clips (MP4). Add a still image from the clip as its poster.
+        widget: list
+        required: false
+        fields:
+          - { name: src, label: Video (MP4), widget: file, media_folder: /public/videos, public_folder: /videos }
+          - { name: poster, label: Poster image, widget: image }
+          - { name: alt, label: What the video shows, widget: string }
       - name: specifications
         label: Technical specifications
         hint: Only publish verified specifications.
@@ -105,6 +131,9 @@ collections:
         fields:
           - { name: label, label: Specification, widget: string }
           - { name: value, label: Value, widget: string }
+      - { name: included, label: What is included, widget: list, required: false }
+      - { name: ratedFor, label: Rated appliances, widget: list, required: false }
+      - { name: warranty, label: Warranty and support, widget: list, required: false }
       - { name: applications, label: Application areas, widget: list, required: false }
       - { name: sample, label: Sample content (labelled and hidden from search), widget: boolean, default: false, required: false }
       - { name: order, label: Display order, widget: number, value_type: int, default: 100, required: false }
@@ -140,6 +169,15 @@ collections:
           - { name: src, label: Image, widget: image }
           - { name: alt, label: Image description (alt text), widget: string }
           - { name: position, label: "Focal point when cropped (optional, e.g. 50% 40%)", widget: string, required: false }
+      - name: sections
+        label: Write-up sections
+        hint: "Blank line between paragraphs. Start a line with '- ' to make a ticked list."
+        widget: list
+        required: false
+        fields:
+          - { name: heading, label: Heading, widget: string }
+          - { name: body, label: Text, widget: text }
+      - { name: quote, label: Customer quote (optional), widget: text, required: false }
       - name: videos
         label: Videos
         hint: Short silent clips (MP4). They loop without sound. Add a still image from the clip as its poster.

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, MapPin } from "lucide-react";
+import { ArrowLeft, Check, MapPin, Quote } from "lucide-react";
 import { Cta } from "@/components/Cta";
 import { ParallaxImage } from "@/components/ParallaxImage";
 import { SplitReveal } from "@/components/SplitReveal";
@@ -39,6 +39,7 @@ export default async function ProjectPage({ params }: Props) {
   // Projects with video show the lead photo and two clips side by side at the top.
   const heroVideos = project.videos.slice(0, 2);
   const moreVideos = project.videos.slice(2);
+  const keyFigures = project.technicalDetails.slice(0, 3);
 
   return (
     <>
@@ -60,15 +61,30 @@ export default async function ProjectPage({ params }: Props) {
               ))}
             </div>
           ) : (
-            <ParallaxImage
-              priority
-              src={lead.src}
-              alt={lead.alt}
-              position={lead.position}
-              sizes="100vw"
-              demo={project.sample ? "Sample content, demonstration image" : undefined}
-              className="mt-12 aspect-[4/3] sm:aspect-[21/10]"
-            />
+            <div className="mt-12 grid gap-4 lg:grid-cols-12 lg:gap-6">
+              <ParallaxImage
+                priority
+                src={lead.src}
+                alt={lead.alt}
+                position={lead.position}
+                sizes="(min-width: 1024px) 40vw, 100vw"
+                demo={project.sample ? "Sample content, demonstration image" : undefined}
+                className="aspect-[4/5] lg:col-span-5"
+              />
+              <div className="flex flex-col justify-between gap-10 rounded-[14px] bg-forest p-7 ring-1 ring-white/10 lg:col-span-7 lg:p-12">
+                <p className="lead text-white/85">{project.summary}</p>
+                {keyFigures.length > 0 && (
+                  <dl className="grid gap-px overflow-hidden rounded-[10px] bg-white/12 sm:grid-cols-3">
+                    {keyFigures.map((d) => (
+                      <div key={d.label} className="bg-forest p-5 lg:py-7">
+                        <dd className="text-[1.5rem] leading-none font-medium tracking-[-0.03em] text-leaf lg:text-[1.8rem]">{d.value}</dd>
+                        <dt className="label mt-3 text-white/55">{d.label}</dt>
+                      </div>
+                    ))}
+                  </dl>
+                )}
+              </div>
+            </div>
           )}
         </div>
       </section>
@@ -77,11 +93,31 @@ export default async function ProjectPage({ params }: Props) {
         <div className="wrap">
           <div className="grid gap-12 lg:grid-cols-12">
             <div className="lg:col-span-7">
-              <h2 className="label text-deep">Project description</h2>
-              <p className="lead mt-5 whitespace-pre-line">{project.description}</p>
+              {project.sections.length > 0 ? (
+                <div className="space-y-12 lg:space-y-14">
+                  {project.sections.map((section) => (
+                    <div key={section.heading}>
+                      <h2 className="text-[1.45rem] leading-tight tracking-[-0.02em]">{section.heading}</h2>
+                      <Body text={section.body} />
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <>
+                  <h2 className="label text-deep">Project description</h2>
+                  <p className="lead mt-5 whitespace-pre-line">{project.description}</p>
+                </>
+              )}
+              {project.quote && (
+                <figure className="mt-14 rounded-[14px] bg-ink p-7 text-white lg:p-10">
+                  <Quote size={26} className="text-leaf" aria-hidden="true" />
+                  <blockquote className="mt-5 text-[1.15rem] leading-relaxed tracking-[-0.01em]">&ldquo;{project.quote}&rdquo;</blockquote>
+                  <figcaption className="label mt-6 text-white/50">Customer experience</figcaption>
+                </figure>
+              )}
             </div>
             {project.technicalDetails.length > 0 && (
-              <div className="lg:col-span-4 lg:col-start-9">
+              <div className="lg:sticky lg:top-28 lg:col-span-4 lg:col-start-9 lg:self-start">
                 <h2 className="label text-deep">Technical details</h2>
                 <dl className="mt-5 border-t border-ink/15">
                   {project.technicalDetails.map((d) => (
@@ -122,5 +158,29 @@ export default async function ProjectPage({ params }: Props) {
         </div>
       </section>
     </>
+  );
+}
+
+/** Paragraphs separated by blank lines; a block of "- " lines becomes a ticked list. */
+function Body({ text }: { text: string }) {
+  return (
+    <div className="mt-4 space-y-4 text-stone">
+      {text.split(/\n\s*\n/).map((block, i) => {
+        const lines = block.split("\n").filter(Boolean);
+        if (lines.length && lines.every((l) => l.startsWith("- "))) {
+          return (
+            <ul key={i} className="border-t border-ink/15">
+              {lines.map((l) => (
+                <li key={l} className="flex gap-3 border-b border-ink/15 py-3 text-ink">
+                  <Check size={18} className="mt-0.5 shrink-0 text-deep" aria-hidden="true" />
+                  <span>{l.slice(2)}</span>
+                </li>
+              ))}
+            </ul>
+          );
+        }
+        return <p key={i}>{block}</p>;
+      })}
+    </div>
   );
 }

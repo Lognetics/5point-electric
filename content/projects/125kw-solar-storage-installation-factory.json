@@ -1,0 +1,56 @@
+{
+  "title": "125 kW Solar & Storage Installation for a Factory",
+  "category": "industrial-energy",
+  "location": "Nigeria",
+  "summary": "Chillers, three-phase air conditioning, compressors and an industrial oven, the class of load that decides whether a plant runs or stops.",
+  "description": "Chillers, three-phase air conditioning, compressors and an industrial oven, the class of load that decides whether a plant runs or stops.",
+  "images": [
+    {
+      "src": "/images/projects/125kw-solar-storage-installation-factory.jpg",
+      "alt": "Industrial battery racks and power equipment beneath a green canopy at a factory installation",
+      "demo": false
+    }
+  ],
+  "technicalDetails": [
+    {
+      "label": "System",
+      "value": "125 kW PCS"
+    },
+    {
+      "label": "Battery storage",
+      "value": "15 × 16 kWh"
+    },
+    {
+      "label": "Solar panels",
+      "value": "168 × 620 W"
+    },
+    {
+      "label": "Property",
+      "value": "Manufacturing plant"
+    },
+    {
+      "label": "Primary loads",
+      "value": "Chillers, three-phase air conditioners, elevator, air compressor, industrial water heater, industrial oven, industrial pumping machine and EV charging station"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "The Challenge",
+      "body": "Industrial power is not a comfort question. When the supply fails, production stops, work in progress is scrapped and the plant absorbs the cost of restarting.\n\nPlants of this size also run motor loads, compressors, chillers, pumps, whose starting current is several times their running current. Any system that ignores that fails on the first cold start."
+    },
+    {
+      "heading": "Our Recommendation",
+      "body": "A 125 kW power conversion system with 240 kWh of lithium storage across fifteen modules and a 168-panel array rated at 104.16 kWp.\n\nIndustrial-grade components throughout, specified to withstand heavy continuous duty. The design leaves room for expansion: additional battery modules and array strings can be added without replacing the conversion equipment."
+    },
+    {
+      "heading": "What We Installed",
+      "body": "- 125 kW power conversion system\n- 15 × 16 kWh lithium batteries on stackable racks\n- 168 × 620 W monocrystalline solar panels\n- Battery management system, circuit protection, mounting infrastructure and complete installation"
+    },
+    {
+      "heading": "The Result",
+      "body": "Rated to carry chillers, three-phase air conditioners, an elevator, air compressor, industrial water heater, industrial oven, industrial pumping machine and an EV charging station.\n\nDependence on grid electricity and diesel generation is reduced structurally rather than marginally, and the plant gains protection against the power instability that damages industrial equipment."
+    }
+  ],
+  "sample": false,
+  "order": 6
+}

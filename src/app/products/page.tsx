@@ -9,6 +9,7 @@ import { CarCard } from "@/components/CarCard";
 import { getCars, getProducts } from "@/lib/content";
 import { PRODUCT_CATEGORIES } from "@/lib/taxonomy";
 import { contactHref } from "@/lib/site";
+import { formatPrice } from "@/lib/cars";
 
 export const metadata: Metadata = {
   title: "Products: EV Chargers, Solar Systems & AC and DC Cables in Nigeria",
@@ -76,26 +77,27 @@ export default function ProductsPage() {
                         </div>
                       </div>
                     ) : items.length > 0 ? (
-                      <ul className={`mt-9 grid gap-x-7 gap-y-12 ${items.length > 1 ? "sm:grid-cols-2" : ""}`}>
+                      <ul className={`mt-9 grid gap-x-7 gap-y-12 ${items.length > 1 ? "sm:grid-cols-2" : ""} ${items.length > 4 ? "2xl:grid-cols-3" : ""}`}>
                         {items.map((product) => (
                           <Reveal as="li" key={product.slug}>
                             <Link
                               href={`/products/${product.slug}`}
                               className={`group grid h-full overflow-hidden rounded-[14px] bg-white ${items.length === 1 ? "md:grid-cols-2" : ""}`}
                             >
-                              <div className={`relative overflow-hidden bg-moss ${items.length === 1 ? "aspect-[16/11] md:aspect-auto md:min-h-[22rem]" : "aspect-[16/11]"}`}>
+                              <div className={`relative overflow-hidden ${product.imageFit === "contain" ? "bg-white" : "bg-moss"} ${items.length === 1 ? "aspect-[16/11] md:aspect-auto md:min-h-[22rem]" : "aspect-[16/11]"}`}>
                                 <Image
                                   src={product.image}
                                   alt={product.imageAlt}
                                   fill
                                   sizes="(min-width: 1024px) 38vw, (min-width: 640px) 50vw, 100vw"
-                                  className="object-cover transition-transform duration-[1.4s] ease-out-soft group-hover:scale-[1.04]"
+                                  className={`${product.imageFit === "contain" ? "object-contain p-6" : "object-cover"} transition-transform duration-[1.4s] ease-out-soft group-hover:scale-[1.04]`}
                                 />
                                 {product.sample && <span className="demo-tag absolute top-3.5 left-3.5">Sample listing</span>}
                               </div>
                               <div className="flex flex-col p-6 lg:p-8">
                                 <h3 className="text-[1.2rem] leading-tight">{product.title}</h3>
                                 <p className="mt-3 flex-1 text-[0.775rem] text-stone">{product.summary}</p>
+                                {product.price && <p className="mt-5 text-[1.05rem] font-medium tracking-[-0.01em] text-deep">{formatPrice(product.price)}</p>}
                                 <span className="link-arrow mt-7 self-start">
                                   Request Product Information <ArrowUpRight size={16} aria-hidden="true" />
                                 </span>

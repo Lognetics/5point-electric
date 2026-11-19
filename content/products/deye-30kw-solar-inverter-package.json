@@ -1,0 +1,59 @@
+{
+  "description": "",
+  "imageFit": "cover",
+  "price": 35990000,
+  "gallery": [],
+  "videos": [],
+  "specifications": [
+    {
+      "label": "System capacity",
+      "value": "30kW / 48V High-VAC"
+    },
+    {
+      "label": "Battery storage",
+      "value": "53.76 kWh (7 × 7.68kWh lithium batteries)"
+    },
+    {
+      "label": "Solar panels",
+      "value": "36 × 620W monocrystalline"
+    }
+  ],
+  "included": [
+    "7 × 7.68kWh lithium batteries",
+    "36 × 620W panels",
+    "Stackable battery rack",
+    "Battery management system",
+    "Electric cables and circuit breaker",
+    "Solar combiner box",
+    "Solar mounting rack and busbar",
+    "Installation",
+    "Logistics and accessories"
+  ],
+  "ratedFor": [
+    "100 lighting points",
+    "10 TVs",
+    "3 fridges",
+    "3 freezers",
+    "7kW EV charger",
+    "Pumping machine",
+    "4 units of 2.5HP air conditioner",
+    "Washing machine"
+  ],
+  "warranty": [
+    "10-year warranty on lithium batteries",
+    "25-year warranty on solar panels",
+    "5-year warranty on inverters",
+    "1 year free after-sales service support"
+  ],
+  "applications": [
+    "Commercial",
+    "Industrial"
+  ],
+  "sample": false,
+  "title": "Deye 30kW High-VAC Solar + Inverter Package",
+  "category": "solar-inverters",
+  "summary": "53.76 kWh storage · 36 × 620W panels. A complete high-voltage solar and battery system, supplied, installed and commissioned.",
+  "image": "/images/products/deye-30kw-package.jpg",
+  "imageAlt": "High-voltage inverter and stacked lithium battery rack of a 30 kW system",
+  "order": 1
+}
